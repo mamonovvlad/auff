@@ -1,0 +1,40 @@
+.table {
+  background: var(--light_gray);
+  margin: 24px 0;
+  border-radius: var(--radius);
+  padding: 0 20px;
+  &__row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--white-dark);
+    &:last-child {
+      border: none;
+    }
+    @include _576 {
+      row-gap: 8px;
+      grid-template-areas: "data none cash" "text text text";
+    }
+  }
+  &__data {
+    margin-right: 30px;
+    color: var(--gray);
+    @include _576 {
+      grid-area: data;
+    }
+  }
+  &__text {
+    @include _576 {
+      grid-area: text;
+    }
+  }
+  &__cash {
+    margin-left: 30px;
+    font-weight: 600;
+    @include _576 {
+      grid-area: cash;
+    }
+  }
+}

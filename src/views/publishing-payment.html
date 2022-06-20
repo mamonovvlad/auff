@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auff</title>
+    <link rel="shortcut icon" href="favicon/icon.svg" type="image/png" />
+  </head>
+
+  <body>
+    <div class="burger__menu">
+      <div class="burger__box">
+        <div class="burger__header">
+          <figure class="logo">
+            <img
+              class="logo-desktop"
+              loading="lazy"
+              src="../source/image/logo/logo.svg"
+              alt="logo"
+            />
+            <img
+              class="logo-mobile"
+              loading="lazy"
+              src="../source/image/logo/logo-mobile.svg"
+              alt="logo"
+            />
+          </figure>
+          <button class="burger__btn burger_hidden">
+            <svg class="">
+              <use xlink:href="../source/image/icon/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger__main scroll p30">
+          <p>Основное:</p>
+          <div class="links">
+            <a href="ads.html">Избранное</a>
+            <a href="comparisons.html">Сравнения <span>(5)</span> </a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+          </div>
+          <p>Мой профиль:</p>
+          <div class="links">
+            <a href="entrance.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
+          <div class="buttons">
+            <button class="button_dark">Найти авто</button>
+            <button class="button_dark_border">Продать авто</button>
+          </div>
+          <div class="social-networks">
+            <p>Мы в соц сетях:</p>
+            <div class="items">
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/viber.svg#viber"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+      <!--Header-->
+      <header class="header mb30" id="header">
+        <div class="general_padding">
+          <div class="container">
+            <div class="header__nav">
+              <button class="burger__btn burger_show">
+                <svg class="burger__icon">
+                  <use
+                    xlink:href="../source/image/icon/burger.svg#burger"
+                  ></use>
+                </svg>
+              </button>
+              <a href="/" class="logo__header">
+                <img
+                  class="logo-desktop"
+                  loading="lazy"
+                  src="../source/image/logo/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  class="logo-mobile"
+                  loading="lazy"
+                  src="../source/image/logo/logo-mobile.svg"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="item item_languages"
+                data-tippy-content="Изменить язык"
+              >
+                <a href="#" class="active">RU </a>
+                <span class="line"></span>
+                <a href="#">UA</a>
+              </div>
+              <div class="item item_user" data-tippy-content="Мой профиль">
+                <span>
+                  <img
+                    loading="lazy"
+                    src="../source/image/icon/user.svg"
+                    alt="user"
+                  />
+                </span>
+                <div class="user__menu">
+                  <a href="./entrance.html">Вход</a>
+                  <a href="./register.html">Регистрация</a>
+                </div>
+              </div>
+              <span class="item item_search" data-tippy-content="Поиск">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+              </span>
+              <a
+                href="chosen.html"
+                class="item item_favorites"
+                data-tippy-content="Избранное"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/star.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="comparisons.html"
+                class="item item_comparisons"
+                data-tippy-content="Сравнения"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/comparison.svg"
+                  alt="comparison"
+                />
+              </a>
+              <button class="place">Разместить объявление</button>
+              <button class="plus">
+                <img src="../source/image/icon/plus.svg" alt="+" />
+              </button>
+              <div class="header__search">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+                <input
+                  class=""
+                  type="search"
+                  placeholder="Поиск среди 100 000 авто"
+                />
+                <button class="close__search">
+                  <img src="../source/image/icon/close.svg" alt="close" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__line"></div>
+        </div>
+      </header>
+      <!--Header End-->
+      <!--Main-->
+      <main class="main general_padding" id="main">
+        <div class="main__box container">
+          <div class="p30">
+            <div class="block__back">
+              <button class="button-back">
+                <svg>
+                  <use xlink:href="../source/image/icon/arrow.svg#arrow"></use>
+                </svg>
+              </button>
+              <h2 class="title">Публикуй</h2>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="publishing-payment__box">
+            <div class="preview p30">
+              <div class="swiper-container gallery-top">
+                <div class="images__number">
+                  <span>12</span
+                  ><img
+                    loading="lazy"
+                    src="../source/image/icon/icon.svg"
+                    alt="number"
+                  />
+                </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/full-car.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/car_2.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/car_6.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/car_7.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/full-car.png" alt="" />
+                  </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+              </div>
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/full-car.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/car_2.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/car_6.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/car_7.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../source/image/temp/full-car.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="data__car">
+                <div class="info__car">
+                  <p>Просмотров всего: <span>2041</span></p>
+                  <p>За сегодня: <span>+152</span></p>
+                </div>
+                <p class="price__car">129 000 $ <span>(3 575 880 грн)</span></p>
+              </div>
+            </div>
+            <div class="publishing-payment__info__car">
+              <div class="p30 list-information">
+                <div class="user mb30">
+                  <figure>
+                    <img src="../source/image/temp/user.png" alt="" />
+                  </figure>
+                  <div class="user-box">
+                    <div class="user-info">
+                      <span class="name"> Игорь </span>
+                      <div class="phone__block">
+                        <div class="phone">(067) ХХХ ХХ ХХ</div>
+                      </div>
+                    </div>
+
+                    <button class="button--grey">Показать</button>
+                    <a href="#" class="user-phone">
+                      <img src="../source/image/icon/phone.svg" alt="phone" />
+                    </a>
+                  </div>
+                </div>
+                <p class="user__title mb20">BMW 750 individual 2019</p>
+                <div class="views mb20">
+                  <p>Просмотров всего: <span>2041</span></p>
+                  <p>За сегодня: <span>+152</span></p>
+                </div>
+                <p class="user__title mb40">
+                  129 000 $ <span>(3 575 880 грн)</span>
+                </p>
+                <div class="buttons">
+                  <button class="button_dark">Написать продавцу</button>
+                  <a href="#" class="comparisons">
+                    <svg class="">
+                      <use
+                        xlink:href="../source/image/icon/comparison.svg#comparison"
+                      ></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="favorites">
+                    <svg class="">
+                      <use
+                        xlink:href="../source/image/icon/star.svg#star"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="p30 feature__block">
+                <ul class="feature">
+                  <li>
+                    <p>Год выпуска:</p>
+                    <span>2017г.</span>
+                  </li>
+                  <li>
+                    <p>Пробег:</p>
+                    <span>49 000 км.</span>
+                  </li>
+                  <li>
+                    <p>Двигатель:</p>
+                    <span>1.5 дизель</span>
+                  </li>
+                  <li>
+                    <p>Коробка:</p>
+                    <span>Автомат</span>
+                  </li>
+                  <li>
+                    <p>Привод:</p>
+                    <span>Перединий</span>
+                  </li>
+                  <li>
+                    <p>Цвет:</p>
+                    <span><span class="color"></span>Серый металик</span>
+                  </li>
+                  <li>
+                    <p>Тип кузова:</p>
+                    <span>Внедорожник</span>
+                  </li>
+                  <li>
+                    <p>Локация:</p>
+                    <span>Днепр</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="line"></div>
+              <div class="social-networks p30">
+                <p>Поделиться публикацией:</p>
+                <div class="box__links">
+                  <a href="">
+                    <img
+                      src="../source/image/social-networks/viber.svg"
+                      alt="viber"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="../source/image/social-networks/telegram.svg"
+                      alt="telegram"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="../source/image/social-networks/whatsapp.svg"
+                      alt="whatsapp"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="../source/image/social-networks/facebook.svg"
+                      alt="facebook"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="publishing-payment__content">
+              <div class="list__buttons">
+                <button class="lists__content_btn active">
+                  <svg class="">
+                    <use xlink:href="../source/image/icon/list.svg#list"></use>
+                  </svg>
+                </button>
+                <button class="tabs__content_btn">
+                  <svg class="">
+                    <use
+                      xlink:href="../source/image/icon/square.svg#square"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="tabs p30">
+                <div class="tabs__box">
+                  <div class="name__tab">
+                    <button class="item-tab active_tab">Описание</button>
+                    <button class="item-tab">Характеристики</button>
+                    <button class="item-tab">Обсуждение</button>
+                    <button class="item-tab">Обмен</button>
+                  </div>
+                  <div class="content__tab">
+                    <div class="item__tab description p30">
+                      <p class="">
+                        Продам BMW 320D и идеальном состоянии, с оригинальным
+                        пробегом, автомобиль весь в родной краске, полностью
+                        обслужен. Комплектация: webasto, мультимедиа, климат,
+                        подкачка передних сидений, навигация, bluetooth, 2 ключа
+                        и тд. Автомобиль стоит вашего внимания. Жду ваши
+                        предложения по телефону
+                      </p>
+                      <p class="">
+                        Продам BMW 320D и идеальном состоянии, с оригинальным
+                        пробегом, автомобиль весь в родной краске, полностью
+                        обслужен. Комплектация: webasto, мультимедиа, климат,
+                        подкачка передних сидений, навигация, bluetooth, 2 ключа
+                        и тд. Автомобиль стоит вашего внимания. Жду ваши
+                        предложения по телефону
+                      </p>
+                    </div>
+                    <div class="item__tab p30">
+                      <div class="specifications">
+                        <div class="specifications__block">
+                          <span class="">Состояние:</span>
+                          <ul>
+                            <li>Гаражное хранение</li>
+                            <li>Не бит</li>
+                            <li>Не крашен</li>
+                          </ul>
+                        </div>
+                        <div class="specifications__block">
+                          <span class="">Безопасность:</span>
+                          <ul>
+                            <li>Центральный замок</li>
+                            <li>Подушка безопасности (Airbag)</li>
+                            <li>Сигнализация</li>
+                            <li>Галогенные фары</li>
+                            <li>Серворуль</li>
+                            <li>Сигнализация</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__tab">
+                      <div class="discussion">
+                        <div class="message p30">
+                          <div class="user__message">
+                            <figure class="user__photo">
+                              <img src="../source/image/temp/user.png" alt="" />
+                            </figure>
+                            <div class="user__box">
+                              <div class="user__text">
+                                <span>Сергей Иванов: </span>
+                                <p>
+                                  В машине есть какие-то царапины, изгибы? Если
+                                  да то где, уточните пожадуйста
+                                </p>
+                              </div>
+                              <span class="date">23:15, 2 дня назад</span>
+                              <button class="reply">Ответить</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="write-message">
+                          <input
+                            type="text"
+                            placeholder="Задайте вопрос продавцу..."
+                          />
+                          <button class="send">
+                            <img
+                              src="../source/image/icon/interface.svg"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                        <div class="register-now">
+                          <button class="button_dark">
+                            Зарегистрируйтесь чтоб задать вопрос
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item__tab">
+                      <div class="exchange p30">
+                        <div class="exchange__block">
+                          <figure class="user__photo">
+                            <img src="../source/image/temp/user.png" alt="" />
+                          </figure>
+                          <div class="exchange__box">
+                            <div class="exchange__content">
+                              <div class="exchange__text">
+                                <div class="text__title">
+                                  <span>Сергей Иванов: </span>
+                                  <p>
+                                    В машине есть какие-то царапины, изгибы?
+                                    Если да то где, уточните пожадуйста
+                                  </p>
+                                </div>
+                                <div class="text__small">
+                                  <span class="date">23:15, 2 дня назад</span>
+                                  <button class="reject-offer">
+                                    Предложение отклонено
+                                  </button>
+                                </div>
+                              </div>
+                              <figure class="exchange__car">
+                                <img
+                                  src="../source/image/temp/user_car.png"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+
+                        <button class="button_dark_border">
+                          Предложить свой обмен
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lists__content">
+                <div class="p30">
+                  <h3 class="content__title">Описание</h3>
+                  <p class="content__description">
+                    Продам BMW 320D и идеальном состоянии, с оригинальным
+                    пробегом, автомобиль весь в родной краске, полностью
+                    обслужен. Комплектация: webasto, мультимедиа, климат,
+                    подкачка передних сидений, навигация, bluetooth, 2 ключа и
+                    тд. Автомобиль стоит вашего внимания. Жду ваши предложения
+                    по телефону Продам BMW 320D и идеальном состоянии, с
+                    оригинальным пробегом, автомобиль весь в родной краске,
+                    полностью обслужен. Комплектация: webasto, мультимедиа,
+                    климат, подкачка передних сидений, навигация, bluetooth, 2
+                    ключа и тд. Автомобиль стоит вашего внимания. Жду ваши
+                    предложения по телефону
+                  </p>
+                </div>
+                <div class="line"></div>
+                <div class="p30">
+                  <h3 class="content__title">Характеристики</h3>
+                  <div class="specifications">
+                    <div class="specifications__block">
+                      <span class="">Состояние:</span>
+                      <ul>
+                        <li>Гаражное хранение</li>
+                        <li>Не бит</li>
+                        <li>Не крашен</li>
+                      </ul>
+                    </div>
+                    <div class="specifications__block">
+                      <span class="">Безопасность:</span>
+                      <ul>
+                        <li>Центральный замок</li>
+                        <li>Подушка безопасности (Airbag)</li>
+                        <li>Сигнализация</li>
+                        <li>Галогенные фары</li>
+                        <li>Серворуль</li>
+                        <li>Сигнализация</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="discussion p30">
+                  <div class="message">
+                    <div class="user__message">
+                      <figure class="user__photo">
+                        <img src="../source/image/temp/user.png" alt="" />
+                      </figure>
+                      <div class="user__box">
+                        <div class="user__text">
+                          <span>Сергей Иванов: </span>
+                          <p>
+                            В машине есть какие-то царапины, изгибы? Если да то
+                            где, уточните пожадуйста
+                          </p>
+                        </div>
+                        <span class="date">23:15, 2 дня назад</span>
+                        <button class="reply">Ответить</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="write-message">
+                    <input
+                      type="text"
+                      placeholder="Задайте вопрос продавцу..."
+                    />
+                    <button class="send">
+                      <img src="../source/image/icon/interface.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="register-now">
+                    <button class="button_dark">
+                      Зарегистрируйтесь чтоб задать вопрос
+                    </button>
+                  </div>
+                </div>
+                <!--Заглешка-->
+                <div class="lack-content dn">
+                  <img
+                    src="../source/image/lack-content/message.svg"
+                    alt="message"
+                  />
+                  <p>Обсуждения к этому объявлению отсутствуют</p>
+                  <button class="button_dark">Задать вопрос</button>
+                </div>
+                <div class="line"></div>
+                <div class="exchange p30">
+                  <div class="exchange__block">
+                    <figure class="user__photo">
+                      <img src="../source/image/temp/user.png" alt="" />
+                    </figure>
+                    <div class="exchange__box">
+                      <div class="exchange__content">
+                        <div class="exchange__text">
+                          <div class="text__title">
+                            <span>Сергей Иванов: </span>
+                            <p>
+                              В машине есть какие-то царапины, изгибы? Если да
+                              то где, уточните пожадуйста
+                            </p>
+                          </div>
+                          <div class="text__small">
+                            <span class="date">23:15, 2 дня назад</span>
+                            <button class="reject-offer">
+                              Предложение отклонено
+                            </button>
+                          </div>
+                        </div>
+                        <figure class="exchange__car">
+                          <img src="../source/image/temp/user_car.png" alt="" />
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="button_dark_border">
+                    Предложить свой обмен
+                  </button>
+                </div>
+                <!--Заглешка-->
+                <div class="lack-content dn">
+                  <img
+                    src="../source/image/lack-content/exchange.svg"
+                    alt="exchange"
+                  />
+                  <p>Обмены к этому объявлению отсутствуют</p>
+                  <button class="button_dark">Предложить обмен</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="paid-features p30">
+            <div class="container">
+              <h2 class="title mb30">Выбранно 2 платные функции</h2>
+              <div class="table-container mb30">
+                <div class="table-row">
+                  <div class="row-item row-item--big">Вывод в топ по марке</div>
+                  <div class="row-item">
+                    10 дней
+                    <button class="edit">
+                      <img src="../source/image/icon/pencil.svg" alt="pencil" />
+                    </button>
+                  </div>
+                  <div class="row-item">
+                    22 место
+                    <button class="edit">
+                      <img src="../source/image/icon/pencil.svg" alt="pencil" />
+                    </button>
+                  </div>
+                  <div class="row-item row-item_bold">
+                    145 грн
+                    <button class="delete">
+                      <img src="../source/image/icon/trash.svg" alt="trash" />
+                    </button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div class="row-item row-item--big">Выделение цветом</div>
+                  <div class="row-item">
+                    10 дней
+                    <button class="edit">
+                      <img src="../source/image/icon/pencil.svg" alt="pencil" />
+                    </button>
+                  </div>
+                  <div class="row-item">
+                    22 место
+                    <button class="edit">
+                      <img src="../source/image/icon/pencil.svg" alt="pencil" />
+                    </button>
+                  </div>
+                  <div class="row-item row-item_bold">
+                    145 грн
+                    <button class="delete">
+                      <img src="../source/image/icon/trash.svg" alt="trash" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-info mb30">
+                <h2 class="title">Итого к оплате:</h2>
+                <h2 class="title">205.00 грн</h2>
+              </div>
+              <div class="buttons">
+                <button class="button_dark_border">
+                  Перенести в черновики
+                </button>
+                <button class="button_dark">Оплатить и опубликовать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--Main End-->
+      <!--Footer-->
+      <footer id="footer" class="footer general_padding">
+        <div class="container p30">
+          <div class="footer__block">
+            <figure class="footer__logo">
+              <img
+                class="logo-desktop"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow.svg"
+                alt="logo"
+              />
+              <img
+                class="logo-mobile"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow-mobile.svg"
+                alt="logo"
+              />
+            </figure>
+            <form action="" class="form-subscribe">
+              <label for="footer_email">Быть в курсе последних новостей</label>
+              <div class="form__box">
+                <input
+                  id="footer_email"
+                  class="input"
+                  type="text"
+                  placeholder="Быть в курсе последних новостей"
+                />
+                <button type="button" class="button_yellow button-subscribe">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscription-issued">
+                <p>Поздравляем, подписка на новости успешно оформленна=)</p>
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+              </div>
+            </form>
+            <a href="#header" class="button_yellow up">
+              <svg class="">
+                <use
+                  xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+                ></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__title">
+            <h2 class="title">Каталог автомобилей</h2>
+            <button class="button__plus car-catalog">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_car-catalog">
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+          </nav>
+
+          <div class="footer__title">
+            <h2 class="title">Другое</h2>
+            <button class="button__plus other">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_other">
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+          </nav>
+        </div>
+        <div class="footer__copyright">
+          <div class="container p30">
+            <div class="footer__box">
+              <p>© Auff, Все права защищены</p>
+              <div class="social-networks">
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/viber.svg#viber"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <nav>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфендициальности</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Footer End-->
+    </div>
+  </body>
+</html>

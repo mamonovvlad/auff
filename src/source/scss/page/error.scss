@@ -1,0 +1,106 @@
+.error {
+  background: var(--yellow);
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  &:after,
+  &:before {
+    content: "";
+    border: 100px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    @include _768 {
+      border: 80px solid rgba(0, 0, 0, 0);
+    }
+  }
+  &:after {
+    bottom: 0;
+    left: 0;
+    border-bottom: 100px solid var(--yellow-dark);
+    border-left: 100px solid var(--yellow-dark);
+    @include _768 {
+      border-bottom: 80px solid var(--yellow-dark);
+      border-left: 80px solid var(--yellow-dark);
+    }
+  }
+  &:before {
+    top: 0;
+    right: 0;
+    border-top: 100px solid var(--yellow-dark);
+    border-right: 100px solid var(--yellow-dark);
+    @include _768 {
+      border-top: 80px solid var(--yellow-dark);
+      border-right: 80px solid var(--yellow-dark);
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  &__title,
+  &__subtitle {
+    font-weight: 600;
+    color: var(--dark);
+  }
+  &__title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    @include _1200 {
+      font-size: 36px;
+    }
+    @include _768 {
+      font-size: 24px;
+    }
+  }
+  &__subtitle {
+    font-size: 24px;
+    text-align: center;
+    @include _1200 {
+      font-size: 18px;
+    }
+    @include _768 {
+      font-size: 16px;
+    }
+  }
+  &__box-img {
+    position: relative;
+    z-index: -1;
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    &:after {
+      bottom: 170px;
+      background: url("../image/error/icon-first.svg") no-repeat;
+      background-size: contain;
+    }
+    &:before {
+      top: 200px;
+      background: url("../image/error/icon-second.svg") no-repeat;
+      background-size: contain;
+    }
+  }
+  &__img {
+    margin-top: 50px;
+    max-width: 650px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  & a {
+    font-size: 14px;
+    color: var(--yellow);
+  }
+}

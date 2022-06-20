@@ -1,0 +1,2468 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon/icon.svg" type="image/png" />
+    <title>Объявления</title>
+  </head>
+
+  <body>
+    <div class="burger__menu">
+      <div class="burger__box">
+        <div class="burger__header">
+          <figure class="logo">
+            <img
+              class="logo-desktop"
+              loading="lazy"
+              src="../source/image/logo/logo.svg"
+              alt="logo"
+            />
+            <img
+              class="logo-mobile"
+              loading="lazy"
+              src="../source/image/logo/logo-mobile.svg"
+              alt="logo"
+            />
+          </figure>
+          <button class="burger__btn burger_hidden">
+            <svg class="">
+              <use xlink:href="../source/image/icon/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger__main scroll p30">
+          <p>Основное:</p>
+          <div class="links">
+            <a href="ads.html">Избранное</a>
+            <a href="comparisons.html">Сравнения <span>(5)</span> </a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+          </div>
+          <p>Мой профиль:</p>
+          <div class="links">
+            <a href="entrance.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
+          <div class="buttons">
+            <button class="button_dark">Найти авто</button>
+            <button class="button_dark_border">Продать авто</button>
+          </div>
+          <div class="social-networks">
+            <p>Мы в соц сетях:</p>
+            <div class="items">
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/viber.svg#viber"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+      <!--Header-->
+      <header class="header" id="header">
+        <div class="general_padding">
+          <div class="container">
+            <div class="header__nav">
+              <button class="burger__btn burger_show">
+                <svg class="burger__icon">
+                  <use
+                    xlink:href="../source/image/icon/burger.svg#burger"
+                  ></use>
+                </svg>
+              </button>
+              <a href="/" class="logo__header">
+                <img
+                  class="logo-desktop"
+                  loading="lazy"
+                  src="../source/image/logo/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  class="logo-mobile"
+                  loading="lazy"
+                  src="../source/image/logo/logo-mobile.svg"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="item item_languages"
+                data-tippy-content="Изменить язык"
+              >
+                <a href="#" class="active">RU </a>
+                <span class="line"></span>
+                <a href="#">UA</a>
+              </div>
+              <div class="item item_user" data-tippy-content="Мой профиль">
+                <span>
+                  <img
+                    loading="lazy"
+                    src="../source/image/icon/user.svg"
+                    alt="user"
+                  />
+                </span>
+                <div class="user__menu">
+                  <a href="./entrance.html">Вход</a>
+                  <a href="./register.html">Регистрация</a>
+                </div>
+              </div>
+              <span class="item item_search" data-tippy-content="Поиск">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+              </span>
+              <a
+                href="chosen.html"
+                class="item item_favorites"
+                data-tippy-content="Избранное"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/star.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="comparisons.html"
+                class="item item_comparisons"
+                data-tippy-content="Сравнения"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/comparison.svg"
+                  alt="comparison"
+                />
+              </a>
+              <button class="place">Разместить объявление</button>
+              <button class="plus">
+                <img src="../source/image/icon/plus.svg" alt="+" />
+              </button>
+              <div class="header__search">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+                <input
+                  class=""
+                  type="search"
+                  placeholder="Поиск среди 100 000 авто"
+                />
+                <button class="close__search">
+                  <img src="../source/image/icon/close.svg" alt="close" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__line"></div>
+          <div class="container p30">
+            <div class="header__search-links">
+              <a href="/" class="header__search-link">Главная</a>
+              <a href="/" class="header__search-link">BMW</a>
+              <a href="/" class="header__search-link active">750</a>
+            </div>
+            <div class="header__search-result">
+              Кол-во результатов:<span> 4234234234234234</span>
+            </div>
+            <div class="header__search-info">
+              <p>Всего предлжений:<b> 10 000 </b></p>
+              <p>За час:<b> + 490 </b></p>
+              <p>За день:<b> + 1 302 </b></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Header End-->
+      <!--Main-->
+      <main class="main general_padding" id="main">
+        <div class="container main__box">
+          <div class="advanced-search__wrapper">
+            <aside class="filter">
+              <div class="sticky">
+                <form action="" class="wrapper">
+                  <button class="is-close close-filter">
+                    <svg class="">
+                      <use
+                        xlink:href="../source/image/icon/close.svg#close"
+                      ></use>
+                    </svg>
+                  </button>
+                  <div class="scroll">
+                    <div class="advanced-search__condition">
+                      <h3 class="advanced-search__tab-title">
+                        <img
+                          src="../source/image/icon/wrench.svg"
+                          alt="wrench"
+                        />
+                        Состояние авто
+                      </h3>
+                      <div class="advanced-search__checkbox">
+                        <span>
+                          <input type="checkbox" name="f1" id="d1" />
+                          <label for="d1" class="advanced-search__label">
+                            Новое
+                          </label>
+                        </span>
+                        <span
+                          ><input type="checkbox" name="f1" id="d2" />
+                          <label for="d2" class="advanced-search__label">
+                            Вживане
+                          </label>
+                        </span>
+                        <span
+                          ><input type="checkbox" name="f1" id="d3" />
+                          <label for="d3" class="advanced-search__label">
+                            Під пригін
+                          </label></span
+                        >
+                      </div>
+                    </div>
+                    <div class="advanced-search__tabs">
+                      <div class="advanced-search__tab">
+                        <h3 class="advanced-search__tab-title">
+                          <img
+                            src="../source/image/icon/clipboard.svg"
+                            alt="clipboard"
+                          />
+                          Основаня информация
+                        </h3>
+                        <button class="tab__disclosure">
+                          <img
+                            src="../source/image/icon/arrow.svg"
+                            alt="arrow"
+                          />
+                        </button>
+                      </div>
+                      <div class="advanced-search__tab-content tab__content">
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Тип транспорта</option>
+                            <option value="items1">Тип транспорта</option>
+                            <option value="items2">Тип транспорта</option>
+                          </select>
+                        </div>
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Тип кузова</option>
+                            <option value="items1">Тип кузова</option>
+                            <option value="items2">Тип кузова</option>
+                          </select>
+                        </div>
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Модель</option>
+                            <option value="items1">Модель</option>
+                            <option value="items2">Модель</option>
+                          </select>
+                        </div>
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Марка</option>
+                            <option value="items1">Марка</option>
+                            <option value="items2">Марка</option>
+                          </select>
+                        </div>
+                        <div class="advanced-search__double-select">
+                          <div class="advanced-search__select">
+                            <select>
+                              <option value="items">Год от</option>
+                              <option value="items1">Год от</option>
+                              <option value="items2">Год от</option>
+                            </select>
+                          </div>
+                          <div class="advanced-search__select">
+                            <select>
+                              <option value="items">Год до</option>
+                              <option value="items1">Год до</option>
+                              <option value="items2">Год до</option>
+                            </select>
+                          </div>
+
+                          <div class="mb16 df">
+                            <label class="fixed__label active__label">
+                              <span class="label-name">Пробег от</span>
+                              <input
+                                id="qw"
+                                class="input js-input-from"
+                                placeholder="0"
+                                type="number"
+                              />
+                            </label>
+                          </div>
+                          <div class="mb16 df">
+                            <label class="fixed__label active__label">
+                              <span class="label-name">Пробег до</span>
+                              <input
+                                class="input js-input-to"
+                                placeholder="0"
+                                type="number"
+                              />
+                            </label>
+                          </div>
+                        </div>
+                        <div class="advanced-search__range-slider">
+                          <input
+                            class="range-slider"
+                            id="mileage"
+                            name="my_range"
+                            value=""
+                          />
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Страна производителя</option>
+                            <option value="items1">Страна производителя</option>
+                            <option value="items2">Страна производителя</option>
+                          </select>
+                        </div>
+                        <div class="advanced-search__button-brand">
+                          <button>Добавить ещё марку</button>
+                          <button>Исключить марку</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="advanced-search__tabs">
+                      <div class="advanced-search__tab">
+                        <h3 class="advanced-search__tab-title">
+                          <img src="../source/image/icon/coin.svg" alt="coin" />
+                          Стоимость авто
+                        </h3>
+                        <button class="tab__disclosure">
+                          <span></span><span></span>
+                        </button>
+                      </div>
+                      <div class="advanced-search__tab-content tab__content">
+                        <div class="advanced-search__input">
+                          <label
+                            for="price-from"
+                            class="fixed__label active__label"
+                          >
+                            <span class="label-name">Цена от</span>
+                            <input
+                              class="input js-input-from-price"
+                              placeholder="0"
+                              type="text"
+                            />
+                          </label>
+                          <label class="fixed__label active__label">
+                            <span class="label-name">Цена до</span>
+                            <input
+                              class="input js-input-to-price"
+                              placeholder="0"
+                              type="text"
+                            />
+                          </label>
+                        </div>
+
+                        <div class="value-selection">
+                          <div class="value-selection__box">
+                            <input
+                              type="radio"
+                              id="usd"
+                              name="choice-currencies"
+                              checked
+                            />
+                            <label for="usd">Usd</label>
+                            <input
+                              type="radio"
+                              name="choice-currencies"
+                              id="euro"
+                            />
+                            <label for="euro">Euro</label>
+                            <input
+                              type="radio"
+                              name="choice-currencies"
+                              id="uah"
+                            />
+                            <label for="uah">Uah</label>
+                          </div>
+                        </div>
+                        <div class="advanced-search__range-slider">
+                          <input
+                            class="range-slider-price"
+                            name="my_range"
+                            value=""
+                          />
+                        </div>
+
+                        <div class="advanced-search__checkbox">
+                          <input type="checkbox" name="f1" id="f1" />
+                          <label for="f1" class="advanced-search__label">
+                            Возможен торг
+                          </label>
+                        </div>
+
+                        <div class="advanced-search__checkbox">
+                          <input type="checkbox" name="f1" id="f2" />
+                          <label for="f2" class="advanced-search__label">
+                            Обмен на недвижемость
+                          </label>
+                        </div>
+
+                        <div class="advanced-search__checkbox">
+                          <input type="checkbox" name="f1" id="f3" />
+                          <label for="f3" class="advanced-search__label">
+                            Обмен на авто
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="advanced-search__tabs">
+                      <div class="advanced-search__tab">
+                        <h3 class="advanced-search__tab-title">
+                          <img
+                            src="../source/image/icon/map-pin.svg"
+                            alt="map-pin"
+                          />
+                          Регион поиска
+                        </h3>
+                        <button class="tab__disclosure">
+                          <span></span><span></span>
+                        </button>
+                      </div>
+                      <div class="advanced-search__tab-content tab__content">
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Укажите город</option>
+                            <option value="items1">Укажите город</option>
+                            <option value="items2">Укажите город</option>
+                          </select>
+                        </div>
+
+                        <div class="advanced-search__tab-region">
+                          <p class="text-help">Рядом с вами:</p>
+                          <div class="advanced-search__checkbox">
+                            <input type="checkbox" name="f1" id="y2" />
+                            <label for="y2" class="advanced-search__label">
+                              Днепр
+                            </label>
+                          </div>
+
+                          <div class="advanced-search__checkbox">
+                            <input type="checkbox" name="f1" id="y3" />
+                            <label for="y3" class="advanced-search__label">
+                              Новомосковск
+                            </label>
+                          </div>
+
+                          <div class="advanced-search__checkbox">
+                            <input type="checkbox" name="f1" id="y4" />
+                            <label for="y4" class="advanced-search__label">
+                              Приднепровск
+                            </label>
+                          </div>
+                        </div>
+                        <div class="advanced-search__tab-region">
+                          <p class="text-help">Популярное:</p>
+                          <div class="advanced-search__checkbox">
+                            <input type="checkbox" name="f1" id="r2" />
+                            <label for="r2" class="advanced-search__label">
+                              Киев
+                            </label>
+                          </div>
+
+                          <div class="advanced-search__checkbox">
+                            <input type="checkbox" name="f1" id="r3" />
+                            <label for="r3" class="advanced-search__label">
+                              Харьков
+                            </label>
+                          </div>
+
+                          <div class="advanced-search__checkbox">
+                            <input type="checkbox" name="f1" id="r4" />
+                            <label for="r4" class="advanced-search__label">
+                              Запорожье
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="advanced-search__tabs">
+                      <div class="advanced-search__tab">
+                        <h3 class="advanced-search__tab-title">
+                          <img
+                            src="../source/image/icon/settings.svg"
+                            alt="settings"
+                          />
+                          Доп. характеристики
+                        </h3>
+                        <button class="tab__disclosure">
+                          <span></span><span></span>
+                        </button>
+                      </div>
+                      <div class="advanced-search__tab-content tab__content">
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items1">Коробка передач</option>
+                            <option value="items2">Коробка передач</option>
+                            <option value="items3">Коробка передач</option>
+                          </select>
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items1">Топливо</option>
+                            <option value="items2">Топливо</option>
+                            <option value="items3">Топливо</option>
+                          </select>
+                        </div>
+                        <div class="advanced-search__input mb30">
+                          <label for="price-from" class="label">
+                            <span class="label-name">Цена от</span>
+                            <input
+                              id="price-from"
+                              class="input"
+                              placeholder="Цена от"
+                              type="text"
+                            />
+                          </label>
+                          <label for="price-to" class="label">
+                            <span class="label-name">Цена до</span>
+                            <input
+                              id="price-to"
+                              class="input"
+                              placeholder="Цена до"
+                              type="text"
+                            />
+                          </label>
+                        </div>
+                        <div class="value-selection mb30">
+                          <div class="value-selection__box">
+                            <input
+                              type="radio"
+                              name="fuelUsage"
+                              id="fuel-city"
+                            />
+                            <label for="fuel-city">Город</label>
+                            <input
+                              type="radio"
+                              name="fuelUsage"
+                              id="fuel-highway"
+                            />
+                            <label for="fuel-highway">Шоссе</label>
+                            <input
+                              type="radio"
+                              name="fuelUsage"
+                              id="fuel-mixed"
+                              checked=""
+                            />
+                            <label for="fuel-mixed">Смешанный</label>
+                          </div>
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Объем двигателя</option>
+                            <option value="items1">Объем двигателя</option>
+                            <option value="items2">Объем двигателя</option>
+                          </select>
+                        </div>
+
+                        <div class="mb16 df width100">
+                          <label for="56" class="label grow1">
+                            <span class="label-name"
+                              >Мощность двигателя Л/С</span
+                            >
+                            <input
+                              id="56"
+                              class="input"
+                              placeholder="Мощность двигателя Л/С"
+                              type="text"
+                              required=""
+                            />
+                          </label>
+                        </div>
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Привод</option>
+                            <option value="items1">Привод</option>
+                            <option value="items2">Привод</option>
+                            <option value="items3">Привод</option>
+                          </select>
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Количество дверей</option>
+                            <option value="items1">Количество дверей</option>
+                            <option value="items2">Количество дверей</option>
+                            <option value="items3">Количество дверей</option>
+                            <option value="items4">Количество дверей</option>
+                          </select>
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Количество мест</option>
+                            <option value="items1">Количество мест</option>
+                            <option value="items2">Количество мест</option>
+                            <option value="items3">Количество мест</option>
+                            <option value="items4">Количество мест</option>
+                          </select>
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Цвет</option>
+                            <option value="items1">Цвет</option>
+                            <option value="items2">Цвет</option>
+                            <option value="items3">Цвет</option>
+                            <option value="items4">Цвет</option>
+                            <option value="items5">Цвет</option>
+                            <option value="items6">Цвет</option>
+                            <option value="items7">Цвет</option>
+                            <option value="items8">Цвет</option>
+                            <option value="items9">Цвет</option>
+                            <option value="items10">Цвет</option>
+                          </select>
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Тип краски</option>
+                            <option value="items1">Тип краски</option>
+                            <option value="items2">Тип краски</option>
+                            <option value="items3">Тип краски</option>
+                          </select>
+                        </div>
+                        <div class="road-accidents">
+                          <input
+                            class="checkbox"
+                            type="checkbox"
+                            id="road-accidents"
+                          />
+                          <label class="yellow-checkbox" for="road-accidents"
+                            >Участие в ДТП</label
+                          >
+                        </div>
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="items">Техническое состояние</option>
+                            <option value="items1">
+                              Техническое состояние
+                            </option>
+                            <option value="items2">
+                              Техническое состояние
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="advanced-search__select">
+                          <select>
+                            <option value="item">Лакокрасочное покрытие</option>
+                            <option value="items1">
+                              Лакокрасочное покрытие
+                            </option>
+                            <option value="items2">
+                              Лакокрасочное покрытие
+                            </option>
+                          </select>
+                        </div>
+
+                        <div class="selection__block">
+                          <div class="advanced-search__tab">
+                            <h4 class="advanced-search__tab-title">
+                              Безопасность
+                            </h4>
+                            <button class="tab__disclosure">
+                              <span></span><span></span>
+                            </button>
+                          </div>
+                          <div
+                            class="advanced-search__tab-content tab__content"
+                          >
+                            <div class="list__checkbox_box">
+                              <span>
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="CentralLocking"
+                                />
+                                <label
+                                  class="yellow-checkbox"
+                                  for="CentralLocking"
+                                  >Центральный замок</label
+                                ></span
+                              >
+
+                              <span
+                                ><input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="ABS"
+                                />
+                                <label class="yellow-checkbox" for="ABS"
+                                  >ABS</label
+                                ></span
+                              >
+
+                              <span>
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="ServoControl"
+                                />
+                                <label
+                                  class="yellow-checkbox"
+                                  for="ServoControl"
+                                  >Серворуль</label
+                                ></span
+                              >
+
+                              <span>
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="LockCheckpoint"
+                                />
+                                <label
+                                  class="yellow-checkbox"
+                                  for="LockCheckpoint"
+                                  >Замок на кпп</label
+                                ></span
+                              >
+
+                              <span
+                                ><input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="ABS1"
+                                />
+                                <label class="yellow-checkbox" for="ABS1">
+                                  ABS
+                                </label>
+                              </span>
+
+                              <span>
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="ABS2"
+                                />
+                                <label class="yellow-checkbox" for="ABS2">
+                                  ABS
+                                </label>
+                              </span>
+
+                              <span>
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="CentralLocking1"
+                                />
+                                <label
+                                  class="yellow-checkbox"
+                                  for="CentralLocking1"
+                                >
+                                  Центральный замок
+                                </label>
+                              </span>
+
+                              <span>
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="ServoControl1"
+                                />
+                                <label
+                                  class="yellow-checkbox"
+                                  for="ServoControl1"
+                                >
+                                  Серворуль
+                                </label>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="selection__block">
+                          <div class="advanced-search__tab">
+                            <h4 class="advanced-search__tab-title">Комфорт</h4>
+                            <button class="tab__disclosure">
+                              <span></span><span></span>
+                            </button>
+                          </div>
+                          <div
+                            class="advanced-search__tab-content tab__content"
+                          >
+                            <div class="list__checkbox_box">
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="PowerSteering"
+                              />
+                              <label class="yellow-checkbox" for="PowerSteering"
+                                >Усилитель руля</label
+                              >
+
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="Conditioner"
+                              />
+                              <label class="yellow-checkbox" for="Conditioner"
+                                >Кондиционер</label
+                              >
+
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="Multi-steering"
+                              />
+                              <label
+                                class="yellow-checkbox"
+                                for="Multi-steering"
+                                >Мультируль</label
+                              >
+
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="ParkingSensors"
+                              />
+                              <label
+                                class="yellow-checkbox"
+                                for="ParkingSensors"
+                                >Парктроник</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="selection__block">
+                          <div class="advanced-search__tab">
+                            <h4 class="advanced-search__tab-title">
+                              Состояние
+                            </h4>
+                            <button class="tab__disclosure">
+                              <span></span><span></span>
+                            </button>
+                          </div>
+                          <div
+                            class="advanced-search__tab-content tab__content"
+                          >
+                            <div class="list__checkbox_box">
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="no-bit"
+                              />
+                              <label class="yellow-checkbox" for="no-bit"
+                                >Не бит</label
+                              >
+
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="GarageStorage"
+                              />
+                              <label class="yellow-checkbox" for="GarageStorage"
+                                >Гаражное хранение</label
+                              >
+
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="ServiceBook"
+                              />
+                              <label class="yellow-checkbox" for="ServiceBook"
+                                >Сервисная книжка</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="selection__block">
+                          <div class="advanced-search__tab">
+                            <h4 class="advanced-search__tab-title">
+                              Мультимедиа
+                            </h4>
+                            <button class="tab__disclosure">
+                              <span></span><span></span>
+                            </button>
+                          </div>
+                          <div
+                            class="advanced-search__tab-content tab__content"
+                          >
+                            <div class="list__checkbox_box">
+                              <input class="checkbox" type="checkbox" id="cd" />
+                              <label class="yellow-checkbox" for="cd">CD</label>
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="mp3"
+                              />
+                              <label class="yellow-checkbox" for="mp3">
+                                MP3
+                              </label>
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="radio-station"
+                              />
+                              <label
+                                class="yellow-checkbox"
+                                for="radio-station"
+                              >
+                                Магнитола
+                              </label>
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="dvd"
+                              />
+                              <label class="yellow-checkbox" for="dvd">
+                                DVD
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="selection__block">
+                          <div class="advanced-search__tab">
+                            <h4 class="advanced-search__tab-title">Прочее</h4>
+                            <button class="tab__disclosure">
+                              <span></span><span></span>
+                            </button>
+                          </div>
+                          <div
+                            class="advanced-search__tab-content tab__content"
+                          >
+                            <div class="list__checkbox_box">
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="long-base"
+                              />
+                              <label class="yellow-checkbox" for="long-base">
+                                Длинная база
+                              </label>
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="tree"
+                              />
+                              <label class="yellow-checkbox" for="tree">
+                                Дерево
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="advanced-search__tabs">
+                      <div class="advanced-search__tab">
+                        <h3 class="advanced-search__tab-title">
+                          <img
+                            src="../source/image/icon/color-palette.svg"
+                            alt="color-palette"
+                          />
+                          Цвет
+                        </h3>
+                        <button class="tab__disclosure">
+                          <span></span><span></span>
+                        </button>
+                      </div>
+                      <div class="advanced-search__tab-content tab__content">
+                        <form class="advanced-search__tab-palette">
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                          <input class="item" type="checkbox" name="color" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="advanced-search__show">
+                  <div class="advanced-search__show-found">
+                    <p>Найдено авто:</p>
+                    <b>12 324</b>
+                  </div>
+                  <div class="advanced-search__show-button icon__hover">
+                    <button class="button_dark close-filter">Показать</button>
+                    <button class="item icon" id="exitFilter">
+                      <span class="link__img img__close"></span>
+                    </button>
+                    <button class="item icon">
+                      <span class="link__img img__star"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <div class="advanced-search__content">
+              <nav class="advanced-search__content-nav">
+                <div class="advanced-search__content-select_wrapper">
+                  <div class="advanced-search__content-select">
+                    <select class="select_border">
+                      <option value="w1">сортировать по алфавиту</option>
+                      <option value="w2">Сортировать по</option>
+                      <option value="w3">Сортировать по</option>
+                    </select>
+                  </div>
+                  <div class="advanced-search__content-select">
+                    <select>
+                      <option value="w1">Период подачи</option>
+                      <option value="w2">Период подачи</option>
+                      <option value="w3">Период подачи</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button class="advanced-search__content_filter">
+                  Показать фильтр <span>4</span>
+                </button>
+
+                <div class="advanced-search__content-switch">
+                  <button class="active" id="removeRow">
+                    <svg class="burger__icon">
+                      <use
+                        xlink:href="../source/image/icon/grid.svg#grid"
+                      ></use>
+                    </svg>
+                  </button>
+                  <button class="" id="addRow">
+                    <svg class="burger__icon">
+                      <use
+                        xlink:href="../source/image/icon/list.svg#list"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+              </nav>
+
+              <div class="tags">
+                <button class="tags__show">+1</button>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  Нерастаможенные
+                </span>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  Механика
+                </span>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  BMW
+                </span>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  320
+                </span>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  Нерастаможенные
+                </span>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  Механика
+                </span>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  BMW
+                </span>
+                <span class="tag">
+                  <a href="#">
+                    <img src="source/image/icon/close.svg" alt="close" />
+                  </a>
+                  320
+                </span>
+              </div>
+
+              <div
+                class="advanced-search__content-card p30"
+                data-view="gallery"
+              >
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container swiper-slider images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      id="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <a href="/tg4h4yh6g5f3" class="name">Su018)</a>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+
+                      <div class="car__price">22 900$</div>
+                      <div class="wrapper">
+                        <span class="year">2000</span>
+                        <div class="car__links">
+                          <a href="#" class="active">
+                            <span class="link__img img__comparison"></span>
+                          </a>
+                          <a href="#" class="">
+                            <span class="link__img img__star"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block active">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div
+                    class="swiper-container images-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
+                  >
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination-progressbar"
+                    >
+                      <span
+                        class="swiper-pagination-progressbar-fill"
+                        style="
+                          transform: translate3d(0px, 0px, 0px) scaleX(0.333333)
+                            scaleY(1);
+                          transition-duration: 300ms;
+                        "
+                      ></span>
+                    </div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images swiper-button-disabled"
+                        tabindex="-1"
+                        role="button"
+                        aria-label="Previous slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="true"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                        aria-controls="swiper-wrapper-9aa80410dbe6f3a8"
+                        aria-disabled="false"
+                      ></div>
+                    </div>
+                    <div
+                      class="swiper-wrapper"
+                      id="swiper-wrapper-9aa80410dbe6f3a8"
+                      aria-live="polite"
+                      style="transform: translate3d(0px, 0px, 0px)"
+                    >
+                      <div
+                        class="swiper-slide car__image swiper-slide-active"
+                        role="group"
+                        aria-label="1 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image swiper-slide-next"
+                        role="group"
+                        aria-label="2 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                      <div
+                        class="swiper-slide car__image"
+                        role="group"
+                        aria-label="3 / 3"
+                        style="width: 288px"
+                      >
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_4.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                    <span
+                      class="swiper-notification"
+                      aria-live="assertive"
+                      aria-atomic="true"
+                    ></span>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p class="name">Suzuki x-90 (2018)</p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-result__pagination">
+                <div class="pagination__block">
+                  <button class="button_dark_border">Показать ещё 10</button>
+                  <div class="pagination">
+                    <button class="button__default">
+                      <svg class="right">
+                        <use
+                          xlink:href="../source/image/icon/arrow-dropdown.svg#arrow-dropdown"
+                        ></use>
+                      </svg>
+                    </button>
+                    <ul class="pagination__lists">
+                      <li class="active">
+                        <a href="">1</a>
+                      </li>
+                      <li>
+                        <a href="">2</a>
+                      </li>
+                      <li>
+                        <a href="">3</a>
+                      </li>
+                    </ul>
+                    <button class="button__default">
+                      <svg class="left">
+                        <use
+                          xlink:href="../source/image/icon/arrow-dropdown.svg#arrow-dropdown"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--Main End-->
+      <!--Footer-->
+      <footer id="footer" class="footer general_padding">
+        <div class="container p30">
+          <div class="footer__block">
+            <figure class="footer__logo">
+              <img
+                class="logo-desktop"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow.svg"
+                alt="logo"
+              />
+              <img
+                class="logo-mobile"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow-mobile.svg"
+                alt="logo"
+              />
+            </figure>
+            <form action="" class="form-subscribe">
+              <label for="footer_email">Быть в курсе последних новостей</label>
+              <div class="form__box">
+                <input
+                  id="footer_email"
+                  class="input"
+                  type="text"
+                  placeholder="Быть в курсе последних новостей"
+                />
+                <button type="button" class="button_yellow button-subscribe">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscription-issued">
+                <p>Поздравляем, подписка на новости успешно оформленна=)</p>
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+              </div>
+            </form>
+            <a href="#header" class="button_yellow up">
+              <svg class="">
+                <use
+                  xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+                ></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__title">
+            <h2 class="title">Каталог автомобилей</h2>
+            <button class="button__plus car-catalog">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_car-catalog">
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+          </nav>
+
+          <div class="footer__title">
+            <h2 class="title">Другое</h2>
+            <button class="button__plus other">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_other">
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+          </nav>
+        </div>
+        <div class="footer__copyright">
+          <div class="container p30">
+            <div class="footer__box">
+              <p>© Auff, Все права защищены</p>
+              <div class="social-networks">
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/viber.svg#viber"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <nav>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфендициальности</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Footer End-->
+    </div>
+  </body>
+</html>

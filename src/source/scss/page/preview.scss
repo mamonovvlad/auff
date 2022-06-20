@@ -1,0 +1,117 @@
+.preview {
+  &__ads {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 2px solid var(--white-dark);
+    @include _576 {
+      border: none;
+    }
+  }
+  & iframe {
+    width: 100%;
+    height: 100%;
+  }
+  &__exit {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    border: 1px solid var(--dark);
+    transition: var(--transition);
+    border-radius: var(--radius);
+    @include _576 {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+    }
+    & svg {
+      color: var(--white);
+      transition: var(--transition);
+    }
+    &:hover {
+      background: var(--yellow);
+      & svg {
+        color: var(--dark);
+      }
+    }
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include _1024 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @include _576 {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    & .images {
+      &__number {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        display: flex;
+        align-items: center;
+        transition: var(--transition);
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 3px 5px;
+        z-index: 2;
+      }
+      &-container {
+        &:hover {
+          & .images__number,
+          & .swiper-button-prev,
+          & .swiper-button-next {
+            background: var(--yellow);
+          }
+        }
+      }
+    }
+  }
+  &__car {
+    max-width: 100%;
+    &.active {
+      background: var(--yellow);
+      & .car__links a {
+        background: var(--yellow-dark);
+      }
+    }
+  }
+  &__button-prev {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--dark);
+    border-radius: var(--radius);
+    font-weight: 600;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    @include _1024 {
+      grid-column-end: 3;
+    }
+    @include _576 {
+      grid-column-end: 2;
+    }
+  }
+  &__footer {
+    border: 2px solid var(--white-dark);
+    @include _576 {
+      border: none;
+    }
+  }
+}
+
+.footer-preview {
+  background: var(--light_gray);
+  &:before {
+    display: none;
+  }
+  & nav a {
+    color: var(--dark);
+  }
+}

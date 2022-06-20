@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auff</title>
+    <link rel="shortcut icon" href="./favicon/icon.svg" type="image/png" />
+  </head>
+
+  <body>
+    <!--    <div class="alert green">-->
+    <!--      <div class="wrapper">-->
+    <!--        <div class="close">-->
+    <!--          <svg class="">-->
+    <!--            <use xlink:href="../source/image/icon/close.svg#close"></use>-->
+    <!--          </svg>-->
+    <!--        </div>-->
+    <!--        <figure>-->
+    <!--          <img src="../source/image/icon/checked-mark.png" alt="checked-mark" />-->
+    <!--        </figure>-->
+    <!--        <div class="text">-->
+    <!--          <h4>Успешно</h4>-->
+    <!--          <p>Текст ошибки, который занимает одну или несколько строк</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <audio id="notification_audio">-->
+    <!--        <source-->
+    <!--          class="audio"-->
+    <!--          src="../source/image/audio/status_notification.mp3"-->
+    <!--          type="audio/mp3"-->
+    <!--        />-->
+    <!--      </audio>-->
+    <!--    </div>-->
+
+    <!--    <div class="popup-window">-->
+    <!--      <div class="deletion">-->
+    <!--        <p>Удалить данные объявления из избранного</p>-->
+    <!--        <div class="buttons">-->
+    <!--          <button class="delete">Отмена</button>-->
+    <!--          <button>Ок</button>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <div class="burger__menu">
+      <div class="burger__box">
+        <div class="burger__header">
+          <figure class="logo">
+            <img
+              class="logo-desktop"
+              loading="lazy"
+              src="../source/image/logo/logo.svg"
+              alt="logo"
+            />
+            <img
+              class="logo-mobile"
+              loading="lazy"
+              src="../source/image/logo/logo-mobile.svg"
+              alt="logo"
+            />
+          </figure>
+          <button class="burger__btn burger_hidden">
+            <svg class="">
+              <use xlink:href="../source/image/icon/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger__main scroll p30">
+          <p>Основное:</p>
+          <div class="links">
+            <a href="ads.html">Избранное</a>
+            <a href="comparisons.html">Сравнения <span>(5)</span> </a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+          </div>
+          <p>Мой профиль:</p>
+          <div class="links">
+            <a href="entrance.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
+          <div class="buttons">
+            <button class="button_dark">Найти авто</button>
+            <button class="button_dark_border">Продать авто</button>
+          </div>
+          <div class="social-networks">
+            <p>Мы в соц сетях:</p>
+            <div class="items">
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/viber.svg#viber"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+      <!--Header-->
+      <header class="header" id="header">
+        <div class="preloader__box">
+          <figure class="">
+            <img
+              class="logo-desktop"
+              loading="lazy"
+              src="./source/image/logo/logo.svg"
+              alt="AUFF"
+            />
+            <img
+              class="logo-mobile"
+              loading="lazy"
+              src="./source/image/logo/logo-dark-mobile.svg"
+              alt="AUFF"
+            />
+          </figure>
+          <div class="loading-window">
+            <div class="car-preloader">
+              <div class="strike"></div>
+              <div class="strike strike2"></div>
+              <div class="strike strike3"></div>
+              <div class="strike strike4"></div>
+              <div class="strike strike5"></div>
+              <div class="car-preloader__detail spoiler"></div>
+              <div class="car-preloader__detail back"></div>
+              <div class="car-preloader__detail center"></div>
+              <div class="car-preloader__detail center1"></div>
+              <div class="car-preloader__detail front"></div>
+              <div class="car-preloader__detail wheel"></div>
+              <div class="car-preloader__detail wheel wheel2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="loading-content general_padding">
+          <div class="container">
+            <div class="header__nav">
+              <button class="burger__btn burger_show">
+                <svg class="burger__icon">
+                  <use
+                    xlink:href="../source/image/icon/burger.svg#burger"
+                  ></use>
+                </svg>
+              </button>
+              <a href="/" class="logo__header">
+                <img
+                  class="logo-desktop"
+                  loading="lazy"
+                  src="../source/image/logo/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  class="logo-mobile"
+                  loading="lazy"
+                  src="../source/image/logo/logo-mobile.svg"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="item item_languages"
+                data-tippy-content="Изменить язык"
+              >
+                <a href="#" class="active">RU </a>
+                <span class="line"></span>
+                <a href="#">UA</a>
+              </div>
+              <div class="item item_user" data-tippy-content="Мой профиль">
+                <span>
+                  <img
+                    loading="lazy"
+                    src="../source/image/icon/user.svg"
+                    alt="user"
+                  />
+                </span>
+                <div class="user__menu">
+                  <a href="./entrance.html">Вход</a>
+                  <a href="./register.html">Регистрация</a>
+                </div>
+              </div>
+              <a
+                href="wide-search.html"
+                class="item item_search"
+                data-tippy-content="Поиск"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+              </a>
+              <a
+                href="chosen.html"
+                class="item item_favorites"
+                data-tippy-content="Избранное"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/star.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="comparisons.html"
+                class="item item_comparisons"
+                data-tippy-content="Сравнения"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/comparison.svg"
+                  alt="comparison"
+                />
+              </a>
+              <button class="place">Разместить объявление</button>
+              <button class="plus">
+                <img src="../source/image/icon/plus.svg" alt="+" />
+              </button>
+            </div>
+          </div>
+          <div class="header__line"></div>
+          <div class="container p30">
+            <div class="header__box-search">
+              <div class="search-car">
+                <div class="dropdown select_border">
+                  <div class="ae-select">
+                    <img src="" class="ae-select-content" alt="Image" />
+                    <span class="toggle">
+                      <img src="./source/image/icon/arrow.svg" alt="arrow" />
+                    </span>
+                  </div>
+                  <ul class="dropdown-menu ae-hide scroll">
+                    <li
+                      class="selected"
+                      data-tippy-content="Cars"
+                      data-tippy-placement="right"
+                    >
+                      <img
+                        src="../source/image/categories/cars.svg"
+                        alt="cars"
+                      />
+                    </li>
+                    <li data-tippy-content="moto" data-tippy-placement="right">
+                      <img
+                        src="../source/image/categories/moto.svg"
+                        alt="moto"
+                      />
+                    </li>
+                    <li data-tippy-content="boat" data-tippy-placement="right">
+                      <img
+                        src="../source/image/categories/boat.svg"
+                        alt="boat"
+                      />
+                    </li>
+                    <li
+                      data-tippy-content="concrete-mixer-truck"
+                      data-tippy-placement="right"
+                    >
+                      <img
+                        src="../source/image/categories/concrete-mixer-truck.svg"
+                        alt="concrete-mixer-truck"
+                      />
+                    </li>
+                    <li
+                      data-tippy-content="trailers"
+                      data-tippy-placement="right"
+                    >
+                      <img
+                        src="../source/image/categories/trailers.svg"
+                        alt="trailers"
+                      />
+                    </li>
+                    <li
+                      data-tippy-content="trucks"
+                      data-tippy-placement="right"
+                    >
+                      <img
+                        src="../source/image/categories/trucks.svg"
+                        alt="trucks"
+                      />
+                    </li>
+                    <li
+                      data-tippy-content="trailer"
+                      data-tippy-placement="right"
+                    >
+                      <img
+                        src="../source/image/categories/trailer.svg"
+                        alt="trailer"
+                      />
+                    </li>
+                    <li
+                      data-tippy-content="aircraft"
+                      data-tippy-placement="right"
+                    >
+                      <img
+                        src="../source/image/categories/aircraft.svg"
+                        alt="aircraft"
+                      />
+                    </li>
+                    <li
+                      data-tippy-content="tractor"
+                      data-tippy-placement="right"
+                    >
+                      <img
+                        src="../source/image/categories/tractor.svg"
+                        alt="tractor"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <label class="select_border specify-brand">
+                  <select data-placeholder="Укажите марку авто" class="select">
+                    <option value=""></option>
+                    <optgroup label="Популярное">
+                      <option value="audi">Audi</option>
+                    </optgroup>
+                  </select>
+                </label>
+                <label class="specify-model">
+                  <select data-placeholder="Укажите модель авто" class="select">
+                    <option value=""></option>
+                    <option value="audi">Audi</option>
+                    <option value="Bmv">Bmv</option>
+                    <option value="mercedes-benz">Mercedes-Benz</option>
+                  </select>
+                </label>
+                <button class="find-car">
+                  <svg>
+                    <use
+                      xlink:href="../source/image/icon/search.svg#search"
+                    ></use>
+                  </svg>
+                  Найти авто
+                </button>
+              </div>
+              <a href="wide-search.html" class="btn__advanced-search">
+                Расширенный поиск
+              </a>
+              <label class="price price-from">
+                <input placeholder="Цена от" type="number" class="input" />
+              </label>
+              <label class="price price-before">
+                <input placeholder="Цена до" type="number" class="input" />
+              </label>
+              <label class="year-before">
+                <select data-placeholder="Год до" class="select">
+                  <option></option>
+                  <option value="1990">1990</option>
+                  <option value="2020">2020</option>
+                </select>
+              </label>
+              <label class="year-from">
+                <select data-placeholder="Год от" class="select">
+                  <option></option>
+                  <option value="1990">1990</option>
+                  <option value="2020">2020</option>
+                </select>
+              </label>
+              <label class="year-before">
+                <select data-placeholder="Год до" class="select">
+                  <option></option>
+                  <option value="1990">1990</option>
+                  <option value="2020">2020</option>
+                </select>
+              </label>
+              <label class="specify-city">
+                <select data-placeholder="Укажите город" class="select">
+                  <option></option>
+                  <option value="donetsk">Донецк</option>
+                  <option value="kiev">Киев</option>
+                </select>
+              </label>
+              <button type="button" class="clear-filter">
+                Очистить фильтр
+              </button>
+              <button class="find-car--mobile">Найти авто</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Header End-->
+      <!--Main-->
+      <main class="main general_padding" id="main">
+        <div class="container main__box p30">
+          <!--Info-->
+          <div class="information mb30">
+            <div class="block">
+              <span class="text">Машин добавленно за сегодня</span>
+              <span class="number">400</span>
+            </div>
+            <div class="block">
+              <span class="text">Машин добавленно за сегодня</span>
+              <span class="number">40 000</span>
+            </div>
+            <div class="block">
+              <span class="text">Машин добавленно за сегодня</span>
+              <span class="number">12 000</span>
+            </div>
+          </div>
+          <!--Info End-->
+          <div class="car m40">
+            <div class="navigation-block">
+              <h2 class="title title--center">
+                Новинки
+                <a href="#" class="subtitle"> (Смотреть все новинки)</a>
+              </h2>
+              <div class="arrows">
+                <div class="swiper-button-prev button-prev-new-product"></div>
+                <div class="swiper-button-next button-next-new-product"></div>
+              </div>
+            </div>
+            <div class="swiper-container new-product-container swiper-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide car__block car-card">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span>
+                      <img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="viewed">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 30 30"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <defs>
+                          <path
+                            d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z"
+                            id="outline"
+                          ></path>
+                          <mask id="mask">
+                            <rect
+                              width="100%"
+                              height="100%"
+                              fill="white"
+                            ></rect>
+                            <use xlink:href="#outline" id="lid" fill="black" />
+                          </mask>
+                        </defs>
+                        <g id="eye-animate">
+                          <path
+                            d="M0,15.089434 C0,16.3335929 5.13666091,24.1788679 14.9348958,24.1788679 C24.7325019,24.1788679 29.8697917,16.3335929 29.8697917,15.089434 C29.8697917,13.8456167 24.7325019,6 14.9348958,6 C5.13666091,6 0,13.8456167 0,15.089434 Z M14.9348958,22.081464 C11.2690863,22.081464 8.29688487,18.9510766 8.29688487,15.089434 C8.29688487,11.2277914 11.2690863,8.09740397 14.9348958,8.09740397 C18.6007053,8.09740397 21.5725924,11.2277914 21.5725924,15.089434 C21.5725924,18.9510766 18.6007053,22.081464 14.9348958,22.081464 L14.9348958,22.081464 Z M18.2535869,15.089434 C18.2535869,17.0200844 16.7673289,18.5857907 14.9348958,18.5857907 C13.1018339,18.5857907 11.6162048,17.0200844 11.6162048,15.089434 C11.6162048,13.1587835 13.1018339,11.593419 14.9348958,11.593419 C15.9253152,11.593419 14.3271242,14.3639878 14.9348958,15.089434 C15.451486,15.7055336 18.2535869,14.2027016 18.2535869,15.089434 L18.2535869,15.089434 Z"
+                            fill="#fff63d"
+                          ></path>
+                          <use
+                            xlink:href="#outline"
+                            mask="url(#mask)"
+                            fill="#fff63d"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_2.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_1.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_3.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <a
+                      href="/123423445465tgrwv"
+                      title="Suzuki Suzuki Suzuki x-90 (2018)"
+                      class="name"
+                    >
+                      Suzuki Suzuki x-90 (13132018)
+                    </a>
+                    <div class="car__box">
+                      <div class="car__description">43 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">
+                        1.5 дизель 1.5 дизель 1.5 дизель
+                      </div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="wrapper">
+                        <span class="year">2000</span>
+                        <div class="car__links">
+                          <a href="#" class="btn--animate">
+                            <span class="pulse"></span>
+                            <span class="link__img img__comparison"></span>
+                          </a>
+                          <a href="#" class="btn--animate">
+                            <span class="pulse"></span>
+                            <span class="link__img img__star"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block car-card">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span>
+                      <img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="viewed">
+                      <svg class="icon__eye">
+                        <use
+                          xlink:href="../source/image/icon/eye.svg#eye"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_2.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_1.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_3.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p title="Suzuki Suzuki Suzuki x-90 (2018)" class="name">
+                      Suzuki Suzuki Suzuki x-90 (2018)
+                    </p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">
+                        1.5 дизель 1.5 дизель 1.5 дизель
+                      </div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block car-card">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span>
+                      <img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="viewed">
+                      <svg class="icon__eye">
+                        <use
+                          xlink:href="../source/image/icon/eye.svg#eye"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          class="image-stub"
+                          loading="lazy"
+                          src="../source/image/icon/car.png"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <p title="Suzuki Suzuki Suzuki x-90 (2018)" class="name">
+                      Suzuki Suzuki Suzuki x-90 (2018)
+                    </p>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">
+                        1.5 дизель 1.5 дизель 1.5 дизель
+                      </div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car mb40">
+            <div class="navigation-block">
+              <h2 class="title">
+                Лучшее предложение
+                <a href="#" class="subtitle">
+                  (Смотреть все лучшее предложения)</a
+                >
+              </h2>
+              <div class="arrows">
+                <div class="swiper-button-prev button-prev-best-offer"></div>
+                <div class="swiper-button-next button-next-best-offer"></div>
+              </div>
+            </div>
+            <div class="swiper-container best-offer-container swiper-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide car__block-full">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="viewed">
+                      <svg class="icon__eye">
+                        <use
+                          xlink:href="../source/image/icon/eye.svg#eye"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_3.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_2.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_1.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <div class="car__box">
+                      <div class="name">
+                        Suzuki x-90 (2018)Suzuki x-90 (2018)Suzuki x-90
+                        (2018)Suzuki x-90 (2018)
+                      </div>
+                      <div class="car__price">22 900$</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_3.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_2.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_1.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <div class="car__box">
+                      <div class="name">Suzuki x-90 (2018)</div>
+                      <div class="car__price">22 900$</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_3.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_2.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_1.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <div class="car__box">
+                      <div class="name">Suzuki x-90 (2018)</div>
+                      <div class="car__price">22 900$</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide car__block-full">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="viewed">
+                      <svg class="icon__eye">
+                        <use
+                          xlink:href="../source/image/icon/eye.svg#eye"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_3.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_2.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_1.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <div class="car__box">
+                      <div class="name">
+                        Suzuki x-90 (2018)Suzuki x-90 (2018)Suzuki x-90
+                        (2018)Suzuki x-90 (2018)
+                      </div>
+                      <div class="car__price">22 900$</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car mb40">
+            <div class="navigation-block">
+              <h2 class="title">
+                Топ до 10 000$
+                <a href="#" class="subtitle"> (Смотреть весь топ до 10 000$)</a>
+              </h2>
+              <div class="arrows">
+                <div class="swiper-button-prev button-prev-good-price"></div>
+                <div class="swiper-button-next button-next-good-price"></div>
+              </div>
+            </div>
+            <div class="swiper-container good-price-container swiper-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide car__block-small">
+                  <div class="swiper-container images-container">
+                    <div class="images__number">
+                      <span>12</span
+                      ><img
+                        loading="lazy"
+                        src="../source/image/icon/icon.svg"
+                        alt="number"
+                      />
+                    </div>
+                    <div class="marking__new-product">новинка</div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation">
+                      <div
+                        class="swiper-button-prev swiper-button-prev-images"
+                      ></div>
+                      <div
+                        class="swiper-button-next swiper-button-next-images"
+                      ></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_3.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_2.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                      <div class="swiper-slide car__image">
+                        <img
+                          loading="lazy"
+                          src="../source/image/temp/car_1.jpg"
+                          alt="Car"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car__info">
+                    <span class="date">Вчера, 12:45</span>
+                    <div class="name">Suzuki x-90 (2018)</div>
+                    <div class="car__box">
+                      <div class="car__description">49 000 км</div>
+                      <div class="car__description">Днепр</div>
+                      <div class="car__description">1.5 дизель</div>
+                      <div class="car__description">Автомат</div>
+                    </div>
+                    <div class="car__box">
+                      <div class="car__price">22 900$</div>
+                      <div class="car__links">
+                        <a href="#" class="">
+                          <span class="link__img img__comparison"></span>
+                        </a>
+                        <a href="#" class="">
+                          <span class="link__img img__star"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Categories-->
+          <div class="categories mb40">
+            <h2 class="title mb20">Категории автомобилей</h2>
+            <div class="categories__box">
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/cars.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/moto.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/trailers.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/trucks.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  src="../source/image/categories/concrete-mixer-truck.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/bus.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/tractor.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/boat.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/aircraft.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+              <a href="#" class="categories__block">
+                <img
+                  loading="lazy"
+                  src="../source/image/categories/trailer.svg"
+                  alt=""
+                />
+                <p>Легковые</p>
+              </a>
+            </div>
+          </div>
+          <!--Categories End-->
+          <!--News-->
+          <div class="news">
+            <div class="navigation-block mb20">
+              <div class="wrapper">
+                <button class="title">Новости</button>
+                <button class="title">Статьи</button>
+              </div>
+              <div class="arrows">
+                <div class="swiper-button-prev swiper-button-prev-news"></div>
+                <div class="swiper-button-next swiper-button-next-news"></div>
+              </div>
+            </div>
+            <div class="swiper-container news-container">
+              <div class="swiper-wrapper">
+                <div class="card swiper-slide">
+                  <a href="#" class="news__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Новости</p>
+                      <p class="card__title">
+                        Название, или даже 2 строки, вау
+                      </p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="article__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Категория статьицауцацуа</p>
+                      <p class="card__title">Статья</p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#" class="news__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Новости</p>
+                      <p class="card__title">
+                        Название, или даже 2 строки, вау
+                      </p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="article__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Категория статьицауцацуа</p>
+                      <p class="card__title">Статья</p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#" class="news__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Новости</p>
+                      <p class="card__title">
+                        Название, или даже 2 строки, вау
+                      </p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="article__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Категория статьицауцацуа</p>
+                      <p class="card__title">Статья</p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#" class="news__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Новости</p>
+                      <p class="card__title">
+                        Название, или даже 2 строки, вау
+                      </p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="article__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Категория статьицауцацуа</p>
+                      <p class="card__title">Статья</p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="card swiper-slide">
+                  <a href="#" class="news__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Новости</p>
+                      <p class="card__title">
+                        Название, или даже 2 строки, вау
+                      </p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                  <a href="#" class="article__block">
+                    <figure class="image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_1.jpg"
+                        alt="Car"
+                      />
+                    </figure>
+                    <div class="box">
+                      <p class="category">Категория статьицауцацуа</p>
+                      <p class="card__title">Статья</p>
+                      <p class="description">
+                        Небольшое описание статьи, которое может занимать
+                        примерно 4-5 строк текста Небольшое описание статьи,
+                        которое может занимать... Небольшое описание статьи,
+                        которое может занимать примерно 4-5
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--News End-->
+        </div>
+      </main>
+      <!--Main End-->
+      <!--Footer-->
+      <footer id="footer" class="footer general_padding">
+        <div class="container p30">
+          <div class="footer__block">
+            <figure class="footer__logo">
+              <img
+                class="logo-desktop"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow.svg"
+                alt="logo"
+              />
+              <img
+                class="logo-mobile"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow-mobile.svg"
+                alt="logo"
+              />
+            </figure>
+            <form action="" class="form-subscribe">
+              <label for="footer_email">Быть в курсе последних новостей</label>
+              <div class="form__box">
+                <input
+                  id="footer_email"
+                  class="input"
+                  type="text"
+                  placeholder="Быть в курсе последних новостей"
+                />
+                <button type="button" class="button_yellow button-subscribe">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscription-issued">
+                <p>Поздравляем, подписка на новости успешно оформленна=)</p>
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+              </div>
+            </form>
+            <a href="#header" class="button_yellow up">
+              <svg class="">
+                <use
+                  xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+                ></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__title">
+            <h2 class="title">Каталог автомобилей</h2>
+            <button class="button__plus car-catalog">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_car-catalog">
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+          </nav>
+
+          <div class="footer__title">
+            <h2 class="title">Другое</h2>
+            <button class="button__plus other">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_other">
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+          </nav>
+          <div class="footer__text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus alias animi architecto blanditiis cum deleniti deserunt
+              dignissimos distinctio ducimus ea earum error et excepturi
+              exercitationem fugiat hic inventore magnam minus nemo neque
+              nesciunt nisi nobis non omnis perferendis perspiciatis placeat,
+              quae quos recusandae reiciendis repudiandae rerum sapiente sed
+              tenetur, unde veritatis voluptatibus! Eaque qui quod rem veniam. A
+              aliquam assumenda atque autem beatae, corporis deleniti
+              dignissimos distinctio dolor doloremque dolores earum
+              exercitationem illum iste itaque laboriosam molestiae natus nemo
+              nisi obcaecati odio porro provident quia quis quisquam quos
+              ratione rem saepe sequi similique sit suscipit ut velit. Aut autem
+              cum, quas sint veniam voluptatum. Cumque fugit officia pariatur
+              qui quo. A aliquam asperiores at commodi culpa delectus dicta
+              dolor doloremque dolores dolorum earum eius eos excepturi
+              explicabo impedit labore laboriosam laudantium libero, molestias
+              natus nostrum officiis optio perferendis porro possimus qui quis
+              quod ratione, soluta sunt unde ut velit voluptates. Facere
+              incidunt iste similique suscipit veniam. Aspernatur atque
+              consectetur corporis delectus dignissimos, expedita itaque
+              laudantium necessitatibus nemo officia omnis provident quis
+              repellendus repudiandae tenetur ut vel! Accusantium aliquid
+              aspernatur, consequuntur delectus dignissimos fugit inventore
+              ipsam laborum nam nemo nisi non odit perspiciatis quam ratione
+              reiciendis ut, voluptates? Aliquid earum enim, ex fugiat illum
+              inventore itaque magnam placeat quo. A ad aperiam architecto
+              consequatur consequuntur cum cupiditate dolorum eaque, impedit
+              itaque minus, modi molestiae nam nesciunt nostrum pariatur
+              perferendis perspiciatis porro quae quia reiciendis saepe sed
+              sequi sunt totam unde velit, voluptate. Deleniti eius eveniet
+              laborum odit perspiciatis voluptatibus. Aperiam dicta ex id
+              laboriosam laborum officiis quis repellendus tenetur ut
+              voluptatem! Ab atque corporis delectus deleniti doloribus ducimus
+              eaque eos explicabo hic illum impedit incidunt ipsum laudantium
+              minus nihil nobis numquam quo quod ratione sapiente suscipit,
+              tempora vero, voluptas, voluptatem voluptates voluptatibus
+              voluptatum. Ab blanditiis corporis, debitis laboriosam officiis
+              soluta unde?
+            </p>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="container p30">
+            <div class="footer__box">
+              <p>© Auff, Все права защищены</p>
+              <div class="social-networks">
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/viber.svg#viber"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <nav>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфендициальности</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Footer End-->
+    </div>
+  </body>
+</html>

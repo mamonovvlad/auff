@@ -1,0 +1,466 @@
+.header {
+  position: relative;
+  background: var(--yellow);
+
+  &:after {
+    content: "";
+    background: var(--yellow);
+    height: 45px;
+    top: calc(100% - 2px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  & .find-car {
+    & svg {
+      width: 18px;
+      height: 18px;
+      color: var(--white);
+    }
+  }
+
+  &__line {
+    height: 1px;
+    background: #e9e33b;
+    margin-left: -30px;
+    margin-right: -30px;
+    @include _1024 {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    @include _768 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__box-search {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) minmax(130px, 220px);
+    grid-template-rows: 80px 60px;
+    grid-template-areas:
+      "search-car search-car search-car search-car search-car search-car btn__advanced-search"
+      "price-from price-before year-from year-before specify-city specify-city clear-filter";
+    row-gap: 30px;
+    column-gap: 30px;
+    @include _1200 {
+      grid-template-rows: 70px 60px;
+      row-gap: 20px;
+      column-gap: 20px;
+    }
+    @include _1024 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 60px 50px 50px;
+      grid-template-areas:
+        "search-car search-car search-car search-car search-car search-car"
+        "price-from price-before year-from year-before specify-city specify-city"
+        "btn__advanced-search btn__advanced-search btn__advanced-search clear-filter clear-filter clear-filter";
+    }
+    @include _768 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(8, auto);
+      grid-template-areas:
+        "search-car search-car"
+        "search-car search-car"
+        "search-car search-car"
+        "price-from price-before"
+        "year-from year-before"
+        "specify-city specify-city"
+        "find-car--mobile find-car--mobile"
+        "clear-filter btn__advanced-search";
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+
+    & .btn__advanced-search {
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-align: center;
+      user-select: none;
+      font-weight: 600;
+      border: 2px solid var(--dark);
+      border-radius: var(--radius);
+      grid-area: btn__advanced-search;
+    }
+
+    & .year-from {
+      grid-area: year-from;
+    }
+
+    & .year-before {
+      grid-area: year-before;
+    }
+
+    & .specify-city {
+      grid-area: specify-city;
+    }
+
+    & .find-car--mobile {
+      display: none;
+      border-radius: var(--radius);
+      background: var(--dark);
+      color: var(--white);
+      grid-area: find-car--mobile;
+      @include _768 {
+        display: block;
+      }
+    }
+
+    & .clear-filter {
+      padding: 0 10px;
+      font-weight: 600;
+      background: var(--yellow-dark);
+      border-radius: var(--radius);
+      grid-area: clear-filter;
+    }
+
+    @include _768 {
+      & .clear-filter,
+      & .specify-city,
+      & .year-before,
+      & .price-before,
+      & .price-from,
+      & .specify-model,
+      & .specify-brand,
+      & .year-from,
+      & .btn__advanced-search,
+      & .find-car--mobile {
+        height: 40px;
+      }
+    }
+  }
+
+  &__logo {
+    & .burger__btn:hover {
+      background: var(--dark);
+
+      & path {
+        transition: var(--transition);
+        fill: var(--white);
+      }
+    }
+  }
+
+  &__nav {
+    position: relative;
+    display: grid;
+    grid-template-columns: 60px 1fr 0 100px 84px 84px 84px 84px 130px 130px;
+    grid-template-rows: 60px;
+    grid-template-areas: "header-burger logo none languages user item-search favorites comparisons place place";
+    padding: 30px 30px 16px;
+    @include _1200 {
+      grid-template-columns: 60px 1fr 0 100px 84px 84px 84px 84px 110px 110px;
+    }
+    @include _1024 {
+      grid-template-columns: 50px 1fr 0 80px 65px 65px 65px 65px 70px 70px;
+      grid-template-rows: 50px;
+      padding: 20px 20px 16px;
+    }
+    @include _768 {
+      grid-template-rows: 40px;
+      grid-template-columns: 40px 55px 1fr 55px 40px;
+      grid-template-areas: "header-burger user logo item-search plus";
+    }
+    @include _576 {
+      padding: 16px;
+    }
+
+    & .item {
+      display: flex;
+      transition: var(--transition);
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid var(--yellow-dark);
+      cursor: pointer;
+      @include _768 {
+        border: none;
+      }
+
+      & img {
+        height: 24px;
+      }
+
+      &:hover,
+      &.active {
+        transition: var(--transition);
+        background: var(--yellow-dark);
+      }
+
+      &_languages {
+        grid-area: languages;
+
+        &:hover {
+          background: none;
+        }
+
+        @include _1024 {
+          border-left: none;
+        }
+        @include _768 {
+          display: none;
+        }
+
+        & a {
+          color: var(--gray);
+          margin: 0 10px;
+          font-weight: 600;
+          text-decoration: none;
+        }
+
+        & .active {
+          color: var(--dark);
+        }
+
+        & .line {
+          min-width: 2px;
+          background: var(--dark);
+          height: 20px;
+        }
+      }
+
+      &_user {
+        position: relative;
+        grid-area: user;
+
+        & .active {
+          background: var(--yellow-dark);
+        }
+      }
+
+      &_search {
+        grid-area: item-search;
+      }
+
+      &_favorites {
+        grid-area: favorites;
+        @include _768 {
+          display: none;
+        }
+      }
+
+      &_comparisons {
+        grid-area: comparisons;
+        @include _768 {
+          display: none;
+        }
+      }
+    }
+
+    & .authorized {
+      width: 50px;
+      height: 50px;
+      @include _768 {
+        width: 25px;
+        height: 25px;
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    & .place {
+      padding: 0 10px;
+      border: 1px solid var(--dark);
+      border-radius: var(--radius);
+      background: var(--dark);
+      color: var(--white);
+      font-weight: 600;
+      transition: var(--transition);
+      grid-area: place;
+
+      &:hover {
+        background: var(--yellow);
+        color: var(--dark);
+      }
+
+      @include _768 {
+        display: none;
+      }
+    }
+
+    & .plus {
+      width: 40px;
+      height: 40px;
+      display: none;
+      border-left: 1px solid var(--yellow-dark);
+      @include _768 {
+        display: block;
+        grid-area: plus;
+      }
+    }
+
+    & .user__menu {
+      position: absolute;
+      width: max-content;
+      background: var(--yellow-dark);
+      padding: 20px;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      border-radius: 0 0 4px 4px;
+      display: none;
+      z-index: 10;
+
+      & a {
+        color: var(--dark);
+        display: block;
+        text-decoration: none;
+
+        &:first-child {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__search {
+    max-width: 696px;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    align-items: center;
+    background: var(--yellow-dark);
+    display: none;
+    padding: 0 20px;
+    @include _1200 {
+      max-width: 656px;
+    }
+    @include _1024 {
+      top: 20px;
+      right: 20px;
+      left: 20px;
+      height: 50px;
+      width: auto;
+      max-width: 100%;
+    }
+    @include _576 {
+      top: 16px;
+      height: 40px;
+      padding: 0 10px;
+    }
+
+    & input {
+      height: 100%;
+      background: var(--yellow-dark);
+      width: 100%;
+      padding: 0 7px;
+
+      &::placeholder {
+        color: var(--dark);
+      }
+    }
+
+    & .close__search {
+      & img {
+        width: 20px;
+      }
+    }
+
+    & .button-search {
+      @include _1024 {
+        padding: 4px;
+        display: flex;
+      }
+
+      & img {
+        @include _1024 {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  & .show {
+    display: flex;
+  }
+}
+
+.price {
+  & input {
+    height: 100%;
+    background: var(--white);
+    border: none;
+
+    &:hover {
+      border: none;
+      background: var(--white);
+    }
+
+    &::placeholder {
+      color: var(--gray);
+    }
+  }
+}
+
+.search-car {
+  display: flex;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  grid-area: search-car;
+  @include _768 {
+    flex-direction: column;
+    background: var(--transparent);
+    box-shadow: none;
+    gap: 10px;
+  }
+
+  & label {
+    width: 100%;
+    height: 100%;
+  }
+
+  & button {
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid var(--dark);
+    border-radius: var(--radius);
+    background: var(--dark);
+    color: var(--white);
+    font-weight: 600;
+    transition: var(--transition);
+    margin: 10px;
+    @include _1024 {
+      max-width: 50px;
+      font-size: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+    }
+    @include _768 {
+      display: none;
+    }
+
+    & svg {
+      display: none;
+      @include _1024 {
+        display: block;
+      }
+    }
+
+    &:hover {
+      background: var(--yellow);
+      color: var(--dark);
+
+      & path {
+        fill: var(--dark);
+      }
+    }
+  }
+
+  & .dropdown {
+    @include _768 {
+    }
+  }
+}

@@ -1,0 +1,124 @@
+// import utils
+@import "./utils/reset";
+@import "./utils/fonts";
+@import "./utils/animate";
+@import "./utils/theme";
+@import "./utils/mixin";
+@import "./utils/helpers";
+// import plugin
+@import "./plugins/select";
+@import "./plugins/slider";
+@import "./plugins/scroll";
+// import modules
+@import "./modules/alert";
+@import "./modules/header";
+@import "./modules/categories";
+@import "./modules/info";
+@import "./modules/footer";
+@import "./modules/burger-menu";
+@import "./modules/personal";
+@import "./modules/banner";
+@import "./modules/car";
+@import "./modules/table";
+@import "./modules/tables";
+@import "./modules/user";
+@import "./modules/preloader";
+@import "./modules/pagination";
+@import "./modules/messages";
+@import "./modules/personal-navigation";
+@import "./modules/filter-card";
+// import pages
+@import "./page/ads";
+@import "./page/privacy-policy";
+@import "./page/promotion-method";
+@import "./page/authorization";
+@import "./page/comparisons";
+@import "./page/error";
+@import "./page/wallet";
+@import "./page/questions";
+@import "./page/settings";
+@import "./page/notification";
+@import "./page/article";
+@import "./page/news";
+@import "./page/publishing-payment";
+@import "./page/preview";
+@import "./page/advanced-search";
+@import "./page/chosen";
+@import "./page/add-ads";
+@import "./page/wide-search";
+// import window
+@import "./window/subscribe-window";
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: var(--light_gray);
+  @include _1024 {
+    font-size: 14px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: var(--white);
+}
+button,
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  user-select: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section,
+.section {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+  position: relative;
+}
+
+.main {
+  position: relative;
+  &__box {
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: var(--shadow);
+  }
+}

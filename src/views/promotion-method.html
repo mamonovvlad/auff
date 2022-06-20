@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auff</title>
+    <link rel="shortcut icon" href="favicon/icon.svg" type="image/png" />
+  </head>
+
+  <body>
+    <div class="burger__menu">
+      <div class="burger__box">
+        <div class="burger__header">
+          <figure class="logo">
+            <img
+              class="logo-desktop"
+              loading="lazy"
+              src="../source/image/logo/logo.svg"
+              alt="logo"
+            />
+            <img
+              class="logo-mobile"
+              loading="lazy"
+              src="../source/image/logo/logo-mobile.svg"
+              alt="logo"
+            />
+          </figure>
+          <button class="burger__btn burger_hidden">
+            <svg class="">
+              <use xlink:href="../source/image/icon/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger__main scroll p30">
+          <p>Основное:</p>
+          <div class="links">
+            <a href="ads.html">Избранное</a>
+            <a href="comparisons.html">Сравнения <span>(5)</span> </a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+          </div>
+          <p>Мой профиль:</p>
+          <div class="links">
+            <a href="entrance.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
+          <div class="buttons">
+            <button class="button_dark">Найти авто</button>
+            <button class="button_dark_border">Продать авто</button>
+          </div>
+          <div class="social-networks">
+            <p>Мы в соц сетях:</p>
+            <div class="items">
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/viber.svg#viber"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+      <!--Header-->
+      <header class="header pb40" id="header">
+        <div class="general_padding">
+          <div class="container">
+            <div class="header__nav">
+              <button class="burger__btn burger_show">
+                <svg class="burger__icon">
+                  <use
+                    xlink:href="../source/image/icon/burger.svg#burger"
+                  ></use>
+                </svg>
+              </button>
+              <a href="/" class="logo__header">
+                <img
+                  class="logo-desktop"
+                  loading="lazy"
+                  src="../source/image/logo/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  class="logo-mobile"
+                  loading="lazy"
+                  src="../source/image/logo/logo-mobile.svg"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="item item_languages"
+                data-tippy-content="Изменить язык"
+              >
+                <a href="#" class="active">RU </a>
+                <span class="line"></span>
+                <a href="#">UA</a>
+              </div>
+              <div class="item item_user" data-tippy-content="Мой профиль">
+                <span>
+                  <img
+                    loading="lazy"
+                    src="../source/image/icon/user.svg"
+                    alt="user"
+                  />
+                </span>
+                <div class="user__menu">
+                  <a href="./entrance.html">Вход</a>
+                  <a href="./register.html">Регистрация</a>
+                </div>
+              </div>
+              <span class="item item_search" data-tippy-content="Поиск">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+              </span>
+              <a
+                href="chosen.html"
+                class="item item_favorites"
+                data-tippy-content="Избранное"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/star.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="comparisons.html"
+                class="item item_comparisons"
+                data-tippy-content="Сравнения"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/comparison.svg"
+                  alt="comparison"
+                />
+              </a>
+              <button class="place">Разместить объявление</button>
+              <button class="plus">
+                <img src="../source/image/icon/plus.svg" alt="+" />
+              </button>
+              <div class="header__search">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+                <input
+                  class=""
+                  type="search"
+                  placeholder="Поиск среди 100 000 авто"
+                />
+                <button class="close__search">
+                  <img src="../source/image/icon/close.svg" alt="close" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__line"></div>
+        </div>
+      </header>
+      <!--Header End-->
+      <!--Main-->
+      <main class="main general_padding" id="main">
+        <div class="container">
+          <div class="main__block">
+            <div class="full__block">
+              <div class="exit mb30">
+                <div class="block__back">
+                  <button class="button-back">
+                    <svg>
+                      <use
+                        xlink:href="../source/image/icon/arrow.svg#arrow"
+                      ></use>
+                    </svg>
+                  </button>
+                  <h1 class="title">Выбирите способ продвиженние объявления</h1>
+                </div>
+              </div>
+              <div class="steps">
+                <div class="step">
+                  <span class="step__item">1</span>
+                  <p>Описывай</p>
+                </div>
+                <div class="step">
+                  <span class="step__item active">2</span>
+                  <p>Продвигай</p>
+                </div>
+                <div class="step">
+                  <span class="step__item next">3</span>
+                  <p>Публикуй</p>
+                </div>
+              </div>
+              <div class="p30">
+                <div class="pay-attention mb40">
+                  <img
+                    class="img__desktop"
+                    src="../source/image/icon/free.svg"
+                    alt="free"
+                  />
+                  <img
+                    class="img__mobile"
+                    src="../source/image/icon/free-mobile.svg"
+                    alt="free"
+                  />
+
+                  <div class="pay-attention__text">
+                    <h4>Обратите внимание</h4>
+                    <p>
+                      Размещение авто на Auff совершенно
+                      <strong>бесплатно.</strong> Если вы не хотите продвигать
+                      ваше объявление с помощу платных функций -
+                      <strong>пропустите данный шаг.</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="bonuses mb40">
+                  <div class="bonus">
+                    <img src="../source/image/number/70.svg" alt="70" />
+                    <p>Получайте на 70% больше просмотров вашего объявления</p>
+                  </div>
+                  <div class="bonus">
+                    <img src="../source/image/number/70.svg" alt="70" />
+                    <p>Получайте на 70% больше просмотров вашего объявления</p>
+                  </div>
+                </div>
+                <div class="list__cards">
+                  <div class="card">
+                    <div class="card__info">
+                      <div class="card__title">
+                        <h4>Вывод в топ по марке</h4>
+                        <span
+                          class="question-mark"
+                          data-tippy-content="Вывод в топ по марке"
+                        >
+                          <img
+                            src="../source/image/icon/question-mark-bg.svg"
+                            alt="question-mark"
+                          />
+                        </span>
+                      </div>
+                      <p class="card__description">
+                        Вы можете вручную параметры вывода объявления в топ
+                      </p>
+                      <div class="custom__input">
+                        <span class="small__text">Кол-во дней</span>
+                        <button class="custom__input_minus">
+                          <img
+                            src="../source/image/icon/minus.svg"
+                            alt="minus"
+                          />
+                        </button>
+                        <div class="result__block">
+                          <output class="custom__input_result" name="result">
+                            0
+                          </output>
+                          <span>Дней</span>
+                        </div>
+                        <button class="custom__input_plus">
+                          <img src="../source/image/icon/plus.svg" alt="plus" />
+                        </button>
+                      </div>
+                      <div class="total-payable">
+                        <p>Итого к оплате:</p>
+                        <p>145 <span>грн</span></p>
+                      </div>
+                    </div>
+                    <div class="card__info">
+                      <div class="card__checkbox">
+                        <input type="checkbox" id="top-brand" />
+                        <label for="top-brand">
+                          <span class="not-selected">Не выбрано</span>
+                          <span class="selected">Выбрано</span>
+                        </label>
+                      </div>
+                      <button class="card__preview">Предпросмотр</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__info">
+                      <div class="card__title">
+                        <h4>Вывод в топ по марке</h4>
+                        <span
+                          class="question-mark"
+                          data-tippy-content="Вывод в топ по марке"
+                        >
+                          <img
+                            src="../source/image/icon/question-mark-bg.svg"
+                            alt="question-mark"
+                          />
+                        </span>
+                      </div>
+                      <p class="card__description">
+                        Вы можете вручную параметры вывода объявления в топ
+                      </p>
+                      <input
+                        class="card__input"
+                        type="text"
+                        placeholder="Кол-во дней"
+                      />
+                      <input
+                        class="card__input"
+                        type="text"
+                        placeholder="Место в топе"
+                      />
+                      <div class="total-payable">
+                        <p>Итого к оплате:</p>
+                        <p>145 <span>грн</span></p>
+                      </div>
+                    </div>
+                    <div class="card__info">
+                      <div class="card__checkbox">
+                        <input type="checkbox" id="top-model" />
+                        <label for="top-model">
+                          <span class="not-selected">Не выбрано</span>
+                          <span class="selected">Выбрано</span>
+                        </label>
+                      </div>
+                      <button class="card__preview">Предпросмотр</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__info">
+                      <div class="card__title">
+                        <h4>Выделение цветов</h4>
+                        <span
+                          class="question-mark"
+                          data-tippy-content="Выделение цветов"
+                        >
+                          <img
+                            src="../source/image/icon/question-mark-bg.svg"
+                            alt="question-mark"
+                          />
+                        </span>
+                      </div>
+                      <p class="card__description">
+                        Ваше объявление будет выделяться на фоне остальных за
+                        счет яркого цвета!
+                      </p>
+                      <input
+                        class="card__input"
+                        type="text"
+                        placeholder="Кол-во дней"
+                      />
+                      <div class="total-payable">
+                        <p>Итого к оплате:</p>
+                        <p>0<span>грн</span></p>
+                      </div>
+                    </div>
+                    <div class="card__info">
+                      <div class="card__checkbox">
+                        <input type="checkbox" id="selecting-colors" />
+                        <label for="selecting-colors">
+                          <span class="not-selected">Не выбрано</span>
+                          <span class="selected">Выбрано</span>
+                        </label>
+                      </div>
+                      <button class="card__preview">Предпросмотр</button>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card__info">
+                      <div class="card__title">
+                        <h4>Выделение размером</h4>
+                        <span
+                          class="question-mark"
+                          data-tippy-content="Выделение размером"
+                        >
+                          <img
+                            src="../source/image/icon/question-mark-bg.svg"
+                            alt="question-mark"
+                          />
+                        </span>
+                      </div>
+                      <p class="card__description">
+                        Ваше объявление будет выделяться на фоне остальных за
+                        счет яркого цвета!
+                      </p>
+                      <input
+                        class="card__input"
+                        type="text"
+                        placeholder="Кол-во дней"
+                      />
+                      <div class="total-payable">
+                        <p>Итого к оплате:</p>
+                        <p>0<span>грн</span></p>
+                      </div>
+                    </div>
+                    <div class="card__info">
+                      <div class="card__checkbox">
+                        <input type="checkbox" id="size-selection" />
+                        <label for="size-selection">
+                          <span class="not-selected">Не выбрано</span>
+                          <span class="selected">Выбрано</span>
+                        </label>
+                      </div>
+                      <button class="card__preview">Предпросмотр</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons p30">
+                <button class="button_dark_border">
+                  Перенести в черновики
+                </button>
+                <button class="button_dark">Далее</button>
+              </div>
+            </div>
+            <div class="small__block p30">
+              <button class="close">
+                <img src="../source/image/icon/close.svg" alt="close" />
+              </button>
+              <h2 class="title mb40">
+                Всего 3 шага и ваше авто уже на продаже!
+              </h2>
+              <div class="list__steps">
+                <div class="step">
+                  <img src="../source/image/number/01.svg" alt="01" />
+                  <p>
+                    Опишите ваше авто и укажите его технические характеристики
+                  </p>
+                </div>
+                <div class="step">
+                  <img src="../source/image/number/02.svg" alt="02" />
+                  <p>Посмотрите на ваше авто перед тем как мы его опубликуем</p>
+                </div>
+                <div class="step">
+                  <img src="../source/image/number/03.svg" alt="03" />
+                  <p>
+                    Опишите ваше авто и укажите его технические характеристики
+                  </p>
+                </div>
+                <div class="step">
+                  <img
+                    src="../source/image/number/checking.svg"
+                    alt="checking"
+                  />
+                  <p>
+                    Готов, теперь остается лишь принимать заявки от возможных
+                    покупателей=)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--Main End-->
+      <!--Footer-->
+      <footer id="footer" class="footer general_padding">
+        <div class="container p30">
+          <div class="footer__block">
+            <figure class="footer__logo">
+              <img
+                class="logo-desktop"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow.svg"
+                alt="logo"
+              />
+              <img
+                class="logo-mobile"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow-mobile.svg"
+                alt="logo"
+              />
+            </figure>
+            <form action="" class="form-subscribe">
+              <label for="footer_email">Быть в курсе последних новостей</label>
+              <div class="form__box">
+                <input
+                  id="footer_email"
+                  class="input"
+                  type="text"
+                  placeholder="Быть в курсе последних новостей"
+                />
+                <button type="button" class="button_yellow button-subscribe">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscription-issued">
+                <p>Поздравляем, подписка на новости успешно оформленна=)</p>
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+              </div>
+            </form>
+            <a href="#header" class="button_yellow up">
+              <svg class="">
+                <use
+                  xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+                ></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__title">
+            <h2 class="title">Каталог автомобилей</h2>
+            <button class="button__plus car-catalog">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_car-catalog">
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+          </nav>
+
+          <div class="footer__title">
+            <h2 class="title">Другое</h2>
+            <button class="button__plus other">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_other">
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+          </nav>
+        </div>
+        <div class="footer__copyright">
+          <div class="container p30">
+            <div class="footer__box">
+              <p>© Auff, Все права защищены</p>
+              <div class="social-networks">
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/viber.svg#viber"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <nav>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфендициальности</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Footer End-->
+    </div>
+  </body>
+</html>

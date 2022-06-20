@@ -1,0 +1,55 @@
+{
+  "name": "auff",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mamonovvlad/auff.git",
+  "author": "Влад <45657091+mamonovvlad@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
+    "build": "webpack --config ./build/webpack.build.conf.js"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
+  "keywords": [
+    "webpack",
+    "webpack4",
+    "merge",
+    "bable",
+    "bable7",
+    "sass"
+  ],
+  "dependencies": {
+    "postcss-loader": "^3.0.0",
+    "sortablejs": "^1.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^5.1.2",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^5.1.0",
+    "html-webpack-partials-plugin": "^0.8.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "overlayscrollbars": "^1.13.1",
+    "prettier": "2.2.1",
+    "sass": "^1.52.3",
+    "sass-loader": "^8.0.2",
+    "selectize": "^0.12.6",
+    "style-loader": "^1.3.0",
+    "swiper": "^6.5.0",
+    "tippy.js": "^6.3.1",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^4.2.2"
+  }
+}

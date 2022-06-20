@@ -1,0 +1,38 @@
+.comparisons {
+  &__navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__car {
+    width: 100%;
+    background: var(--light_gray);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: var(--transition);
+    &:hover {
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+  }
+  &__content {
+    & .comparisons__box {
+      padding: 30px 0;
+    }
+    & .car__image {
+      width: 100%;
+    }
+  }
+  &__step {
+    padding: 10px 16px;
+    border-top: 1px solid var(--white-dark);
+    & span {
+      color: var(--gray);
+    }
+  }
+}
+.touch__box {
+  @include _768 {
+    display: none;
+  }
+}

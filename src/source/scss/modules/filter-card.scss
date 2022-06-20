@@ -1,0 +1,114 @@
+.filter {
+  &-car__block {
+    position: relative;
+    border-radius: var(--radius);
+    background: var(--light_gray);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:hover {
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+  }
+  &-car__info {
+    padding: 16px;
+    & a.show {
+      display: inline-block;
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 18px;
+      margin: 5px 0 10px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    & .name {
+      font-weight: bold;
+      font-size: 18px;
+      color: var(--dark);
+      margin-bottom: 10px;
+      @include crop-height(1);
+      @include _768 {
+        font-size: 16px;
+      }
+    }
+    & .logo-button {
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px;
+      padding-left: 65px;
+      display: flex;
+      justify-content: flex-end;
+      & img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--yellow);
+        border: 2px solid var(--dark);
+        border-radius: var(--radius);
+        object-fit: scale-down;
+      }
+    }
+  }
+  &-car__description {
+    font-weight: 600;
+    margin: 5px 0;
+    overflow-x: hidden;
+    & span {
+      font-weight: 400;
+      color: var(--gray);
+      margin-right: 4px;
+    }
+  }
+  &-car__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 16px;
+    & a.button_dark {
+      height: 40px;
+      padding: 0;
+      flex: 1 1 auto;
+    }
+    & button {
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius);
+      border: 2px solid var(--dark);
+      transition: var(--transition);
+    }
+  }
+}
+.pencil,
+.trash {
+  width: 34px;
+  height: 34px;
+  background: var(--white-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  margin-left: 16px;
+  & svg {
+    width: 18px;
+    height: 18px;
+  }
+  &:hover {
+    background: var(--dark);
+    & svg {
+      color: var(--yellow);
+    }
+  }
+}

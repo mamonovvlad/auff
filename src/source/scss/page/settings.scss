@@ -1,0 +1,400 @@
+.settings {
+  &-content {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  &__contacts {
+    display: flex;
+    @include _1200 {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__contact {
+    width: 100%;
+    display: flex;
+
+    & .block {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      & label {
+        position: relative;
+        margin-bottom: 10px;
+        overflow: hidden;
+        padding-top: 10px;
+      }
+
+      &:first-child {
+        margin-right: 20px;
+        @include _768 {
+          margin-right: 10px;
+        }
+        @include _576 {
+          margin-right: 0;
+        }
+      }
+
+      & .active__label .label-name {
+        top: -5px;
+      }
+
+      & .selectize-control,
+      & .selectize-input,
+      & .selectize-input input {
+        background: var(--light_gray);
+      }
+
+      & .selectize-input {
+        height: 50px;
+      }
+
+      @include _576 {
+        width: 100%;
+      }
+    }
+
+    @include _1200 {
+      width: 100%;
+    }
+    @include _576 {
+      flex-wrap: wrap;
+    }
+
+    & .selectize-control.single {
+      border-radius: var(--radius);
+    }
+
+    & .selectize-dropdown-content {
+      background: var(--light_gray);
+      box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    & .selectize-dropdown-content:after {
+      background: none;
+    }
+  }
+
+  & .buttons {
+    display: flex;
+    gap: 20px;
+    @include _768 {
+      gap: 10px;
+    }
+
+    & button {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      color: var(--white);
+      transition: var(--transition);
+
+      &:hover {
+        box-shadow: 0 3px 10px rgb(145, 145, 145);
+      }
+
+      &:hover span img {
+        transform: rotate(360deg);
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 52px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      & span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+          transition: var(--transition);
+        }
+      }
+    }
+
+    & .facebook {
+      background: var(--blue);
+
+      & span {
+        background: #4267b2;
+      }
+
+      &:before {
+        background: var(--blue);
+      }
+    }
+
+    & .google {
+      background: var(--light-red);
+
+      & span {
+        background: #e94235;
+      }
+
+      &:before {
+        background: var(--light-red);
+      }
+    }
+  }
+
+  &__tabs {
+    padding: 30px 0;
+    border-top: 2px solid var(--light_gray);
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.active span {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    @include _576 {
+      font-size: 20px;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding-top: 20px;
+  }
+
+  &__password {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    @include _1440 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include _1200 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include _576 {
+      grid-template-columns: 1fr;
+    }
+
+    & button {
+      min-width: 100%;
+    }
+  }
+
+  &__notification {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include _768 {
+      margin-bottom: 16px;
+    }
+    @include _576 {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    & .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    & .content {
+      padding: 0 2px;
+    }
+
+    & h4 {
+      flex-grow: 1;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    & p {
+      color: var(--gray);
+    }
+
+    & .checkbox {
+      flex-grow: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @include _576 {
+        order: 1;
+      }
+
+      & label {
+        display: flex;
+        margin-left: 30px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  & .delete-account {
+    max-width: 300px;
+    margin-top: 15px;
+    width: 100%;
+
+    & button {
+      margin-top: 22px;
+      width: 100%;
+    }
+  }
+}
+
+.input__show {
+  max-width: 120px;
+  position: absolute;
+  margin: 6px;
+  right: -130px;
+  bottom: 0;
+  height: 38px;
+}
+
+.input--active {
+  right: 0;
+}
+
+.avatar-upload {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: relative;
+  margin-right: 16px;
+
+  & .image__default {
+    width: 50px;
+  }
+}
+
+.avatar-upload[data-user-photo="default"] {
+  & .avatar-edit {
+    width: 100%;
+    border-radius: var(--radius);
+    transition: var(--transition);
+
+    & .image__edit {
+      display: none;
+    }
+
+    &:hover {
+      padding: 5px;
+      background: var(--light_gray);
+
+      & input + label {
+        background: var(--light_gray);
+      }
+    }
+
+    & input {
+      display: none;
+
+      + label {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--white);
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: var(--transition);
+      }
+    }
+  }
+
+  & .avatar-preview {
+    display: none;
+  }
+}
+
+.avatar-upload[data-user-photo="custom"] {
+  border: 5px solid var(--dark);
+  border-radius: var(--radius);
+  background-color: var(--dark);
+
+  & .avatar-edit {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+
+    & input {
+      display: none;
+
+      + label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        border-top-left-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
+        background: var(--yellow);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        & .image__default {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .avatar-preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: var(--radius);
+      object-fit: contain;
+    }
+
+    @include _576 {
+      height: 280px;
+    }
+  }
+}

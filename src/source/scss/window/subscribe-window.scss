@@ -1,0 +1,74 @@
+.subscribe-window {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  & .window {
+    position: relative;
+    background: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 550px;
+    box-shadow: var(--shadow);
+    &__close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 20px;
+      cursor: pointer;
+    }
+    &__name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      @include _576 {
+        font-size: 20px;
+        margin-bottom: 13px;
+      }
+    }
+    &__text {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    & img {
+      @include _768 {
+        order: 5;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    background: var(--white);
+    width: 100%;
+    @include _768 {
+      margin-bottom: 20px;
+    }
+    & input {
+      width: 100%;
+      margin-left: 14px;
+    }
+    & button {
+      margin: 5px;
+      padding: 12px 20px;
+      background: var(--dark);
+      color: var(--white);
+      border-radius: var(--radius);
+      @include _576 {
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+      }
+      & img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

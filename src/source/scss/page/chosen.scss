@@ -1,0 +1,27 @@
+.chosen {
+  &__link {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--gray);
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: var(--transition);
+    @include _576 {
+      font-size: 20px;
+    }
+  }
+  &__filter,
+  &__viewed,
+  &__ads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include _1200 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include _576 {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.small__block_filter {
+  & .search {
+    border-top: 2px solid var(--light_gray);
+
+    & h2 {
+      font-size: 24px;
+      font-weight: 400;
+
+      & span {
+        font-weight: 700;
+      }
+
+      @include _768 {
+        font-size: 18px;
+      }
+    }
+
+    & button {
+      width: 100%;
+    }
+
+    & .advanced-search__range-slider {
+      margin-bottom: 10px;
+    }
+  }
+
+  & .input__box {
+    display: flex;
+
+    & .label {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    & button {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  & .lists__checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & label {
+      width: max-content;
+    }
+  }
+
+  & .close__block {
+    display: none;
+    @include _1200 {
+      display: block;
+    }
+  }
+}
+
+.selecting-category {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 10px;
+  @include _768 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @include _576 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  & .categories__block {
+    cursor: pointer;
+
+    &:first-child,
+    &:nth-child(2) {
+      grid-column-start: auto;
+      grid-column-end: auto;
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  & input {
+    display: none;
+  }
+
+  & input:checked + label {
+    border: 2px solid var(--dark);
+    background: var(--yellow);
+  }
+}
+
+.history__categories,
+.search__city-wrap {
+  display: flex;
+
+  & span {
+    display: flex;
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 1px solid var(--red);
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  & button {
+    width: 15px;
+    align-self: center;
+    display: flex;
+    margin-right: 8px;
+  }
+}
+
+.search__city-wrap {
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+.history__categories {
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.submits {
+  display: flex;
+
+  & .button_dark {
+    width: 100%;
+    margin-right: 20px;
+    @include _768 {
+      margin-right: 16px;
+    }
+
+    &:hover {
+      & .text__yellow {
+        color: var(--dark);
+      }
+    }
+  }
+
+  & .button_dark_border {
+    max-width: 50px;
+    min-width: 50px;
+    width: 100%;
+    padding: 0;
+
+    & img {
+      width: 20px;
+    }
+  }
+}
+
+.body-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

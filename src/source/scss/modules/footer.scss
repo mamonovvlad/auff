@@ -1,0 +1,290 @@
+.footer {
+  background: var(--dark);
+  position: relative;
+  &:before {
+    content: "";
+    background: var(--dark);
+    height: 45px;
+    bottom: calc(100% - 2px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &__text {
+    color: var(--white);
+  }
+  &__title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  & .title {
+    color: var(--white);
+    margin-bottom: 40px;
+    @include _768 {
+      margin-bottom: 20px;
+    }
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 60px;
+    @include _768 {
+      flex-wrap: wrap;
+      margin-bottom: 55px;
+    }
+    @include _576 {
+      margin-bottom: 35px;
+    }
+    & .up {
+      width: 50px;
+      padding: 0;
+      scroll-behavior: smooth;
+      margin-left: 15px;
+      & svg {
+        width: 24px;
+        height: 24px;
+        transform: rotate(90deg);
+        transition: var(--transition);
+      }
+      &:hover {
+        & svg {
+          color: var(--yellow);
+        }
+      }
+      @include _768 {
+        padding: 15px 12px;
+      }
+    }
+  }
+  & .form-subscribe {
+    max-width: 710px;
+    position: relative;
+    width: 100%;
+    & label {
+      display: none;
+      font-size: 14px;
+      color: var(--white);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    @include _1024 {
+      max-width: 480px;
+      & .button_yellow {
+        max-width: 180px;
+      }
+    }
+    @include _768 {
+      order: 1;
+      width: 100%;
+      max-width: 100%;
+      margin-top: 30px;
+      & label {
+        display: block;
+      }
+      & .button_yellow {
+        max-width: 120px;
+        padding: 18px 10px;
+      }
+    }
+  }
+  & .form__box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-shadow: var(--shadow);
+    & input {
+      border-radius: 4px 0 0 4px;
+      width: 100%;
+      max-width: 100%;
+    }
+    & button {
+      border-radius: 0 4px 4px 0;
+      max-width: 260px;
+      width: 100%;
+    }
+  }
+  &__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    row-gap: 14px;
+    column-gap: 25px;
+    margin-bottom: 60px;
+    & a {
+      display: flex;
+      transition: var(--transition);
+      justify-content: space-between;
+      font-size: 14px;
+      text-decoration: none;
+      &:hover {
+        color: var(--yellow);
+      }
+      @include _768 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+    & span {
+      color: var(--gray);
+      margin-left: 10px;
+    }
+    @include _1200 {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 25px;
+    }
+    @include _1024 {
+      grid-template-columns: 1fr 1fr;
+      & a {
+        font-size: 14px;
+      }
+    }
+    @include _768 {
+      display: none;
+    }
+  }
+
+  &__copyright {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -30px;
+      right: -30px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      @include _1200 {
+        left: 0;
+        right: 0;
+      }
+    }
+    @include _768 {
+      flex-direction: column;
+      padding-top: 10px;
+      & .social-networks {
+        order: -1;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    & p {
+      color: var(--gray);
+    }
+    & a {
+      margin-right: 20px;
+      text-decoration: none;
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+      & path {
+        transition: var(--transition);
+      }
+      &:hover svg {
+        & path {
+          fill: var(--yellow);
+        }
+      }
+    }
+    & nav {
+      @include _1024 {
+        width: 100%;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        @include _768 {
+          display: flex;
+          flex-direction: column;
+          margin-top: 16px;
+          & a {
+            margin-right: 0;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+    @include _1024 {
+      flex-wrap: wrap;
+    }
+    @include _768 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  @include _1200 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  & .subscription-issued {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    overflow: hidden;
+    background: var(--yellow);
+    border-radius: var(--radius);
+    & p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+    @include _768 {
+      top: 35px;
+    }
+  }
+  & .social-networks {
+    & svg {
+      width: 27px;
+      height: 27px;
+      color: var(--gray);
+    }
+    & a:hover {
+      & svg {
+        color: var(--yellow);
+      }
+    }
+  }
+}
+
+.progress {
+  background: var(--yellow);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.button__plus {
+  display: none;
+  @include _768 {
+    display: flex;
+  }
+}
+.progress-value {
+  animation: load 4s normal forwards;
+  background: #bdb62d;
+  height: 6px;
+  width: 0;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,0 +1,234 @@
+.search-car {
+  transition: var(--transition);
+
+  & .select_border {
+    position: relative;
+    transition: var(--transition);
+
+    &:before {
+      content: "";
+      position: absolute;
+      transition: var(--transition);
+      right: -1px;
+      border-right: 1px solid #dfe2e9;
+      top: 15px;
+      bottom: 15px;
+      z-index: 3;
+      @include _768 {
+        display: none;
+      }
+    }
+  }
+
+  & .select .dropdown-active {
+    &:before {
+      opacity: 0;
+    }
+  }
+}
+
+.selectize-control {
+  transition: var(--transition);
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & .dropdown-active {
+    box-shadow: var(--shadow);
+    border-radius: 4px 4px 0 0 !important;
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.selectize-control.single .selectize-input {
+  border-radius: var(--radius);
+  padding: 10px 20px;
+  height: 100%;
+  background: var(--white);
+}
+
+.selectize-control.single .selectize-input:after {
+  content: "";
+  background: url(../image/icon/arrow-dropdown.svg) no-repeat right;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transition: var(--transition);
+  right: 10px;
+  cursor: pointer;
+  background-size: contain;
+}
+
+.header__box-search .selectize-control.single .selectize-input:after {
+  background: url(../image/icon/arrow.svg) no-repeat right;
+  width: 10px;
+  height: 15px;
+  transform: rotate(90deg);
+}
+
+.selectize-input {
+  color: var(--dark);
+  font-size: 16px !important;
+  display: flex;
+  align-items: center;
+  @include _1200 {
+    font-size: 14px !important;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    color: var(--gray);
+    @include _1200 {
+      font-size: 14px;
+    }
+  }
+}
+
+.selectize-dropdown.single {
+  position: absolute;
+  width: calc(100% + 2px) !important;
+  right: 0;
+  max-height: 200px;
+  left: -1px !important;
+  border: 1px solid #dfe2e9;
+  font-size: 16px;
+  border-radius: 0 0 4px 4px;
+  font-weight: initial;
+  overflow: hidden;
+  z-index: 5;
+  background-color: var(--white);
+  box-shadow: 0 20px 24px rgba(0, 0, 0, 0.08);
+  @include _1200 {
+    font-size: 14px;
+  }
+
+  & .optgroup {
+    margin-top: 20px;
+  }
+
+  & .optgroup-header {
+    color: var(--gray);
+    padding: 0 20px 10px 20px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  & .option {
+    cursor: pointer;
+    padding: 8px 20px;
+
+    &:hover {
+      background-color: #f1eea3;
+    }
+  }
+}
+
+.selectize-control .dropdown-active:after {
+  transform: rotate(180deg);
+}
+
+.header__box-search .selectize-control .dropdown-active:after {
+  transform: rotate(270deg) !important;
+}
+
+.dropdown {
+  max-width: 90px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: var(--white);
+  position: relative;
+  @include _768 {
+    background: var(--transparent);
+    max-width: 100%;
+    padding: 0;
+  }
+
+  & .ae-select-content {
+    max-width: 40px;
+    width: 100%;
+  }
+}
+
+.ae-select {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include _768 {
+    display: none;
+  }
+
+  & .toggle {
+    width: 15px;
+    height: 15px;
+    display: flex;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      transform: rotate(90deg);
+      transition: var(--transition);
+    }
+  }
+
+  & .is-active {
+    & img {
+      transform: rotate(270deg);
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  border: 1px solid #dfe2e9;
+  border-radius: 0 0 4px 4px;
+  background-color: var(--white);
+  box-shadow: 0 20px 24px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+  @include _768 {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-height: 100%;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    box-shadow: none;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  & li {
+    padding: 5px 20px;
+    @include _768 {
+      padding: 0 2px;
+      height: 40px;
+      max-width: 80px;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    &:hover {
+      background: var(--yellow-dark);
+    }
+  }
+
+  & .selected {
+    background: var(--yellow-dark);
+    @include _768 {
+      border: 1px solid var(--dark);
+      border-radius: var(--radius);
+    }
+  }
+}
+
+.ae-hide {
+  display: none;
+}

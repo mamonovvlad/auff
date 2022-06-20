@@ -1,0 +1,256 @@
+.burger {
+  &__menu {
+    position: fixed;
+    left: -1000px;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -10;
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+  &_show {
+    transition: var(--transition);
+    border: 1px solid var(--dark);
+    border-radius: var(--radius);
+    @include _768 {
+      border: none;
+      border-right: 1px solid var(--yellow-dark);
+      border-radius: 0;
+    }
+
+    &:hover {
+      background: var(--dark);
+
+      & .burger__icon {
+        color: var(--white);
+      }
+    }
+  }
+
+  &_hidden {
+    border: 1px solid var(--dark);
+    border-radius: var(--radius);
+
+    & svg {
+      width: 25px;
+      height: 25px;
+      color: var(--yellow);
+    }
+  }
+
+  &__box {
+    max-width: 560px;
+    background: var(--white);
+    position: relative;
+    height: 100%;
+    @include _768 {
+      max-width: 400px;
+    }
+    @include _576 {
+      max-width: 320px;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    transition: var(--transition);
+    grid-area: header-burger;
+    @include _1024 {
+      min-width: 50px;
+      height: 50px;
+    }
+    @include _768 {
+      min-width: 40px;
+      max-width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__header {
+    background: var(--light_gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 0 20px 0 var(--white);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    @include _576 {
+      padding: 15px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      border: 15px solid transparent;
+      border-top: 15px solid var(--light_gray);
+      @include _576 {
+        display: none;
+      }
+    }
+
+    & .burger__btn {
+      background: var(--dark);
+      margin-right: 0;
+
+      &:hover {
+        background: var(--yellow);
+
+        & svg {
+          color: var(--dark);
+        }
+      }
+    }
+  }
+
+  &__main {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @include _768 {
+      padding-top: 100px;
+    }
+
+    & .links {
+      display: flex;
+      flex-direction: column;
+
+      & a {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        font-size: 22px;
+        color: var(--dark);
+        margin-top: 12px;
+        transition: var(--transition);
+        @include _768 {
+          font-size: 16px;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          width: 8px;
+          height: 14px;
+          background: url("../image/icon/arrow.svg") no-repeat right;
+        }
+
+        &:hover {
+          text-shadow: 0 0 0 var(--dark);
+        }
+
+        &:last-child {
+          margin-bottom: 25px;
+        }
+
+        & span {
+          color: var(--gray);
+        }
+      }
+    }
+
+    & p {
+      margin-bottom: 10px;
+      color: var(--gray);
+      font-size: 18px;
+      @include _768 {
+        font-size: 14px;
+      }
+    }
+
+    & .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include _576 {
+        flex-wrap: wrap;
+      }
+
+      & button {
+        margin-bottom: 30px;
+        width: 100%;
+
+        &:first-child {
+          margin-right: 16px;
+        }
+
+        @include _768 {
+          margin-bottom: 20px;
+        }
+        @include _576 {
+          &:first-child {
+            margin-right: 0;
+          }
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    & .social-networks {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      & .social-networks__icon {
+        width: 27px;
+        height: 27px;
+        color: var(--gray);
+      }
+
+      & .items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        & a {
+          background: var(--light_gray);
+          padding-top: 20px;
+          padding-bottom: 20px;
+          display: flex;
+          justify-content: center;
+          transition: var(--transition);
+          border-right: 2px solid var(--white-dark);
+          @include _576 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+
+          &:last-child {
+            border-right: 0 solid var(--white-dark);
+          }
+
+          &:hover {
+            background: var(--white-dark);
+
+            & .social-networks__icon {
+              color: var(--dark);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_active {
+    left: 0;
+    opacity: 1;
+    z-index: 10;
+  }
+
+  &__icon {
+    width: 25px;
+    height: 24px;
+  }
+}

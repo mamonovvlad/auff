@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <link rel="shortcut icon" href="favicon/icon.svg" type="image/png" />
+  </head>
+
+  <body>
+    <div class="burger__menu">
+      <div class="burger__box">
+        <div class="burger__header">
+          <figure class="logo">
+            <img
+              class="logo-desktop"
+              loading="lazy"
+              src="../source/image/logo/logo.svg"
+              alt="logo"
+            />
+            <img
+              class="logo-mobile"
+              loading="lazy"
+              src="../source/image/logo/logo-mobile.svg"
+              alt="logo"
+            />
+          </figure>
+          <button class="burger__btn burger_hidden">
+            <svg class="">
+              <use xlink:href="../source/image/icon/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger__main scroll p30">
+          <p>Основное:</p>
+          <div class="links">
+            <a href="ads.html">Избранное</a>
+            <a href="comparisons.html">Сравнения <span>(5)</span> </a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+          </div>
+          <p>Мой профиль:</p>
+          <div class="links">
+            <a href="entrance.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
+          <div class="buttons">
+            <button class="button_dark">Найти авто</button>
+            <button class="button_dark_border">Продать авто</button>
+          </div>
+          <div class="social-networks">
+            <p>Мы в соц сетях:</p>
+            <div class="items">
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/viber.svg#viber"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+      <!--Header-->
+      <header class="header" id="header">
+        <div class="general_padding">
+          <div class="container">
+            <div class="header__nav">
+              <button class="burger__btn burger_show">
+                <svg class="burger__icon">
+                  <use
+                    xlink:href="../source/image/icon/burger.svg#burger"
+                  ></use>
+                </svg>
+              </button>
+              <a href="/" class="logo__header">
+                <img
+                  class="logo-desktop"
+                  loading="lazy"
+                  src="../source/image/logo/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  class="logo-mobile"
+                  loading="lazy"
+                  src="../source/image/logo/logo-mobile.svg"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="item item_languages"
+                data-tippy-content="Изменить язык"
+              >
+                <a href="#" class="active">RU </a>
+                <span class="line"></span>
+                <a href="#">UA</a>
+              </div>
+              <div class="item item_user" data-tippy-content="Мой профиль">
+                <span>
+                  <img
+                    loading="lazy"
+                    src="../source/image/icon/user.svg"
+                    alt="user"
+                  />
+                </span>
+                <div class="user__menu">
+                  <a href="./entrance.html">Вход</a>
+                  <a href="./register.html">Регистрация</a>
+                </div>
+              </div>
+              <span class="item item_search" data-tippy-content="Поиск">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+              </span>
+              <a
+                href="chosen.html"
+                class="item item_favorites"
+                data-tippy-content="Избранное"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/star.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="comparisons.html"
+                class="item item_comparisons"
+                data-tippy-content="Сравнения"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/comparison.svg"
+                  alt="comparison"
+                />
+              </a>
+              <button class="place">Разместить объявление</button>
+              <button class="plus">
+                <img src="../source/image/icon/plus.svg" alt="+" />
+              </button>
+              <div class="header__search">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+                <input
+                  class=""
+                  type="search"
+                  placeholder="Поиск среди 100 000 авто"
+                />
+                <button class="close__search">
+                  <img src="../source/image/icon/close.svg" alt="close" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__line"></div>
+          <div class="container p30">
+            <div class="article__header">
+              <div class="article__text">
+                <div class="bread-crumbs mb30">
+                  <a href="/">Главная</a> <a href="">Блог</a>
+                </div>
+                <div class="article__category">
+                  <div class="article">Категория статьи</div>
+                  <div class="article">Категория статьи</div>
+                </div>
+                <h1 class="article__name title">
+                  Название статьи в 1, или даже 2 строки, вау
+                </h1>
+                <div class="info-records">
+                  <span class="time">8 минут на чтение</span>
+                  <span class="date">02.12.2020</span>
+                </div>
+              </div>
+              <div class="article__arrow">
+                <a href="#" class="left">
+                  <img src="../source/image/icon/long-arrow.svg " alt="" />
+                  <span>Предыдущее объявление</span>
+                </a>
+                <a href="#" class="right">
+                  <img src="../source/image/icon/long-arrow.svg " alt="" />
+                  <span>Следующее объявление</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--Header End-->
+      <!--Main-->
+      <main class="main general_padding" id="main">
+        <div class="container">
+          <div class="article__box">
+            <div class="article__info">
+              <div class="info__content p30">
+                <p>
+                  Часто бывает так, что смысл текста не имеет большого значения,
+                  а важен только его объем или структура. Генератор текста
+                  онлайн позволит задать необходимое количество слов, из которых
+                  будут сформировано указанное Вами число абзацев.
+                </p>
+                <img src="../source/image/temp/car_6.png" alt="" />
+                <p>
+                  Источник фото:
+                  <a href="/">сайтблаблабла.юа</a>
+                </p>
+                <p>
+                  <strong> Lorem Ipsum </strong> - это текст-"рыба", часто
+                  используемый в печати и вэб-дизайне. Lorem Ipsum является
+                  стандартной "рыбой" для текстов на латинице с начала XVI века.
+                  В то время некий безымянный печатник создал большую коллекцию
+                  размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                  образцов. Lorem Ipsum не только успешно пережил без заметных
+                  изменений пять веков, но и перешагнул в электронный дизайн.
+                  Его популяризации в новое время послужили публикация листов
+                  Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                  недавнее время, программы электронной вёрстки типа Aldus
+                  PageMaker, в шаблонах которых используется Lorem Ipsum.
+                </p>
+                <img src="../source/image/temp/car_6.png" alt="" />
+                <p>
+                  <strong> Lorem Ipsum </strong> - это текст-"рыба", часто - это
+                  текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+                  Ipsum является стандартной "рыбой" для текстов на латинице с
+                  начала XVI века. В то время некий безымянный печатник создал
+                  большую коллекцию размеров и форм шрифтов, используя Lorem
+                  Ipsum для распечатки образцов. Lorem Ipsum не только успешно
+                  пережил без заметных изменений пять веков, но и перешагнул в
+                  электронный дизайн. Его популяризации в новое время послужили
+                  публикация листов Letraset с образцами Lorem Ipsum в 60-х
+                  годах и, в более недавнее время, программы электронной вёрстки
+                  типа Aldus PageMaker, в шаблонах которых используется Lorem
+                  Ipsum.
+                </p>
+                <h3 class="title">Заголовок для данного блока</h3>
+                <p>
+                  <strong> Lorem Ipsum </strong> - это текст-"рыба", часто - это
+                  текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+                  Ipsum является стандартной "рыбой на латинице с начала XVI
+                  века. В то время некий безымянный печатник создал большую
+                  коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+                  распечатки образцов. Yе только успешно пережил без заметных
+                  изменений пять веков, но и перешагнул в электронный дизайн.
+                  Его популяризации в новое время послужили публикация листов
+                  Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                  недавнее время, программы электронной вёрстки типа Aldus
+                  PageMaker, в шаблонах которых используется Lorem Ipsum.
+                </p>
+                <div class="see-also">
+                  <span>Читайте также:</span>
+                  <a href="#">
+                    Опубликован отчет об экспериментальном препарате от COVID-19
+                  </a>
+                </div>
+                <p>
+                  <strong> Lorem Ipsum </strong> - это текст-"рыба", часто
+                  используемый в печати и вэб-дизайне. Lorem Ipsum является
+                  стандартной "рыбой" для текстов на латинице с начала XVI века.
+                  В то время некий безымянный печатник создал большую коллекцию
+                  размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                  образцов. Lorem Ipsum не только успешно пережил без заметных
+                  изменений пять веков, но и перешагнул в электронный дизайн.
+                  Его популяризации в новое время послужили публикация листов
+                  Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                  недавнее время, программы электронной вёрстки типа Aldus
+                  PageMaker, в шаблонах которых используется
+                  <a href="#">Lorem Ipsum</a> .
+                </p>
+                <h3 class="title">Заголовок для данного блока</h3>
+                <div class="images">
+                  <img src="../source/image/temp/car_7.png" alt="" />
+                  <img src="../source/image/temp/car_2.jpg" alt="" />
+                </div>
+                <strong
+                  >Заголовок для данного блока и нумерованый список второго
+                  варианта:</strong
+                >
+                <ul>
+                  <li>По своей сути рыбатекст является альтернативой.</li>
+                  <li>По своей сути рыбатекст является альтернативой.</li>
+                  <li>По своей сути рыбатекст является альтернативой.</li>
+                  <li>По своей сути рыбатекст является альтернативой.</li>
+                </ul>
+                <p>
+                  <strong> Lorem Ipsum </strong> - это текст-"рыба", часто
+                  используемый в печати и вэб-дизайне. Lorem Ipsum является
+                  стандартной "рыбой" для текстов на латинице с начала XVI века.
+                  В то время некий безымянный печатник создал большую коллекцию
+                  размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                  образцов. Lorem Ipsum не только успешно пережил без заметных
+                  изменений пять веков, но и перешагнул в электронный дизайн.
+                  Его популяризации в новое время послужили публикация листов
+                  Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                  недавнее время, программы электронной вёрстки типа Aldus
+                  PageMaker, в шаблонах которых используется
+                  <a href="#">Lorem Ipsum</a> .
+                </p>
+                <div class="quote">
+                  В отличии от lorem ipsum, текст рыба на русском языке наполнит
+                  любой макет непонятным смыслом и придаст неповторимый
+                </div>
+                <p>
+                  <strong> Lorem Ipsum </strong> - это текст-"рыба", часто
+                  используемый в печати и вэб-дизайне. Lorem Ipsum является
+                  стандартной "рыбой" для текстов на латинице с начала XVI века.
+                  В то время некий безымянный печатник создал большую коллекцию
+                  размеров и форм шрифтов, используя Lorem Ipsum для распечатки
+                  образцов. Lorem Ipsum не только успешно пережил без заметных
+                  изменений пять веков, но и перешагнул в электронный дизайн.
+                  Его популяризации в новое время послужили публикация листов
+                  Letraset с образцами Lorem Ipsum в 60-х годах и, в более
+                  недавнее время, программы электронной вёрстки типа Aldus
+                  PageMaker, в шаблонах которых используется
+                  <a href="#">Lorem Ipsum</a> .
+                </p>
+              </div>
+              <div class="article__comments">
+                <div class="comments__info p30">
+                  <div class="categories">
+                    <p class="categories__name">Категории:</p>
+                    <div class="article__category">
+                      <div class="article"><a href="">Категория статьи</a></div>
+                      <div class="article"><a href="">Категория статьи</a></div>
+                    </div>
+                  </div>
+                  <div class="share">
+                    <p class="share__name">Поделиться:</p>
+                    <div class="share__images">
+                      <a href="#">
+                        <svg class="social-networks__icon">
+                          <use
+                            xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                      <a href="#">
+                        <svg class="social-networks__icon">
+                          <use
+                            xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                      <a href="#">
+                        <svg class="social-networks__icon">
+                          <use
+                            xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                          ></use>
+                        </svg>
+                      </a>
+                      <a href="#">
+                        <svg class="social-networks__icon">
+                          <use
+                            xlink:href="../source/image/social-networks/viber.svg#viber"
+                          ></use>
+                        </svg>
+                      </a>
+                      <a href="#">
+                        <svg class="social-networks__icon">
+                          <use
+                            xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments p30">Плагин коментариве в фейсбук</div>
+              </div>
+            </div>
+            <div class="article__sidebar">
+              <h2 class="title">То, что сейчас в топе</h2>
+              <div class="article__top">
+                <a href="#" class="item">
+                  <span class="item__category">Категория статьи</span>
+                  <p class="item__name">
+                    Как правильно заменить свечи зажигания?
+                  </p>
+                </a>
+                <a href="#" class="item">
+                  <span class="item__category">Категория статьи</span>
+                  <p class="item__name">
+                    Как правильно заменить свечи зажигания?
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--Main End-->
+      <!--Footer-->
+      <footer id="footer" class="footer general_padding">
+        <div class="container p30">
+          <div class="footer__block">
+            <figure class="footer__logo">
+              <img
+                class="logo-desktop"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow.svg"
+                alt="logo"
+              />
+              <img
+                class="logo-mobile"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow-mobile.svg"
+                alt="logo"
+              />
+            </figure>
+            <form action="" class="form-subscribe">
+              <label for="footer_email">Быть в курсе последних новостей</label>
+              <div class="form__box">
+                <input
+                  id="footer_email"
+                  class="input"
+                  type="text"
+                  placeholder="Быть в курсе последних новостей"
+                />
+                <button type="button" class="button_yellow button-subscribe">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscription-issued">
+                <p>Поздравляем, подписка на новости успешно оформленна=)</p>
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+              </div>
+            </form>
+            <a href="#header" class="button_yellow up">
+              <svg class="">
+                <use
+                  xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+                ></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__title">
+            <h2 class="title">Каталог автомобилей</h2>
+            <button class="button__plus car-catalog">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_car-catalog">
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+          </nav>
+
+          <div class="footer__title">
+            <h2 class="title">Другое</h2>
+            <button class="button__plus other">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_other">
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+          </nav>
+        </div>
+        <div class="footer__copyright">
+          <div class="container p30">
+            <div class="footer__box">
+              <p>© Auff, Все права защищены</p>
+              <div class="social-networks">
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/viber.svg#viber"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <nav>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфендициальности</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Footer End-->
+    </div>
+  </body>
+</html>

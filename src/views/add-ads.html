@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auff</title>
+    <link rel="shortcut icon" href="favicon/icon.svg" type="image/png" />
+  </head>
+
+  <body>
+    <div class="show__image">
+      <div class="wrapper">
+        <div class="image">
+          <button class="button__hidden">
+            <svg class="">
+              <use xlink:href="../source/image/icon/close.svg#close"></use>
+            </svg>
+          </button>
+          <img src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="burger__menu">
+      <div class="burger__box">
+        <div class="burger__header">
+          <figure class="logo">
+            <img
+              class="logo-desktop"
+              loading="lazy"
+              src="../source/image/logo/logo.svg"
+              alt="logo"
+            />
+            <img
+              class="logo-mobile"
+              loading="lazy"
+              src="../source/image/logo/logo-mobile.svg"
+              alt="logo"
+            />
+          </figure>
+          <button class="burger__btn burger_hidden">
+            <svg class="">
+              <use xlink:href="../source/image/icon/close.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="burger__main scroll p30">
+          <p>Основное:</p>
+          <div class="links">
+            <a href="ads.html">Избранное</a>
+            <a href="comparisons.html">Сравнения <span>(5)</span> </a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+          </div>
+          <p>Мой профиль:</p>
+          <div class="links">
+            <a href="entrance.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
+          <div class="buttons">
+            <button class="button_dark">Найти авто</button>
+            <button class="button_dark_border">Продать авто</button>
+          </div>
+          <div class="social-networks">
+            <p>Мы в соц сетях:</p>
+            <div class="items">
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/viber.svg#viber"
+                  ></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="social-networks__icon">
+                  <use
+                    xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blur">
+      <!--Header-->
+      <header class="header pb40" id="header">
+        <div class="general_padding">
+          <div class="container">
+            <div class="header__nav">
+              <button class="burger__btn burger_show">
+                <svg class="burger__icon">
+                  <use
+                    xlink:href="../source/image/icon/burger.svg#burger"
+                  ></use>
+                </svg>
+              </button>
+              <a href="/" class="logo__header">
+                <img
+                  class="logo-desktop"
+                  loading="lazy"
+                  src="../source/image/logo/logo.svg"
+                  alt="logo"
+                />
+                <img
+                  class="logo-mobile"
+                  loading="lazy"
+                  src="../source/image/logo/logo-mobile.svg"
+                  alt="logo"
+                />
+              </a>
+              <div
+                class="item item_languages"
+                data-tippy-content="Изменить язык"
+              >
+                <a href="#" class="active">RU </a>
+                <span class="line"></span>
+                <a href="#">UA</a>
+              </div>
+              <div class="item item_user" data-tippy-content="Мой профиль">
+                <span>
+                  <img
+                    loading="lazy"
+                    src="../source/image/icon/user.svg"
+                    alt="user"
+                  />
+                </span>
+                <div class="user__menu">
+                  <a href="./entrance.html">Вход</a>
+                  <a href="./register.html">Регистрация</a>
+                </div>
+              </div>
+              <span class="item item_search" data-tippy-content="Поиск">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+              </span>
+              <a
+                href="chosen.html"
+                class="item item_favorites"
+                data-tippy-content="Избранное"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/star.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="comparisons.html"
+                class="item item_comparisons"
+                data-tippy-content="Сравнения"
+              >
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/comparison.svg"
+                  alt="comparison"
+                />
+              </a>
+              <button class="place">Разместить объявление</button>
+              <button class="plus">
+                <img src="../source/image/icon/plus.svg" alt="+" />
+              </button>
+              <div class="header__search">
+                <img
+                  loading="lazy"
+                  src="../source/image/icon/search.svg"
+                  alt="search"
+                />
+                <input
+                  class=""
+                  type="search"
+                  placeholder="Поиск среди 100 000 авто"
+                />
+                <button class="close__search">
+                  <img src="../source/image/icon/close.svg" alt="close" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__line"></div>
+        </div>
+      </header>
+      <!--Header End-->
+      <!--Main-->
+      <main class="main general_padding" id="main">
+        <div class="container">
+          <div class="main__block">
+            <div class="full__block">
+              <div class="exit mb30">
+                <div class="block__back">
+                  <button class="button-back">
+                    <svg>
+                      <use
+                        xlink:href="../source/image/icon/arrow.svg#arrow"
+                      ></use>
+                    </svg>
+                  </button>
+                  <h2 class="title">Добавить объявление</h2>
+                </div>
+                <div class="open-all">
+                  <button class="open-all__button">
+                    <span></span><span></span>
+                  </button>
+                </div>
+              </div>
+              <div class="steps">
+                <div class="step">
+                  <span class="step__item active">1</span>
+                  <p>Описывай</p>
+                </div>
+                <div class="step">
+                  <span class="step__item next">2</span>
+                  <p>Продвигай</p>
+                </div>
+                <div class="step">
+                  <span class="step__item">3</span>
+                  <p>Публикуй</p>
+                </div>
+              </div>
+              <div class="advertisement__content_tabs">
+                <div class="advertisement__tabs">
+                  <div class="advertisement__tab">
+                    <h3 class="advertisement__tab_title">
+                      Контактные данные
+                      <span
+                        class="question-mark"
+                        data-tippy-content="Контактные данные"
+                      >
+                        <img
+                          src="../source/image/icon/question-mark-bg.svg"
+                          alt="question-mark"
+                        />
+                      </span>
+                    </h3>
+                    <button class="tab__disclosure">
+                      <img src="../source/image/icon/arrow.svg" alt="arrow" />
+                    </button>
+                  </div>
+
+                  <div class="advertisement__tab_content tab__content">
+                    <p class="">
+                      Мы рекомендуем загружать фото размером <b>760х500</b> для
+                      корректного отображения.
+                    </p>
+                    <div class="advertisement__tab__images">
+                      <div id="files" class="files" data-count="24">
+                        <span>
+                          <img
+                            loading="lazy"
+                            src="../source/image/temp/car_0"
+                            alt="Car"
+                          />
+
+                          <button class="btn delete">
+                            <span>
+                              <img
+                                src="./source/image/icon/close.svg"
+                                alt="close"
+                              />
+                            </span>
+                          </button>
+                          <button class="btn primary">Главное фото</button>
+                        </span>
+                        <span>
+                          <img
+                            loading="lazy"
+                            src="../source/image/temp/car_3.jpg"
+                            alt="Car"
+                          />
+
+                          <button class="btn delete">
+                            <span>
+                              <img
+                                src="./source/image/icon/close.svg"
+                                alt="close"
+                              />
+                            </span>
+                          </button>
+                          <button class="btn primary">Главное фото</button>
+                        </span>
+                        <span>
+                          <img
+                            loading="lazy"
+                            src="../source/image/temp/car_0"
+                            alt="Car"
+                          />
+
+                          <button class="btn delete">
+                            <span>
+                              <img
+                                src="./source/image/icon/close.svg"
+                                alt="close"
+                              />
+                            </span>
+                          </button>
+                          <button class="btn primary">Главное фото</button>
+                        </span>
+                        <span>
+                          <img
+                            loading="lazy"
+                            src="../source/image/temp/car_0"
+                            alt="Car"
+                          />
+
+                          <button class="btn delete">
+                            <span>
+                              <img
+                                src="./source/image/icon/close.svg"
+                                alt="close"
+                              />
+                            </span>
+                          </button>
+                          <button class="btn primary">Главное фото</button>
+                        </span>
+                        <span>
+                          <img
+                            loading="lazy"
+                            src="../source/image/temp/user_car.png"
+                            alt="Car"
+                          />
+
+                          <button class="btn delete">
+                            <span>
+                              <img
+                                src="./source/image/icon/close.svg"
+                                alt="close"
+                              />
+                            </span>
+                          </button>
+                          <button class="btn primary">Главное фото</button>
+                        </span>
+                        <span>
+                          <img
+                            loading="lazy"
+                            src="../source/image/temp/car_0"
+                            alt="Car"
+                          />
+
+                          <button class="btn delete">
+                            <span>
+                              <img
+                                src="./source/image/icon/close.svg"
+                                alt="close"
+                              />
+                            </span>
+                          </button>
+                          <button class="btn primary">Главное фото</button>
+                        </span>
+                        <span>
+                          <img
+                            loading="lazy"
+                            src="../source/image/temp/car_0"
+                            alt="Car"
+                          />
+
+                          <button class="btn delete">
+                            <span>
+                              <img
+                                src="./source/image/icon/close.svg"
+                                alt="close"
+                              />
+                            </span>
+                          </button>
+                          <button class="btn primary">Главное фото</button>
+                        </span>
+                      </div>
+                      <div class="wrapper__button">
+                        <button id="add_photo" class="add_photo">
+                          <span>
+                            <img
+                              src="../source/image/icon/plus.svg"
+                              alt="plus"
+                            />
+                            Добавить фото
+                          </span>
+                          <input
+                            id="images"
+                            class="images"
+                            type="file"
+                            name="images[]"
+                          />
+                        </button>
+                      </div>
+                    </div>
+
+                    <label class="label video">
+                      <input
+                        type="text"
+                        class="input"
+                        id="video_url"
+                        name="video_url"
+                        placeholder="Ссылка на ролик из YouTube"
+                      />
+                      <span class="info">
+                        <span class="label-name">
+                          Ссылка на ролик из YouTube
+                        </span>
+                      </span>
+                    </label>
+                    <div class="wrapper__video">
+                      <button class="button__hidden">
+                        <svg class="">
+                          <use
+                            xlink:href="../source/image/icon/close.svg#close"
+                          ></use>
+                        </svg>
+                      </button>
+                      <iframe
+                        src="https://www.youtube.com/embed/s3FDqC1EnZ8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div id="main-info" class="advertisement__tabs">
+                  <div class="advertisement__tab">
+                    <h3 class="advertisement__tab_title">
+                      Основная информация
+                      <span
+                        class="question-mark"
+                        data-tippy-content="Основная информация"
+                      >
+                        <img
+                          src="../source/image/icon/question-mark-bg.svg"
+                          alt="question-mark"
+                        />
+                      </span>
+                    </h3>
+                    <button class="tab__disclosure">
+                      <img src="../source/image/icon/arrow.svg" alt="arrow" />
+                    </button>
+                  </div>
+
+                  <div class="advertisement__tab_content tab__content">
+                    <p class="mb30">
+                      <sup>* </sup> - поля с меткой “Звездочки” обязательны для
+                      заполнения
+                    </p>
+                    <div class="advertisement__select">
+                      <select name="sel">
+                        <option value="1">* Тип транспорта</option>
+                        <option value="2">* Тип транспорта</option>
+                        <option value="3">* Тип транспорта</option>
+                        <option value="4">* Тип транспорта</option>
+                        <option value="5">* Тип транспорта</option>
+                      </select>
+
+                      <select name="sel">
+                        <option value="1">* Марка авто</option>
+                        <option value="2">* Марка авто</option>
+                        <option value="3">* Марка авто</option>
+                        <option value="4">* Марка авто</option>
+                      </select>
+
+                      <select name="sel">
+                        <option value="1">* Модель авто</option>
+                        <option value="2">* Модель авто</option>
+                        <option value="3">* Модель авто</option>
+                        <option value="4">* Модель авто</option>
+                        <option value="5">* Модель авто</option>
+                      </select>
+
+                      <select name="sel">
+                        <option value="1">* Год выпуска</option>
+                        <option value="2">* Год выпуска</option>
+                        <option value="3">* Год выпуска</option>
+                        <option value="4">* Год выпуска</option>
+                        <option value="5">* Год выпуска</option>
+                      </select>
+
+                      <select name="sel">
+                        <option value="1">* Тип кузова</option>
+                        <option value="2">* Тип кузова</option>
+                        <option value="3">* Тип кузова</option>
+                        <option value="4">* Тип кузова</option>
+                        <option value="5">* Тип кузова</option>
+                      </select>
+
+                      <div class="advertisement__tab_input-wrap">
+                        <label for="32" class="label">
+                          <span class="label-name">Пробег от</span>
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Пробег от"
+                            id="32"
+                          />
+                        </label>
+                        <label for="33" class="label">
+                          <span class="label-name">Пробег до</span>
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Пробег до"
+                            id="33"
+                          />
+                        </label>
+                      </div>
+
+                      <select name="sel">
+                        <option value="1">* Модификация</option>
+                        <option value="2">* Модификация</option>
+                        <option value="3">* Модификация</option>
+                        <option value="4">* Модификация</option>
+                        <option value="5">* Модификация</option>
+                      </select>
+
+                      <label for="34" class="label">
+                        <span class="label-name">VIN-код</span>
+                        <input
+                          type="text"
+                          class="input"
+                          placeholder="VIN-код"
+                          id="34"
+                        />
+                      </label>
+
+                      <select name="sel">
+                        <option value="1">* Регион</option>
+                        <option value="2">* Регион</option>
+                        <option value="3">* Регион</option>
+                        <option value="4">* Регион</option>
+                        <option value="5">* Регион</option>
+                      </select>
+
+                      <select name="sel">
+                        <option value="1">* Город</option>
+                        <option value="2">* Город</option>
+                        <option value="3">* Город</option>
+                        <option value="4">* Город</option>
+                        <option value="5">* Город</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="advertisement__tabs">
+                  <div class="advertisement__tab">
+                    <h3 class="advertisement__tab_title">
+                      Описание автомобиля
+                      <span
+                        class="question-mark"
+                        data-tippy-content="Описание автомобиля"
+                      >
+                        <img
+                          src="../source/image/icon/question-mark-bg.svg"
+                          alt="question-mark"
+                        />
+                      </span>
+                    </h3>
+                    <button class="tab__disclosure">
+                      <span></span><span></span>
+                    </button>
+                  </div>
+                  <div class="advertisement__tab_content tab__content">
+                    <p class="">
+                      Тут доп текст, который поясняет зачем нужно заполнять
+                      поля, которые ниже.
+                    </p>
+                    <label
+                      for="description"
+                      class="label advertisement__tab_textarea"
+                    >
+                      <textarea
+                        id="description"
+                        class="textarea is-invalid"
+                        placeholder="Начните вводить текст"
+                      ></textarea>
+                      <span class="info">
+                        <span class="required-field active__field">*</span>
+                        <span class="label-name"> Описание автомобиля</span>
+                        <span class="error__text">
+                          Неверно заполнено поле
+                        </span>
+                      </span>
+                    </label>
+                    <span class="number-characters"><span>0</span>/1200</span>
+                  </div>
+                </div>
+                <div class="advertisement__tabs">
+                  <div class="advertisement__tab">
+                    <h3 class="advertisement__tab_title">
+                      Дополнительные характеристики
+                      <span
+                        class="question-mark"
+                        data-tippy-content="Дополнительные характеристики"
+                      >
+                        <img
+                          src="../source/image/icon/question-mark-bg.svg"
+                          alt="question-mark"
+                        />
+                      </span>
+                    </h3>
+                    <button class="tab__disclosure">
+                      <span></span><span></span>
+                    </button>
+                  </div>
+                  <div class="advertisement__tab_content tab__content">
+                    <p class="">
+                      Тут доп текст, который поясняет зачем нужно заполнять
+                      поля, которые ниже.
+                    </p>
+
+                    <div class="advertisement__selects">
+                      <div class="advertisement__select_row">
+                        <select name="sel">
+                          <option value="1">Коробка передач</option>
+                          <option value="2">Коробка передач</option>
+                          <option value="3">Коробка передач</option>
+                          <option value="4">Коробка передач</option>
+                          <option value="5">Коробка передач</option>
+                        </select>
+
+                        <select name="sel">
+                          <option value="1">Топливо</option>
+                          <option value="2">Топливо</option>
+                          <option value="3">Топливо</option>
+                        </select>
+                      </div>
+
+                      <div class="advertisement__select_row">
+                        <div class="advertisement__tab_input-wrap">
+                          <label for="consumption-from" class="label">
+                            <input
+                              type="text"
+                              class="input"
+                              placeholder="Расход  от"
+                              id="consumption-from"
+                            />
+                            <span class="info">
+                              <span class="label-name">Объем двигателя</span>
+                            </span>
+                          </label>
+                          <label for="consumption-to" class="label">
+                            <input
+                              type="text"
+                              class="input is-valid"
+                              placeholder="Расход  до"
+                              id="consumption-to"
+                            />
+                            <span class="info">
+                              <span class="label-name">Объем двигателя</span>
+                            </span>
+                          </label>
+                        </div>
+
+                        <div class="value-selection">
+                          <div class="value-selection__box">
+                            <input
+                              type="radio"
+                              name="fuelUsage"
+                              id="fuel-city"
+                            />
+                            <label for="fuel-city">Город</label>
+                            <input
+                              type="radio"
+                              name="fuelUsage"
+                              id="fuel-highway"
+                            />
+                            <label for="fuel-highway">Шоссе</label>
+                            <input
+                              type="radio"
+                              name="fuelUsage"
+                              id="fuel-mixed"
+                              checked=""
+                            />
+                            <label for="fuel-mixed">Смешанный</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="advertisement__select_row">
+                        <label for="36" class="label is-invalid">
+                          <input
+                            type="text"
+                            class="input"
+                            placeholder="Объем двигателя"
+                            id="36"
+                          />
+                          <span class="info">
+                            <span class="required-field active__field">*</span>
+                            <span class="label-name">Объем двигателя</span>
+                            <span class="error__text">
+                              Неверно заполнено поле
+                            </span>
+                          </span>
+                        </label>
+                        <div class="advertisement__tab_input-wrap">
+                          <label for="35" class="label">
+                            <span class="label-name"
+                              >Мощность двигателя Л/С
+                            </span>
+                            <input
+                              type="text"
+                              class="input"
+                              placeholder="Мощность двигателя Л/С"
+                              id="35"
+                            />
+                          </label>
+                          <div class="select__small">
+                            <select name="sel" class="">
+                              <option value="1">кВт</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="label">
+                          <select name="sel">
+                            <option value="">Привод</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                          </select>
+                          <span class="info">
+                            <span class="required-field active__field">*</span>
+                            <span class="label-name">Объем двигателя</span>
+                            <span class="error__text">
+                              Неверно заполнено поле
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="advertisement__select_row">
+                        <select name="sel">
+                          <option value="1">Количество дверей</option>
+                          <option value="2">Количество дверей</option>
+                          <option value="3">Количество дверей</option>
+                          <option value="4">Количество дверей</option>
+                          <option value="5">Количество дверей</option>
+                        </select>
+
+                        <select name="sel">
+                          <option value="1">Количество мест</option>
+                          <option value="2">Количество мест</option>
+                          <option value="3">Количество мест</option>
+                          <option value="4">Количество мест</option>
+                          <option value="5">Количество мест</option>
+                        </select>
+                      </div>
+                      <div class="advertisement__select_row">
+                        <select name="sel">
+                          <option value="1">Цвет</option>
+                          <option value="2">Цвет</option>
+                          <option value="3">Цвет</option>
+                          <option value="4">Цвет</option>
+                          <option value="5">Цвет</option>
+                        </select>
+
+                        <select name="sel">
+                          <option value="1">Тип краски</option>
+                          <option value="2">Тип краски</option>
+                          <option value="3">Тип краски</option>
+                          <option value="4">Тип краски</option>
+                          <option value="5">Тип краски</option>
+                        </select>
+                      </div>
+                      <div class="advertisement__select_row">
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="road-accidents"
+                        />
+                        <label class="yellow-checkbox" for="road-accidents"
+                          >Участие в ДТП</label
+                        >
+
+                        <select name="sel">
+                          <option value="1">Техническое состояние</option>
+                          <option value="2">Техническое состояние</option>
+                          <option value="3">Техническое состояние</option>
+                          <option value="4">Техническое состояние</option>
+                          <option value="5">Техническое состояние</option>
+                        </select>
+
+                        <select name="sel">
+                          <option value="1">Лакокрасочное покрытие</option>
+                          <option value="2">Лакокрасочное покрытие</option>
+                          <option value="3">Лакокрасочное покрытие</option>
+                          <option value="4">Лакокрасочное покрытие</option>
+                          <option value="5">Лакокрасочное покрытие</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="list__checkbox">
+                      <h4>Безопасность</h4>
+                      <div class="list__checkbox_box">
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="CentralLocking"
+                        />
+                        <label class="yellow-checkbox" for="CentralLocking"
+                          >Центральный замок</label
+                        >
+
+                        <input class="checkbox" type="checkbox" id="ABS" />
+                        <label class="yellow-checkbox" for="ABS">ABS</label>
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="ServoControl"
+                        />
+                        <label class="yellow-checkbox" for="ServoControl"
+                          >Серворуль</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="LockCheckpoint"
+                        />
+                        <label class="yellow-checkbox" for="LockCheckpoint"
+                          >Замок на кпп</label
+                        >
+
+                        <input class="checkbox" type="checkbox" id="ABS1" />
+                        <label class="yellow-checkbox" for="ABS1">ABS</label>
+
+                        <input class="checkbox" type="checkbox" id="ABS2" />
+                        <label class="yellow-checkbox" for="ABS2">ABS</label>
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="CentralLocking1"
+                        />
+                        <label class="yellow-checkbox" for="CentralLocking1"
+                          >Центральный замок</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="ServoControl1"
+                        />
+                        <label class="yellow-checkbox" for="ServoControl1"
+                          >Серворуль</label
+                        >
+                      </div>
+                      <h4>Комфорт</h4>
+                      <div class="list__checkbox_box">
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="PowerSteering"
+                        />
+                        <label class="yellow-checkbox" for="PowerSteering"
+                          >Усилитель руля</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="Conditioner"
+                        />
+                        <label class="yellow-checkbox" for="Conditioner"
+                          >Кондиционер</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="Multi-steering"
+                        />
+                        <label class="yellow-checkbox" for="Multi-steering"
+                          >Мультируль</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="ParkingSensors"
+                        />
+                        <label class="yellow-checkbox" for="ParkingSensors"
+                          >Парктроник</label
+                        >
+                      </div>
+                      <h4>Состояние</h4>
+                      <div class="list__checkbox_box">
+                        <input class="checkbox" type="checkbox" id="no-bit" />
+                        <label class="yellow-checkbox" for="no-bit"
+                          >Не бит</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="GarageStorage"
+                        />
+                        <label class="yellow-checkbox" for="GarageStorage"
+                          >Гаражное хранение</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="ServiceBook"
+                        />
+                        <label class="yellow-checkbox" for="ServiceBook"
+                          >Сервисная книжка</label
+                        >
+                      </div>
+                      <h4>Мультимедия</h4>
+                      <div class="list__checkbox_box">
+                        <input class="checkbox" type="checkbox" id="media" />
+                        <label class="yellow-checkbox" for="media"
+                          >Мультимедия</label
+                        >
+
+                        <input class="checkbox" type="checkbox" id="media1" />
+                        <label class="yellow-checkbox" for="media1"
+                          >Гаражное хранение</label
+                        >
+
+                        <input class="checkbox" type="checkbox" id="media2" />
+                        <label class="yellow-checkbox" for="media2"
+                          >Сервисная книжка</label
+                        >
+                      </div>
+                      <h4>Прочее</h4>
+                      <div class="list__checkbox_box">
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="other-check"
+                        />
+                        <label class="yellow-checkbox" for="other-check"
+                          >Мультимедия</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="other-check1"
+                        />
+                        <label class="yellow-checkbox" for="other-check1"
+                          >Гаражное хранение</label
+                        >
+
+                        <input
+                          class="checkbox"
+                          type="checkbox"
+                          id="other-check2"
+                        />
+                        <label class="yellow-checkbox" for="other-check2"
+                          >Сервисная книжка</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="advertisement__tabs">
+                  <div class="advertisement__tab">
+                    <h3 class="advertisement__tab_title">
+                      Регистрация авто
+                      <span
+                        class="question-mark"
+                        data-tippy-content="Регистрация авто"
+                      >
+                        <img
+                          src="../source/image/icon/question-mark-bg.svg"
+                          alt="question-mark"
+                        />
+                      </span>
+                    </h3>
+                    <button class="tab__disclosure">
+                      <span></span><span></span>
+                    </button>
+                  </div>
+
+                  <div class="advertisement__tab_content tab__content">
+                    <p class="mb30">
+                      Заполнять данное поле в случае пригона авто из дургой
+                      страны.
+                    </p>
+                    <div class="advertisement__select">
+                      <select name="sel">
+                        <option value="1">Растаможен</option>
+                        <option value="2">Растаможен</option>
+                        <option value="3">Растаможен</option>
+                      </select>
+                      <select name="sel">
+                        <option value="1">Пригнан из</option>
+                        <option value="2">Пригнан из</option>
+                        <option value="3">Пригнан из</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="advertisement__tabs">
+                  <div class="advertisement__tab">
+                    <h3 class="advertisement__tab_title">
+                      Стоимость
+                      <span
+                        class="question-mark"
+                        data-tippy-content="Стоимость"
+                      >
+                        <img
+                          src="../source/image/icon/question-mark-bg.svg"
+                          alt="question-mark"
+                        />
+                      </span>
+                    </h3>
+                    <button class="tab__disclosure">
+                      <span></span><span></span>
+                    </button>
+                  </div>
+                  <div class="advertisement__tab_content tab__content">
+                    <div class="advertisement__select">
+                      <div class="advertisement__tab_input-wrap">
+                        <label for="price-from" class="label active__label">
+                          <span class="label-name">Цена от</span>
+                          <input
+                            id="price-from"
+                            class="input js-input-from"
+                            placeholder="Цена от"
+                            type="text"
+                          />
+                        </label>
+                        <label for="price-to" class="label active__label">
+                          <span class="label-name">Цена до</span>
+                          <input
+                            id="price-to"
+                            class="input js-input-to"
+                            placeholder="Цена до"
+                            type="text"
+                          />
+                        </label>
+                      </div>
+                      <div class="advertisement__tab_money">
+                        <select name="sel">
+                          <option value="1">$</option>
+                          <option value="2">$10</option>
+                          <option value="3">$100</option>
+                          <option value="4">$1000</option>
+                          <option value="5">$2000</option>
+                          <option value="6">$2500</option>
+                          <option value="7">$5000</option>
+                          <option value="8">$6000</option>
+                          <option value="9">$7000</option>
+                          <option value="10">$9000</option>
+                          <option value="11">$10 000</option>
+                        </select>
+                        <p>
+                          Автомобилей в данном <br />
+                          ценовом диапазоне:
+                          <span class="advertisement__tab_item-red">4445</span>
+                        </p>
+                      </div>
+                    </div>
+                    <canvas id="chart"></canvas>
+                    <div class="advanced-search__range-slider">
+                      <input
+                        type="text"
+                        class="range-slider"
+                        name="my_range"
+                        value=""
+                      />
+                    </div>
+
+                    <div class="list__checkbox_box">
+                      <input class="checkbox" type="checkbox" id="auction" />
+                      <label class="yellow-checkbox" for="auction"
+                        >Возможен торг</label
+                      >
+
+                      <input class="checkbox" type="checkbox" id="auction1" />
+                      <label class="yellow-checkbox" for="auction1"
+                        >Обмен на недвижемость</label
+                      >
+
+                      <input class="checkbox" type="checkbox" id="auction2" />
+                      <label class="yellow-checkbox" for="auction2"
+                        >Обмен на авто</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="advertisement__agreement">
+                <div class="agreement">
+                  <div class="animate__line">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <input
+                    type="checkbox"
+                    name="sel"
+                    id="agreements"
+                    class="checkbox"
+                  />
+                  <label for="agreements"> Я согласен с условиями</label>
+                  <a class="link_agreements" href="/"
+                    >Соглашения о предоставлении онлайн услуг</a
+                  >
+                </div>
+                <div class="advertisement__submits">
+                  <button
+                    class="button_dark_border btn__disabled disabled"
+                    disabled
+                  >
+                    Перенести в черновики
+                  </button>
+                  <a
+                    href="#main-info"
+                    class="button_dark btn__disabled disabled"
+                    disabled
+                  >
+                    Далее
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="small__block p30">
+              <button class="close">
+                <img src="../source/image/icon/close.svg" alt="" />
+              </button>
+              <h2 class="title mb40">
+                Всего 3 шага и ваше авто уже на продаже!
+              </h2>
+              <div class="list__steps">
+                <div class="step">
+                  <img src="../source/image/number/01.svg" alt="01" />
+                  <p>
+                    Опишите ваше авто и укажите его технические характеристики
+                  </p>
+                </div>
+                <div class="step">
+                  <img src="../source/image/number/02.svg" alt="02" />
+                  <p>Посмотрите на ваше авто перед тем как мы его опубликуем</p>
+                </div>
+                <div class="step">
+                  <img src="../source/image/number/03.svg" alt="03" />
+                  <p>
+                    Опишите ваше авто и укажите его технические характеристики
+                  </p>
+                </div>
+                <div class="step">
+                  <img
+                    src="../source/image/number/checking.svg"
+                    alt="checking"
+                  />
+                  <p>
+                    Готов, теперь остается лишь принимать заявки от возможных
+                    покупателей=)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--Main End-->
+      <!--Footer-->
+      <footer id="footer" class="footer general_padding">
+        <div class="container p30">
+          <div class="footer__block">
+            <figure class="footer__logo">
+              <img
+                class="logo-desktop"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow.svg"
+                alt="logo"
+              />
+              <img
+                class="logo-mobile"
+                loading="lazy"
+                src="../source/image/logo/logo-yellow-mobile.svg"
+                alt="logo"
+              />
+            </figure>
+            <form action="" class="form-subscribe">
+              <label for="footer_email">Быть в курсе последних новостей</label>
+              <div class="form__box">
+                <input
+                  id="footer_email"
+                  class="input"
+                  type="text"
+                  placeholder="Быть в курсе последних новостей"
+                />
+                <button type="button" class="button_yellow button-subscribe">
+                  Подписаться
+                </button>
+              </div>
+              <div class="subscription-issued">
+                <p>Поздравляем, подписка на новости успешно оформленна=)</p>
+                <div class="progress">
+                  <div class="progress-value"></div>
+                </div>
+              </div>
+            </form>
+            <a href="#header" class="button_yellow up">
+              <svg>
+                <use
+                  xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+                ></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__title">
+            <h2 class="title">Каталог автомобилей</h2>
+            <button class="button__plus car-catalog">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_car-catalog">
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+            <a href="#">Каталог мото <span>555 2</span> </a>
+            <a href="#">Каталог водного <span>124 222</span> </a>
+            <a href="#">Каталог водного <span>1 222</span> </a>
+            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+            <a href="#">Каталог легковых <span>12 242</span> </a>
+          </nav>
+
+          <div class="footer__title">
+            <h2 class="title">Другое</h2>
+            <button class="button__plus other">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <nav class="footer__nav nav_other">
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Калькуялтор растаможки</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Автосалоны</a>
+            <a href="#">Калькуялтор растаможки</a>
+          </nav>
+        </div>
+        <div class="footer__copyright">
+          <div class="container p30">
+            <div class="footer__box">
+              <p>© Auff, Все права защищены</p>
+              <div class="social-networks">
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/viber.svg#viber"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg class="social-networks__icon">
+                    <use
+                      xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <nav>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Политика конфендициальности</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Footer End-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  </body>
+</html>

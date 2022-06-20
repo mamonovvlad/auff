@@ -1,0 +1,80 @@
+.information {
+  background: var(--light_gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--radius);
+  & .block {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      background: #dfe2e9;
+      @include _768 {
+        width: 100%;
+        height: 1px;
+        top: auto;
+        bottom: 0;
+      }
+    }
+    &:last-child::after {
+      display: none;
+    }
+    @include _1440 {
+      flex-wrap: wrap;
+    }
+    @include _768 {
+      display: flex;
+      align-items: center;
+    }
+  }
+  & .text {
+    color: var(--dark);
+    margin-right: 10px;
+    max-width: 290px;
+    @include _1440 {
+      order: 1;
+      width: 100%;
+      text-align: left;
+    }
+    @include _1024 {
+      font-size: 14px;
+      margin-right: 0;
+    }
+    @include _768 {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  & .number {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--dark);
+    text-align: right;
+    @include _1440 {
+      width: 100%;
+      text-align: left;
+    }
+    @include _1024 {
+      font-size: 24px;
+    }
+    @include _768 {
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+  @include _768 {
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+}
