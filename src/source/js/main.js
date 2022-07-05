@@ -13,6 +13,10 @@ window.addEventListener("DOMContentLoaded", function() {
   const tagsParent = document.querySelector(".tags");
   let tags = document.querySelectorAll(".tag");
   const tagsBtn = document.querySelector(".tags__show");
+  let tabContent = document.querySelectorAll(".advertisement__tabs .tab__content");
+  let advertisementTabs = document.querySelectorAll(".advertisement__tab");
+  let tabs = document.querySelectorAll(".advertisement__tabs");
+  let openAllButton = document.querySelector(".open-all__button");
   
   if (alert) {
     setTimeout(() => {
@@ -144,9 +148,51 @@ window.addEventListener("DOMContentLoaded", function() {
       });
     });
   
+
+  //add-ads__tab
+  if (tabs) {
+    tabs.forEach(item => {
+      item.querySelector(".tab__disclosure").addEventListener("click", function() {
+        console.log(item);
+        if (item.classList.contains("active")) {
+          item.classList.remove("active");
+          item.querySelector(".tab__content").style.display = "none";
+        } else {
+          item.classList.add("active");
+          item.querySelector(".tab__content").style.display = "block";
+        }
+      });
+    });
+  }
+  
+  
+  if (openAllButton) {
+    openAllButton.addEventListener("click", () => {
+      let openAll = document.querySelector(".open-all");
+      if (openAll.classList.contains("active")) {
+        openAll.classList.remove("active");
+        advertisementTabs.forEach(item => {
+          item.classList.remove("active");
+        });
+        tabContent.forEach(item => {
+          item.style.display = "none";
+        });
+      } else {
+        openAll.classList.add("active");
+        advertisementTabs.forEach(item => {
+          item.classList.add("active");
+        });
+        tabContent.forEach(item => {
+          item.style.display = "block";
+        });
+      }
+    });
+  }
+  
   activeTags();
   hideTabs();
   showTabs();
+  
 });
 
 $(document).ready(function() {
@@ -352,30 +398,6 @@ $(document).ready(function() {
     } else {
       $(this).addClass("active");
       $(this).next(".tab__content").slideDown(250);
-    }
-  });
-  //add-ads__tab
-  $(".advertisement__tab").on("click", function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this).next(".tab__content").slideUp(250);
-      $(".open-all").removeClass("active");
-    } else {
-      $(this).addClass("active");
-      $(this).next(".tab__content").slideDown(250);
-      $(".open-all").removeClass("active");
-    }
-  });
-  
-  $(".open-all__button").on("click", function() {
-    if ($(".open-all").hasClass("active")) {
-      $(".open-all").removeClass("active");
-      $(".advertisement__tab").removeClass("active");
-      $(".advertisement__tab").next(".tab__content").slideUp(250);
-    } else {
-      $(".open-all").addClass("active");
-      $(".advertisement__tab").addClass("active");
-      $(".advertisement__tab").next(".tab__content").slideDown(250);
     }
   });
   
