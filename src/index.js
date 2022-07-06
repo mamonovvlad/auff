@@ -11,7 +11,7 @@ import "tippy.js/animations/shift-away.css";
 import "./source/js/main";
 import "./source/js/slider";
 import "./source/js/select";
-import "./source/js/slider-range";
+//import "./source/js/slider-range";
 import "./source/js/scroll";
 import "./source/js/tippy";
 // import "./source/js/chart";

@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function() {
   if (alert) {
     setTimeout(() => {
       alert.classList.add("alert-active");
-      audio.volume = 0.6;
+      audio.volume = 0.3;
       audio.play();
     }, 1000);
     alertClose.addEventListener("click", function() {
@@ -322,7 +322,7 @@ $(document).ready(function() {
   }
   
   $("#imageUpload").change(function() {
-    readURL(this);
+    //readURL(this);
   });
   
   //Footer
@@ -362,9 +362,10 @@ $(document).ready(function() {
     headerBlock.find(".select").each(function(index, element) {
       element.selectize && element.selectize.clear();
     });
-    let $slider = headerBlock.find(".range-slider");
-    let slider_instance = $slider.data("ionRangeSlider");
-    slider_instance.reset();
+    $('input[name="price"]').val('');
+    $('label.price input[type="text"]').each(function(){
+      $(this).val('');
+    });
   });
   
   //  notifications
@@ -641,7 +642,10 @@ $(document).ready(function() {
     ) {
       return false;
     } else {
-      // window.location.href = $(this).find(".name").attr("href");
+      let url = $(this).find(".name").attr("href");
+      if(typeof url !== "undefined") {
+        window.location.href = $(this).find(".name").attr("href");
+      }
     }
   });
   

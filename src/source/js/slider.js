@@ -200,3 +200,47 @@ new Swiper(".similar-ads-container", {
     },
   },
 });
+
+let page = parseInt($("input[name=\"page\"]").val());
+let pageCount = parseInt($("input[name=\"page_count\"]").val());
+if (page >= pageCount && pageCount <= 1) {
+  $('div.pagination__block').hide();
+}
+if (page >= pageCount) {
+  $('#show-more').hide();
+}
+let loadingFlag = false;
+$(document).on('click', '#show-more', function () {
+  if (!loadingFlag) {
+    loadingFlag = true;
+    let csrfToken = $("meta[name=\"csrf-token\"]").attr("content");
+    $.ajax({
+      type: 'post',
+      url: window.location.href,
+      data: {
+        'page': page + 1,
+        '_csrf': csrfToken
+      },
+      success: function (data) {
+        page++;
+        loadingFlag = false;btn__disabled
+        $('div.advanced-search__content-card').append(data);
+        if (page >= pageCount) {
+          $('#show-more').hide();
+        }
+        $('div.pagination__block div.pagination').hide();
+        new Swiper(".images-container", {
+          slidesPerView: 1,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar"
+          },
+          navigation: {
+            nextEl: ".swiper-button-next-images",
+            prevEl: ".swiper-button-prev-images"
+          }
+        });
+      }
+    });
+  }
+});
