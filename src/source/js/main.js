@@ -152,7 +152,7 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function() {
-  //settings tab
+  //tab
   $(".tab__disclosure").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
@@ -263,20 +263,6 @@ $(document).ready(function() {
     $(".question__category").removeClass("active");
     $(this).addClass("active");
   });
-  // Tabs
-  $(".tab").on("click", function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this).children(".tab__content").slideUp(250);
-    } else {
-      $(".tab").removeClass("active");
-      $(this).addClass("active");
-      $(".tab__content").slideUp(250);
-      $(this).children(".tab__content").slideDown(250);
-    }
-  });
-  
-  //settings file
   
   function readURL(input) {
     if (input.files && input.files[0]) {
@@ -364,16 +350,6 @@ $(document).ready(function() {
     .eq(0)
     .addClass("active_tab");
   
-  //advanced-search__tab
-  $(".advanced-search__tab").on("click", function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this).next(".tab__content").slideUp(250);
-    } else {
-      $(this).addClass("active");
-      $(this).next(".tab__content").slideDown(250);
-    }
-  });
   
   //Tabs content
   $(".lists__content_btn").on("click", function() {
