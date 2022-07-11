@@ -18,12 +18,6 @@
       padding: 16px;
     }
 
-    &.active {
-      & .tab__disclosure span {
-        transform: rotate(0deg);
-      }
-    }
-
     &_title {
       font-weight: 600;
       font-size: 18px;

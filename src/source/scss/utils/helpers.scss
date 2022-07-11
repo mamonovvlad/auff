@@ -416,7 +416,7 @@ input:checked + label:before {
   }
 }
 
-.active .tab__disclosure {
+ .tab__disclosure.active {
   & img {
     transform: rotate(270deg);
   }

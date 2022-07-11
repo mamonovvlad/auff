@@ -13,10 +13,6 @@ window.addEventListener("DOMContentLoaded", function() {
   const tagsParent = document.querySelector(".tags");
   let tags = document.querySelectorAll(".tag");
   const tagsBtn = document.querySelector(".tags__show");
-  let tabContent = document.querySelectorAll(".advertisement__tabs .tab__content");
-  let advertisementTabs = document.querySelectorAll(".advertisement__tab");
-  let tabs = document.querySelectorAll(".advertisement__tabs");
-  let openAllButton = document.querySelector(".open-all__button");
   
   if (alert) {
     setTimeout(() => {
@@ -148,46 +144,6 @@ window.addEventListener("DOMContentLoaded", function() {
       });
     });
   
-
-  //add-ads__tab
-  if (tabs) {
-    tabs.forEach(item => {
-      item.querySelector(".tab__disclosure").addEventListener("click", function() {
-        console.log(item);
-        if (item.classList.contains("active")) {
-          item.classList.remove("active");
-          item.querySelector(".tab__content").style.display = "none";
-        } else {
-          item.classList.add("active");
-          item.querySelector(".tab__content").style.display = "block";
-        }
-      });
-    });
-  }
-  
-  
-  if (openAllButton) {
-    openAllButton.addEventListener("click", () => {
-      let openAll = document.querySelector(".open-all");
-      if (openAll.classList.contains("active")) {
-        openAll.classList.remove("active");
-        advertisementTabs.forEach(item => {
-          item.classList.remove("active");
-        });
-        tabContent.forEach(item => {
-          item.style.display = "none";
-        });
-      } else {
-        openAll.classList.add("active");
-        advertisementTabs.forEach(item => {
-          item.classList.add("active");
-        });
-        tabContent.forEach(item => {
-          item.style.display = "block";
-        });
-      }
-    });
-  }
   
   activeTags();
   hideTabs();
@@ -196,6 +152,35 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function() {
+  //settings tab
+  $(".tab__disclosure").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).parent(".tab__title").next(".tab__content").slideUp(250);
+    } else {
+      $(".settings__tab").removeClass("active");
+      $(this).addClass("active");
+      $(this).parent(".tab__title").next(".tab__content").slideDown(250);
+    }
+  });
+  
+  $(".open-all__button").on("click", function() {
+    let openAll = $(".open-all");
+    let tabContent = $(".tab__content");
+    let tabDisclosure = $(".tab__disclosure");
+    if (openAll.hasClass("active")) {
+      openAll.removeClass("active");
+      tabDisclosure.removeClass("active");
+      tabContent.removeClass("active");
+      tabContent.slideUp(250);
+    } else {
+      openAll.addClass("active");
+      tabContent.addClass("active");
+      tabDisclosure.addClass("active");
+      tabContent.slideDown(250);
+    }
+  });
+  
   $(".btn--animate")
     .on("mouseenter", function(e) {
       var parentOffset = $(this).offset(),
@@ -290,18 +275,6 @@ $(document).ready(function() {
       $(this).children(".tab__content").slideDown(250);
     }
   });
-  //settings tab
-  $(".settings__tab").on("click", function() {
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this).next(".tab__content").slideUp(250);
-    } else {
-      $(".settings__tab").removeClass("active");
-      $(this).addClass("active");
-      $(".tab__content").slideUp(250);
-      $(this).next(".tab__content").slideDown(250);
-    }
-  });
   
   //settings file
   
@@ -362,9 +335,9 @@ $(document).ready(function() {
     headerBlock.find(".select").each(function(index, element) {
       element.selectize && element.selectize.clear();
     });
-    $('input[name="price"]').val('');
-    $('label.price input[type="text"]').each(function(){
-      $(this).val('');
+    $("input[name=\"price\"]").val("");
+    $("label.price input[type=\"text\"]").each(function() {
+      $(this).val("");
     });
   });
   
@@ -643,7 +616,7 @@ $(document).ready(function() {
       return false;
     } else {
       let url = $(this).find(".name").attr("href");
-      if(typeof url !== "undefined") {
+      if (typeof url !== "undefined") {
         window.location.href = $(this).find(".name").attr("href");
       }
     }

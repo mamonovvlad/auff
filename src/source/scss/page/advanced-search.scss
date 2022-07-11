@@ -181,12 +181,6 @@
       }
     }
 
-    &.active {
-      & .tab__disclosure span:nth-child(2) {
-        transform: rotate(0deg);
-      }
-    }
-
     &-content {
       display: none;
       padding-top: 20px;
