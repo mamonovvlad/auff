@@ -154,7 +154,7 @@ window.addEventListener("DOMContentLoaded", function() {
 $(document).ready(function() {
   //tab
   $(".tab__disclosure").on("click", function() {
-    if ($(this).hasClass("active")) {
+    if ($(this).hasClass("active") || $(this).parent(".tab__title").next(".tab__content").css("display") === "block") {
       $(this).removeClass("active");
       $(this).parent(".tab__title").next(".tab__content").slideUp(250);
     } else {
@@ -587,7 +587,8 @@ $(document).ready(function() {
   $(".swiper-slide ").on("click", function(e) {
     if (
       $(e.target).closest(".swiper-navigation").length ||
-      $(e.target).closest(".swiper-navigation").length
+      $(e.target).closest(".swiper-navigation").length ||
+      $(e.target).closest(".car__links a").length
     ) {
       return false;
     } else {

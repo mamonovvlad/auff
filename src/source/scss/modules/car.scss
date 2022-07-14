@@ -1,5 +1,6 @@
 .car {
   &__block {
+    cursor: pointer;
     border-radius: var(--radius);
     background: var(--light_gray);
     transition: var(--transition);
@@ -134,6 +135,7 @@
 }
 
 .car__block-full {
+  cursor: pointer;
   max-width: 600px;
   height: 388px;
   display: flex;
@@ -206,6 +208,7 @@
 }
 
 .car__block-small {
+  cursor: pointer;
   border-radius: var(--radius);
   background: var(--light_gray);
   overflow: hidden;
@@ -285,6 +288,7 @@
 .icon__hover {
   & a,
   & .icon {
+    position: relative;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -307,8 +311,7 @@
       }
 
       & .img__comparison {
-        background: url("../image/icon/comparison-bg.svg#comparison-bg")
-          no-repeat center;
+        background: url("../image/icon/comparison-bg.svg#comparison-bg") no-repeat center;
       }
 
       & .img__star {
@@ -335,8 +338,7 @@
     }
 
     & .img__comparison {
-      background: url("../image/icon/comparison-bg.svg#comparison-bg") no-repeat
-        center;
+      background: url("../image/icon/comparison-bg.svg#comparison-bg") no-repeat center;
     }
 
     & .img__star {
@@ -346,5 +348,15 @@
     & .img__trash {
       background: url("../image/icon/trash-bg.svg#trash-bg") no-repeat center;
     }
+  }
+}
+
+.car__links a {
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: transparent;
   }
 }
