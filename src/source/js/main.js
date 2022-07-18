@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", function() {
   //Alert Open
   let alert = document.querySelector(".alert");
   let alertClose = document.querySelector(".alert .close");
-  let audio = document.getElementById("notification_audio");
+  let audio = document.querySelector(".notification_audio");
   let tabsArr = [];
   const textarea = document.querySelector(".textarea");
   const password = document.querySelectorAll(".password");

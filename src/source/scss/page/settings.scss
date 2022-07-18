@@ -6,6 +6,10 @@
 
   &__contacts {
     display: flex;
+    gap: 20px;
+    @include _768 {
+      gap: 15px;
+    }
     @include _1200 {
       flex-direction: column-reverse;
     }
@@ -14,27 +18,17 @@
   &__contact {
     width: 100%;
     display: flex;
+    gap: 15px;
 
     & .block {
       width: 50%;
       display: flex;
       flex-direction: column;
+      gap: 15px;
 
       & label {
         position: relative;
-        margin-bottom: 10px;
         overflow: hidden;
-        padding-top: 10px;
-      }
-
-      &:first-child {
-        margin-right: 20px;
-        @include _768 {
-          margin-right: 10px;
-        }
-        @include _576 {
-          margin-right: 0;
-        }
       }
 
       & .active__label .label-name {
@@ -79,6 +73,7 @@
 
   & .buttons {
     display: flex;
+    margin-top: 15px;
     gap: 20px;
     @include _768 {
       gap: 10px;
@@ -188,8 +183,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
+    gap: 15px;
     @include _1440 {
       grid-template-columns: repeat(3, 1fr);
     }
