@@ -432,14 +432,14 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
   $("#chosenAds").on("click", function() {
-    $(".chosen__viewed").fadeOut(200);
+    $(".chosen__viewed--wrapper").fadeOut(200);
     $(".chosen__filter").fadeOut(200);
     setTimeout(function() {
       $(".chosen__ads").fadeIn(200);
     }, 200);
   });
   $("#chosenFilter").on("click", function() {
-    $(".chosen__viewed").fadeOut(200);
+    $(".chosen__viewed--wrapper").fadeOut(200);
     $(".chosen__ads").fadeOut(200);
     setTimeout(function() {
       $(".chosen__filter").fadeIn(200);
@@ -449,7 +449,7 @@ $(document).ready(function() {
     $(".chosen__filter").fadeOut(200);
     $(".chosen__ads").fadeOut(200);
     setTimeout(function() {
-      $(".chosen__viewed").fadeIn(200);
+      $(".chosen__viewed--wrapper").fadeIn(200);
     }, 200);
   });
   //ads.html
