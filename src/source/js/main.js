@@ -578,7 +578,7 @@ $(document).ready(function() {
       $(e.target).closest(".swiper-navigation").length ||
       $(e.target).closest(".car__links a").length
     ) {
-      return false;
+      //return false;
     } else {
       let url = $(this).find(".name").attr("href");
       if (typeof url !== "undefined") {
