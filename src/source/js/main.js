@@ -1,4 +1,6 @@
 "use strict";
+//module
+import "./pages/card";
 
 window.addEventListener("DOMContentLoaded", function() {
   //Alert Open
@@ -350,20 +352,6 @@ $(document).ready(function() {
     .eq(0)
     .addClass("active_tab");
   
-  
-  //Tabs content
-  $(".lists__content_btn").on("click", function() {
-    $(".lists__content_btn").addClass("active");
-    $(".tabs__content_btn").removeClass("active");
-    $(".tabs").fadeOut();
-    $(".lists__content").fadeIn();
-  });
-  $(".tabs__content_btn").on("click", function() {
-    $(".tabs__content_btn").addClass("active");
-    $(".lists__content_btn").removeClass("active");
-    $(".tabs").fadeIn();
-    $(".lists__content").fadeOut();
-  });
   
   //hidden subscribe-window
   $(".window__close").click(function() {
