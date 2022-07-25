@@ -223,7 +223,7 @@ $(document).on('click', '#show-more', function () {
       },
       success: function (data) {
         page++;
-        loadingFlag = false;btn__disabled
+        loadingFlag = false;
         $('div.advanced-search__content-card').append(data);
         if (page >= pageCount) {
           $('#show-more').hide();
