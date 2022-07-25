@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     margin: 0 -10px;
   }
+
   &__prev,
   &__next {
     font-size: 24px;
@@ -19,21 +20,25 @@
     @include _576 {
       font-size: 16px;
     }
+
     &.swiper-button-disabled {
       color: var(--dark);
     }
   }
 }
+
 //scroll bar
 .swiper-scrollbar {
   display: block;
   height: 10px;
   border-radius: 5px;
   background: var(--light_gray);
+
   &-drag {
     background: var(--dark);
   }
 }
+
 .moderation,
 .ads__archive,
 .ads__active {
@@ -56,11 +61,13 @@
     grid-template-columns: 1fr;
   }
 }
+
 .ads__archive {
   & .user__car {
     filter: grayscale(1);
   }
 }
+
 // card car
 .user__car {
   position: relative;
@@ -70,16 +77,19 @@
   border-radius: 6px;
   overflow: hidden;
   transition: var(--transition);
+
   &:hover {
     background: var(--white);
     box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.08);
   }
+
   & .images {
     &-container {
       &:hover {
         & .images__number {
           background: var(--yellow);
         }
+
         & .swiper-button-next,
         & .swiper-button-prev {
           background: var(--yellow);
@@ -87,8 +97,10 @@
       }
     }
   }
+
   & .status {
     display: flex;
+
     & .item {
       width: 100%;
       height: 45px;
@@ -98,15 +110,19 @@
       background: var(--dark_grey);
       transition: var(--transition);
       border-left: 1px solid #f0f1f4;
+
       &:first-child {
         border-left: none;
       }
+
       & img {
         width: 15px;
       }
+
       &:hover {
         opacity: 0.5;
       }
+
       & span {
         padding-left: 5px;
         font-weight: 600;
@@ -114,13 +130,21 @@
       }
     }
   }
+
   & .activation {
     margin-bottom: 10px;
   }
+
   & .description {
+    &__box {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
     font-size: 14px;
     color: var(--dark);
-    margin-top: 12px;
+
     &:last-child {
       margin-bottom: 16px;
       @include _768 {
@@ -128,23 +152,20 @@
       }
     }
   }
+
   & .group {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    & button {
-      margin-left: 10px;
-      &:first-child {
-        margin-left: 0;
-      }
-    }
+    display: inline-flex;
+    align-self: flex-end;
+    column-gap: 10px;
   }
+
   & button {
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
   }
+
   & .promote {
     width: 100%;
     max-width: 165px;
@@ -158,14 +179,17 @@
     @include _768 {
       font-size: 12px;
     }
+
     &:hover {
       background: var(--yellow);
       color: var(--dark);
     }
   }
+
   & .restore {
     max-width: 100%;
   }
+
   & .edit,
   & .archive,
   & .delete {
@@ -173,12 +197,15 @@
     height: 40px;
     border: 2px solid var(--dark);
     border-radius: var(--radius);
+
     & svg {
       width: 20px;
       height: 20px;
     }
+
     &:hover {
       background: var(--dark);
+
       & svg {
         color: var(--yellow);
       }
@@ -190,16 +217,20 @@
   text-align: center;
   transition: var(--transition);
   border-radius: var(--radius);
+
   &:hover {
     background: var(--light_gray);
     padding: 10px;
+
     & .content {
       padding: 25px;
+
       & span {
         opacity: 0;
       }
     }
   }
+
   & .content {
     height: 100%;
     padding: 35px;
@@ -211,6 +242,7 @@
     transition: var(--transition);
     border-radius: var(--radius);
     user-select: none;
+
     & p {
       transition: var(--transition);
     }

@@ -1,21 +1,110 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="../favicon/icon.svg" type="image/png" />
-    <title>Oбъявления</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="../favicon/icon.svg" type="image/png" />
+  <title>Oбъявления</title>
+</head>
 
-  <body>
-    <div class="burger__menu">
-      <div class="burger__box">
-        <div class="burger__header">
-          <figure class="logo">
+<body>
+<div class="burger__menu">
+  <div class="burger__box">
+    <div class="burger__header">
+      <figure class="logo">
+        <img
+          class="logo-desktop"
+          loading="lazy"
+          src="../source/image/logo/logo.svg"
+          alt="logo"
+        />
+        <img
+          class="logo-mobile"
+          loading="lazy"
+          src="../source/image/logo/logo-mobile.svg"
+          alt="logo"
+        />
+      </figure>
+      <button class="burger__btn burger_hidden">
+        <svg class="">
+          <use xlink:href="../source/image/icon/close.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="burger__main scroll p30">
+      <p>Основное:</p>
+      <div class="links">
+        <a href="ads.html">Избранное</a>
+        <a href="comparisons.html">Сравнения <span>(5)</span> </a>
+        <a href="#">Калькуялтор растаможки</a>
+        <a href="#">Автосалоны</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Калькуялтор растаможки</a>
+        <a href="#">Автосалоны</a>
+      </div>
+      <p>Мой профиль:</p>
+      <div class="links">
+        <a href="entrance.html">Вход</a>
+        <a href="register.html">Регистрация</a>
+      </div>
+      <div class="buttons">
+        <button class="button_dark">Найти авто</button>
+        <button class="button_dark_border">Продать авто</button>
+      </div>
+      <div class="social-networks">
+        <p>Мы в соц сетях:</p>
+        <div class="items">
+          <a href="#">
+            <svg class="social-networks__icon">
+              <use
+                xlink:href="../source/image/social-networks/facebook.svg#facebook"
+              ></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="social-networks__icon">
+              <use
+                xlink:href="../source/image/social-networks/telegram.svg#telegram"
+              ></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="social-networks__icon">
+              <use
+                xlink:href="../source/image/social-networks/viber.svg#viber"
+              ></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="social-networks__icon">
+              <use
+                xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="blur">
+  <!--Header-->
+  <header class="header" id="header">
+    <div class="general_padding">
+      <div class="container">
+        <div class="header__nav">
+          <button class="burger__btn burger_show">
+            <svg class="burger__icon">
+              <use
+                xlink:href="../source/image/icon/burger.svg#burger"
+              ></use>
+            </svg>
+          </button>
+          <a href="/" class="logo__header">
             <img
               class="logo-desktop"
               loading="lazy"
@@ -28,105 +117,16 @@
               src="../source/image/logo/logo-mobile.svg"
               alt="logo"
             />
-          </figure>
-          <button class="burger__btn burger_hidden">
-            <svg class="">
-              <use xlink:href="../source/image/icon/close.svg#close"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="burger__main scroll p30">
-          <p>Основное:</p>
-          <div class="links">
-            <a href="ads.html">Избранное</a>
-            <a href="comparisons.html">Сравнения <span>(5)</span> </a>
-            <a href="#">Калькуялтор растаможки</a>
-            <a href="#">Автосалоны</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Калькуялтор растаможки</a>
-            <a href="#">Автосалоны</a>
+          </a>
+          <div
+            class="item item_languages"
+            data-tippy-content="Изменить язык"
+          >
+            <a href="#" class="active">RU </a>
+            <span class="line"></span>
+            <a href="#">UA</a>
           </div>
-          <p>Мой профиль:</p>
-          <div class="links">
-            <a href="entrance.html">Вход</a>
-            <a href="register.html">Регистрация</a>
-          </div>
-          <div class="buttons">
-            <button class="button_dark">Найти авто</button>
-            <button class="button_dark_border">Продать авто</button>
-          </div>
-          <div class="social-networks">
-            <p>Мы в соц сетях:</p>
-            <div class="items">
-              <a href="#">
-                <svg class="social-networks__icon">
-                  <use
-                    xlink:href="../source/image/social-networks/facebook.svg#facebook"
-                  ></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg class="social-networks__icon">
-                  <use
-                    xlink:href="../source/image/social-networks/telegram.svg#telegram"
-                  ></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg class="social-networks__icon">
-                  <use
-                    xlink:href="../source/image/social-networks/viber.svg#viber"
-                  ></use>
-                </svg>
-              </a>
-              <a href="#">
-                <svg class="social-networks__icon">
-                  <use
-                    xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
-                  ></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="blur">
-      <!--Header-->
-      <header class="header" id="header">
-        <div class="general_padding">
-          <div class="container">
-            <div class="header__nav">
-              <button class="burger__btn burger_show">
-                <svg class="burger__icon">
-                  <use
-                    xlink:href="../source/image/icon/burger.svg#burger"
-                  ></use>
-                </svg>
-              </button>
-              <a href="/" class="logo__header">
-                <img
-                  class="logo-desktop"
-                  loading="lazy"
-                  src="../source/image/logo/logo.svg"
-                  alt="logo"
-                />
-                <img
-                  class="logo-mobile"
-                  loading="lazy"
-                  src="../source/image/logo/logo-mobile.svg"
-                  alt="logo"
-                />
-              </a>
-              <div
-                class="item item_languages"
-                data-tippy-content="Изменить язык"
-              >
-                <a href="#" class="active">RU </a>
-                <span class="line"></span>
-                <a href="#">UA</a>
-              </div>
-              <div class="item item_user" data-tippy-content="Мой профиль">
+          <div class="item item_user" data-tippy-content="Мой профиль">
                 <span class="authorized">
                   <img
                     loading="lazy"
@@ -134,766 +134,766 @@
                     alt=""
                   />
                 </span>
-                <div class="user__menu">
-                  <a href="/notification.html">Мой профиль</a>
-                  <a href="/">Выход</a>
-                </div>
-              </div>
-              <span class="item item_search" data-tippy-content="Поиск">
+            <div class="user__menu">
+              <a href="/notification.html">Мой профиль</a>
+              <a href="/">Выход</a>
+            </div>
+          </div>
+          <span class="item item_search" data-tippy-content="Поиск">
                 <img
                   loading="lazy"
                   src="../source/image/icon/search.svg"
                   alt="search"
                 />
               </span>
-              <a
-                href="chosen.html"
-                class="item item_favorites"
-                data-tippy-content="Избранное"
-              >
-                <img
-                  loading="lazy"
-                  src="../source/image/icon/star.svg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="comparisons.html"
-                class="item item_comparisons"
-                data-tippy-content="Сравнения"
-              >
-                <img
-                  loading="lazy"
-                  src="../source/image/icon/comparison.svg"
-                  alt="comparison"
-                />
-              </a>
-              <button class="place">Разместить объявление</button>
-              <button class="plus">
-                <img src="../source/image/icon/plus.svg" alt="+" />
-              </button>
-              <div class="header__search">
-                <img
-                  loading="lazy"
-                  src="../source/image/icon/search.svg"
-                  alt="search"
-                />
-                <input
-                  class=""
-                  type="search"
-                  placeholder="Поиск среди 100 000 авто"
-                />
-                <button class="close__search">
-                  <img src="../source/image/icon/close.svg" alt="close" />
-                </button>
-              </div>
+          <a
+            href="chosen.html"
+            class="item item_favorites"
+            data-tippy-content="Избранное"
+          >
+            <img
+              loading="lazy"
+              src="../source/image/icon/star.svg"
+              alt=""
+            />
+          </a>
+          <a
+            href="comparisons.html"
+            class="item item_comparisons"
+            data-tippy-content="Сравнения"
+          >
+            <img
+              loading="lazy"
+              src="../source/image/icon/comparison.svg"
+              alt="comparison"
+            />
+          </a>
+          <button class="place">Разместить объявление</button>
+          <button class="plus">
+            <img src="../source/image/icon/plus.svg" alt="+" />
+          </button>
+          <div class="header__search">
+            <img
+              loading="lazy"
+              src="../source/image/icon/search.svg"
+              alt="search"
+            />
+            <input
+              class=""
+              type="search"
+              placeholder="Поиск среди 100 000 авто"
+            />
+            <button class="close__search">
+              <img src="../source/image/icon/close.svg" alt="close" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__line"></div>
+      <div class="container p30">
+        <div class="user-wrapper">
+          <div class="user">
+            <div class="user__image">
+              <img
+                loading="lazy"
+                src="../source/image/temp/user.png"
+                alt="user"
+              />
+            </div>
+            <div class="user-info">
+              <p class="user__name">Анатолий Демьянчук</p>
+              <p class="user__id">ID: 9138157</p>
             </div>
           </div>
-          <div class="header__line"></div>
-          <div class="container p30">
-            <div class="user-wrapper">
-              <div class="user">
-                <div class="user__image">
-                  <img
-                    loading="lazy"
-                    src="../source/image/temp/user.png"
-                    alt="user"
-                  />
-                </div>
-                <div class="user-info">
-                  <p class="user__name">Анатолий Демьянчук</p>
-                  <p class="user__id">ID: 9138157</p>
-                </div>
-              </div>
-              <div class="helpers">
-                <div class="helpers__image">
-                  <img
-                    loading="lazy"
-                    src="../source/image/temp/help.png"
-                    alt="help"
-                  />
-                </div>
-                <div class="helpers__info">
-                  <p class="helpers__text">Привет, чем я могу тебе помочь?</p>
-                  <a href="#" class="helpers__link">Задать вопрос?</a>
-                </div>
-              </div>
-              <div class="money">
-                <div class="money__image">
-                  <img
-                    loading="lazy"
-                    src="../source/image/icon/wallet-bg.svg"
-                    alt="wallet-bg"
-                  />
-                </div>
-                <div class="money__info">
-                  <p class="money__balance">120грн</p>
-                  <a href="#" class="money__link">Пополнить</a>
-                </div>
-              </div>
+          <div class="helpers">
+            <div class="helpers__image">
+              <img
+                loading="lazy"
+                src="../source/image/temp/help.png"
+                alt="help"
+              />
             </div>
-            <div class="back">
-              <button class="button-back show__menu">
-                <svg>
-                  <use xlink:href="../source/image/icon/arrow.svg#arrow"></use>
-                </svg>
-              </button>
-              <p>Кошелек</p>
+            <div class="helpers__info">
+              <p class="helpers__text">Привет, чем я могу тебе помочь?</p>
+              <a href="#" class="helpers__link">Задать вопрос?</a>
+            </div>
+          </div>
+          <div class="money">
+            <div class="money__image">
+              <img
+                loading="lazy"
+                src="../source/image/icon/wallet-bg.svg"
+                alt="wallet-bg"
+              />
+            </div>
+            <div class="money__info">
+              <p class="money__balance">120грн</p>
+              <a href="#" class="money__link">Пополнить</a>
             </div>
           </div>
         </div>
-      </header>
-      <!--Header End-->
-      <!--Main-->
-      <main class="main general_padding" id="main">
-        <div class="container main__box">
-          <div class="personal-area">
-            <div class="personal__menu">
-              <div class="menu-scroll">
-                <nav class="menu__items scroll">
-                  <div class="personal__burger burger__animate">
-                    <button
-                      class=""
-                      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-                      aria-label="Main Menu"
-                    >
-                      <svg viewBox="0 0 100 100">
-                        <path
-                          class="line line1"
-                          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-                        />
-                        <path class="line line2" d="M 20,50 H 80" />
-                        <path
-                          class="line line3"
-                          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-                        />
-                      </svg>
-                    </button>
-                    <p class="burger__text">Свернуть меню</p>
-                  </div>
-                  <p class="personal__description">Основное</p>
-                  <a href="ads.html" class="active">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/clipboard.svg"
-                      alt="svg"
+        <div class="back">
+          <button class="button-back show__menu">
+            <svg>
+              <use xlink:href="../source/image/icon/arrow.svg#arrow"></use>
+            </svg>
+          </button>
+          <p>Кошелек</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Header End-->
+  <!--Main-->
+  <main class="main general_padding" id="main">
+    <div class="container main__box">
+      <div class="personal-area">
+        <div class="personal__menu">
+          <div class="menu-scroll">
+            <nav class="menu__items scroll">
+              <div class="personal__burger burger__animate">
+                <button
+                  class=""
+                  onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                  aria-label="Main Menu"
+                >
+                  <svg viewBox="0 0 100 100">
+                    <path
+                      class="line line1"
+                      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
                     />
-                    <p class="link__name">Мои объявления</p>
-                  </a>
-                  <a href="wide-search.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/search.svg"
-                      alt="svg"
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path
+                      class="line line3"
+                      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
                     />
-                    <p class="link__name">Поиск</p>
-                  </a>
-                  <a href="chosen.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/star.svg"
-                      alt="svg"
-                    />
-                    <p class="link__name">Избранное</p>
-                  </a>
-                  <a href="comparisons.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/comparison.svg"
-                      alt="svg"
-                    />
-                    <p class="link__name">Сравнения</p>
-                  </a>
-                  <a href="wallet.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/wallet.svg"
-                      alt="svg"
-                    />
-                    <p class="link__name">Кошелек</p>
-                  </a>
-                  <a href="messages.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/mail.svg"
-                      alt="svg"
-                    />
-                    <p class="link__name">
-                      Чат <span class="notification">+12</span>
-                    </p>
-                  </a>
-                  <p class="personal__description">Дополнительное</p>
-                  <a href="notification.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/notification-bell.svg"
-                      alt="svg"
-                    />
-                    <p class="link__name">
-                      Уведомления <span class="notification">+4</span>
-                    </p>
-                  </a>
-                  <a href="settings.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/settings.svg"
-                      alt="svg"
-                    />
-                    <p class="link__name">Настройки</p>
-                  </a>
-                  <a href="questions.html" class="">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/support.svg"
-                      alt="svg"
-                    />
-                    <p class="link__name">Помощь</p>
-                  </a>
-                  <a href="/" class="btn__exit">
-                    <img
-                      loading="lazy"
-                      class="personal__icon"
-                      src="../source/image/icon/log-out.svg"
-                      alt="svg"
-                    />
-                    <p>Выход</p>
-                  </a>
-                  <div class="p30">
-                    <div class="banner">
-                      <img
-                        src="../source/image/temp/car-1-banner.svg"
-                        alt="svg"
-                      />
-                      Место под баннер
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div class="personal__content">
-              <div class="personal-navigation">
-                <button id="adsActive" class="active">
-                  Активные объявления (5)
+                  </svg>
                 </button>
-                <button id="adsArchive">Архивные (2)</button>
-                <button id="moderation">На модерации</button>
+                <p class="burger__text">Свернуть меню</p>
               </div>
+              <p class="personal__description">Основное</p>
+              <a href="ads.html" class="active">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/clipboard.svg"
+                  alt="svg"
+                />
+                <p class="link__name">Мои объявления</p>
+              </a>
+              <a href="wide-search.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/search.svg"
+                  alt="svg"
+                />
+                <p class="link__name">Поиск</p>
+              </a>
+              <a href="chosen.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/star.svg"
+                  alt="svg"
+                />
+                <p class="link__name">Избранное</p>
+              </a>
+              <a href="comparisons.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/comparison.svg"
+                  alt="svg"
+                />
+                <p class="link__name">Сравнения</p>
+              </a>
+              <a href="wallet.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/wallet.svg"
+                  alt="svg"
+                />
+                <p class="link__name">Кошелек</p>
+              </a>
+              <a href="messages.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/mail.svg"
+                  alt="svg"
+                />
+                <p class="link__name">
+                  Чат <span class="notification">+12</span>
+                </p>
+              </a>
+              <p class="personal__description">Дополнительное</p>
+              <a href="notification.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/notification-bell.svg"
+                  alt="svg"
+                />
+                <p class="link__name">
+                  Уведомления <span class="notification">+4</span>
+                </p>
+              </a>
+              <a href="settings.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/settings.svg"
+                  alt="svg"
+                />
+                <p class="link__name">Настройки</p>
+              </a>
+              <a href="questions.html" class="">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/support.svg"
+                  alt="svg"
+                />
+                <p class="link__name">Помощь</p>
+              </a>
+              <a href="/" class="btn__exit">
+                <img
+                  loading="lazy"
+                  class="personal__icon"
+                  src="../source/image/icon/log-out.svg"
+                  alt="svg"
+                />
+                <p>Выход</p>
+              </a>
+              <div class="p30">
+                <div class="banner">
+                  <img
+                    src="../source/image/temp/car-1-banner.svg"
+                    alt="svg"
+                  />
+                  Место под баннер
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="personal__content">
+          <div class="personal-navigation">
+            <button id="adsActive" class="active">
+              Активные объявления (5)
+            </button>
+            <button id="adsArchive">Архивные (2)</button>
+            <button id="moderation">На модерации</button>
+          </div>
 
-              <div class="ads-container">
-                <div class="ads__active p30">
-                  <div class="user__car">
-                    <div class="swiper-container images-container">
-                      <div class="images__number">
+          <div class="ads-container">
+            <div class="ads__active p30">
+              <div class="user__car">
+                <div class="swiper-container images-container">
+                  <div class="images__number">
                         <span>12</span
                         ><img
-                          loading="lazy"
-                          src="../source/image/icon/icon.svg"
-                          alt="number"
-                        />
-                      </div>
-                      <div class="swiper-pagination"></div>
-                      <div class="swiper-navigation">
-                        <div
-                          class="swiper-button-prev swiper-button-prev-images"
-                        ></div>
-                        <div
-                          class="swiper-button-next swiper-button-next-images"
-                        ></div>
-                      </div>
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                      </div>
+                    loading="lazy"
+                    src="../source/image/icon/icon.svg"
+                    alt="number"
+                  />
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-navigation">
+                    <div
+                      class="swiper-button-prev swiper-button-prev-images"
+                    ></div>
+                    <div
+                      class="swiper-button-next swiper-button-next-images"
+                    ></div>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide car__image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
+                      />
                     </div>
-                    <div class="status">
-                      <div class="item">
-                        <img src="../source/image/icon/eye.svg" alt="eye" />
-                        <span>244</span>
-                      </div>
-                      <div class="item">
-                        <img src="../source/image/icon/phone.svg" alt="phone" />
-                        <span>12</span>
-                      </div>
-                      <div class="item">
-                        <img
-                          src="../source/image/icon/comparison.svg"
-                          alt="comparison"
-                        />
-                        <span>0</span>
-                      </div>
-                      <div class="item">
-                        <img src="../source/image/icon/star.svg" alt="star" />
-                        <span>0</span>
-                      </div>
+                    <div class="swiper-slide car__image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
+                      />
                     </div>
-                    <div class="car__info">
-                      <div class="activation">
-                        Активно до: <b>24.12.2020</b>
-                      </div>
-                      <p class="name">Suzuki x-90 (2018)</p>
-                      <div class="description__box">
-                        <div class="description">Пробег: <b>49 000 км</b></div>
-                        <div class="description">Локация: <b>Днепр</b></div>
-                        <div class="description">
-                          Объем двигателя: <b>1.5 дизель</b>
-                        </div>
-                        <div class="description">Год: <b>2012</b></div>
-                        <div class="description">Коробка: <b>Автомат</b></div>
-                      </div>
-                      <div class="car__box">
-                        <div class="car__price">22 900$</div>
-                      </div>
-                      <div class="group">
-                        <button class="archive" data-tippy-content="Архив">
-                          <svg class="">
-                            <use
-                              xlink:href="../source/image/icon/archive.svg#archive"
-                            ></use>
-                          </svg>
-                        </button>
-                        <button class="edit" data-tippy-content="Изменить">
-                          <svg class="">
-                            <use
-                              xlink:href="../source/image/icon/pencil.svg#pencil"
-                            ></use>
-                          </svg>
-                        </button>
-                        <button class="delete" data-tippy-content="Удалить">
-                          <svg>
-                            <use
-                              xlink:href="../source/image/icon/trash.svg#trash"
-                            ></use>
-                          </svg>
-                        </button>
-                      </div>
+                    <div class="swiper-slide car__image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
+                      />
                     </div>
                   </div>
-                  <button class="add__car">
+                </div>
+                <div class="status">
+                  <div class="item">
+                    <img src="../source/image/icon/eye.svg" alt="eye" />
+                    <span>244</span>
+                  </div>
+                  <div class="item">
+                    <img src="../source/image/icon/phone.svg" alt="phone" />
+                    <span>12</span>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="../source/image/icon/comparison.svg"
+                      alt="comparison"
+                    />
+                    <span>0</span>
+                  </div>
+                  <div class="item">
+                    <img src="../source/image/icon/star.svg" alt="star" />
+                    <span>0</span>
+                  </div>
+                </div>
+                <div class="car__info redirecting-link">
+                  <div class="activation">
+                    Активно до: <b>24.12.2020</b>
+                  </div>
+                  <a class="name" href="/ru/card/556194" title="Abarth Fiat 595 Basic">Abarth Fiat 595 Basic</a>
+                  <div class="description__box">
+                    <div class="description">Пробег: <b>49 000 км</b></div>
+                    <div class="description">Локация: <b>Днепр</b></div>
+                    <div class="description">
+                      Объем двигателя: <b>1.5 дизель</b>
+                    </div>
+                    <div class="description">Год: <b>2012</b></div>
+                    <div class="description">Коробка: <b>Автомат</b></div>
+                  </div>
+                  <div class="car__box">
+                    <div class="car__price">22 900$</div>
+                  </div>
+                  <div class="group">
+                    <button class="archive" data-tippy-content="Архив">
+                      <svg class="">
+                        <use
+                          xlink:href="../source/image/icon/archive.svg#archive"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="edit" data-tippy-content="Изменить">
+                      <svg class="">
+                        <use
+                          xlink:href="../source/image/icon/pencil.svg#pencil"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="delete" data-tippy-content="Удалить">
+                      <svg>
+                        <use
+                          xlink:href="../source/image/icon/trash.svg#trash"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="add__car">
                     <span class="content">
                       <img src="../source/image/icon/car.png" alt="add car" />
                       <span>Нажмите, чтоб добавить новое авто</span>
                     </span>
+              </button>
+              <div class="empty">
+                <div class="lack-content dn grids">
+                  <img
+                    src="../source/image/lack-content/car.svg"
+                    alt="auto"
+                  />
+                  <p>У вас ещё нет активных объявлений =(</p>
+                  <button class="button_dark">
+                    Добавить первое объявление
                   </button>
-                  <div class="empty">
-                    <div class="lack-content dn grids">
+                </div>
+              </div>
+            </div>
+            <div class="ads__archive p30" style="display: none">
+              <div class="user__car">
+                <div class="swiper-container images-container">
+                  <div class="images__number">
+                        <span>12</span
+                        ><img
+                    loading="lazy"
+                    src="../source/image/icon/icon.svg"
+                    alt="number"
+                  />
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-navigation">
+                    <div
+                      class="swiper-button-prev swiper-button-prev-images"
+                    ></div>
+                    <div
+                      class="swiper-button-next swiper-button-next-images"
+                    ></div>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide car__image">
                       <img
-                        src="../source/image/lack-content/car.svg"
-                        alt="auto"
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
                       />
-                      <p>У вас ещё нет активных объявлений =(</p>
-                      <button class="button_dark">
-                        Добавить первое объявление
-                      </button>
+                    </div>
+                    <div class="swiper-slide car__image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
+                      />
+                    </div>
+                    <div class="swiper-slide car__image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
+                      />
                     </div>
                   </div>
                 </div>
-                <div class="ads__archive p30" style="display: none">
-                  <div class="user__car">
-                    <div class="swiper-container images-container">
-                      <div class="images__number">
+                <div class="status">
+                  <div class="item">
+                    <img src="../source/image/icon/eye.svg" alt="eye" />
+                    <span>244</span>
+                  </div>
+                  <div class="item">
+                    <img src="../source/image/icon/phone.svg" alt="phone" />
+                    <span>12</span>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="../source/image/icon/comparison.svg"
+                      alt="comparison"
+                    />
+                    <span>0</span>
+                  </div>
+                  <div class="item">
+                    <img src="../source/image/icon/star.svg" alt="star" />
+                    <span>0</span>
+                  </div>
+                </div>
+                <div class="car__info">
+                  <div class="activation">
+                    Активно до: <b>24.12.2020</b>
+                  </div>
+                  <p class="name">Suzuki x-90 (2018)</p>
+                  <div class="description__box">
+                    <div class="description">Пробег: <b>49 000 км</b></div>
+                    <div class="description">Локация: <b>Днепр</b></div>
+                    <div class="description">
+                      Объем двигателя: <b>1.5 дизель</b>
+                    </div>
+                    <div class="description">Год: <b>2012</b></div>
+                    <div class="description">Коробка: <b>Автомат</b></div>
+                  </div>
+                  <div class="car__box">
+                    <div class="car__price">22 900$</div>
+                  </div>
+                  <div class="group">
+                    <button class="promote restore">Восстановить</button>
+                    <button class="edit" data-tippy-content="Изменить">
+                      <svg class="">
+                        <use
+                          xlink:href="../source/image/icon/pencil.svg#pencil"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="empty">
+                <div class="lack-content grids dn">
+                  <img
+                    src="../source/image/lack-content/frame.svg"
+                    alt="frame"
+                  />
+                  <p>У вас ещё нет активных объявлений =(</p>
+                  <button class="button_dark">
+                    Добавить первое объявление
+                  </button>
+                  <!-- /.button_dark -->
+                </div>
+              </div>
+            </div>
+            <div class="moderation p30" style="display: none">
+              <div class="user__car">
+                <div class="swiper-container images-container">
+                  <div class="images__number">
                         <span>12</span
                         ><img
-                          loading="lazy"
-                          src="../source/image/icon/icon.svg"
-                          alt="number"
-                        />
-                      </div>
-                      <div class="swiper-pagination"></div>
-                      <div class="swiper-navigation">
-                        <div
-                          class="swiper-button-prev swiper-button-prev-images"
-                        ></div>
-                        <div
-                          class="swiper-button-next swiper-button-next-images"
-                        ></div>
-                      </div>
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="status">
-                      <div class="item">
-                        <img src="../source/image/icon/eye.svg" alt="eye" />
-                        <span>244</span>
-                      </div>
-                      <div class="item">
-                        <img src="../source/image/icon/phone.svg" alt="phone" />
-                        <span>12</span>
-                      </div>
-                      <div class="item">
-                        <img
-                          src="../source/image/icon/comparison.svg"
-                          alt="comparison"
-                        />
-                        <span>0</span>
-                      </div>
-                      <div class="item">
-                        <img src="../source/image/icon/star.svg" alt="star" />
-                        <span>0</span>
-                      </div>
-                    </div>
-                    <div class="car__info">
-                      <div class="activation">
-                        Активно до: <b>24.12.2020</b>
-                      </div>
-                      <p class="name">Suzuki x-90 (2018)</p>
-                      <div class="description__box">
-                        <div class="description">Пробег: <b>49 000 км</b></div>
-                        <div class="description">Локация: <b>Днепр</b></div>
-                        <div class="description">
-                          Объем двигателя: <b>1.5 дизель</b>
-                        </div>
-                        <div class="description">Год: <b>2012</b></div>
-                        <div class="description">Коробка: <b>Автомат</b></div>
-                      </div>
-                      <div class="car__box">
-                        <div class="car__price">22 900$</div>
-                      </div>
-                      <div class="group">
-                        <button class="promote restore">Восстановить</button>
-                        <button class="edit" data-tippy-content="Изменить">
-                          <svg class="">
-                            <use
-                              xlink:href="../source/image/icon/pencil.svg#pencil"
-                            ></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
+                    loading="lazy"
+                    src="../source/image/icon/icon.svg"
+                    alt="number"
+                  />
                   </div>
-                  <div class="empty">
-                    <div class="lack-content grids dn">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-navigation">
+                    <div
+                      class="swiper-button-prev swiper-button-prev-images"
+                    ></div>
+                    <div
+                      class="swiper-button-next swiper-button-next-images"
+                    ></div>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide car__image">
                       <img
-                        src="../source/image/lack-content/frame.svg"
-                        alt="frame"
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
                       />
-                      <p>У вас ещё нет активных объявлений =(</p>
-                      <button class="button_dark">
-                        Добавить первое объявление
-                      </button>
-                      <!-- /.button_dark -->
+                    </div>
+                    <div class="swiper-slide car__image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
+                      />
+                    </div>
+                    <div class="swiper-slide car__image">
+                      <img
+                        loading="lazy"
+                        src="../source/image/temp/car_4.png"
+                        alt="Car"
+                      />
                     </div>
                   </div>
                 </div>
-                <div class="moderation p30" style="display: none">
-                  <div class="user__car">
-                    <div class="swiper-container images-container">
-                      <div class="images__number">
-                        <span>12</span
-                        ><img
-                          loading="lazy"
-                          src="../source/image/icon/icon.svg"
-                          alt="number"
-                        />
-                      </div>
-                      <div class="swiper-pagination"></div>
-                      <div class="swiper-navigation">
-                        <div
-                          class="swiper-button-prev swiper-button-prev-images"
-                        ></div>
-                        <div
-                          class="swiper-button-next swiper-button-next-images"
-                        ></div>
-                      </div>
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                        <div class="swiper-slide car__image">
-                          <img
-                            loading="lazy"
-                            src="../source/image/temp/car_4.png"
-                            alt="Car"
-                          />
-                        </div>
-                      </div>
+                <div class="status">
+                  <div class="item">
+                    <img src="../source/image/icon/eye.svg" alt="eye" />
+                    <span>244</span>
+                  </div>
+                  <div class="item">
+                    <img src="../source/image/icon/phone.svg" alt="phone" />
+                    <span>12</span>
+                  </div>
+                  <div class="item">
+                    <img
+                      src="../source/image/icon/comparison.svg"
+                      alt="comparison"
+                    />
+                    <span>0</span>
+                  </div>
+                  <div class="item">
+                    <img src="../source/image/icon/star.svg" alt="star" />
+                    <span>0</span>
+                  </div>
+                </div>
+                <div class="car__info">
+                  <div class="activation">
+                    Активно до: <b>24.12.2020</b>
+                  </div>
+                  <p class="name">Suzuki x-90 (2018)</p>
+                  <div class="description__box">
+                    <div class="description">Пробег: <b>49 000 км</b></div>
+                    <div class="description">Локация: <b>Днепр</b></div>
+                    <div class="description">
+                      Объем двигателя: <b>1.5 дизель</b>
                     </div>
-                    <div class="status">
-                      <div class="item">
-                        <img src="../source/image/icon/eye.svg" alt="eye" />
-                        <span>244</span>
-                      </div>
-                      <div class="item">
-                        <img src="../source/image/icon/phone.svg" alt="phone" />
-                        <span>12</span>
-                      </div>
-                      <div class="item">
-                        <img
-                          src="../source/image/icon/comparison.svg"
-                          alt="comparison"
-                        />
-                        <span>0</span>
-                      </div>
-                      <div class="item">
-                        <img src="../source/image/icon/star.svg" alt="star" />
-                        <span>0</span>
-                      </div>
-                    </div>
-                    <div class="car__info">
-                      <div class="activation">
-                        Активно до: <b>24.12.2020</b>
-                      </div>
-                      <p class="name">Suzuki x-90 (2018)</p>
-                      <div class="description__box">
-                        <div class="description">Пробег: <b>49 000 км</b></div>
-                        <div class="description">Локация: <b>Днепр</b></div>
-                        <div class="description">
-                          Объем двигателя: <b>1.5 дизель</b>
-                        </div>
-                        <div class="description">Год: <b>2012</b></div>
-                        <div class="description">Коробка: <b>Автомат</b></div>
-                      </div>
-                      <div class="car__box">
-                        <div class="car__price">22 900$</div>
-                      </div>
-                      <div class="group">
-                        <button class="archive">
-                          <svg class="">
-                            <use
-                              xlink:href="../source/image/icon/archive.svg#archive"
-                            ></use>
-                          </svg>
-                        </button>
-                        <button class="edit">
-                          <svg class="">
-                            <use
-                              xlink:href="../source/image/icon/pencil.svg#pencil"
-                            ></use>
-                          </svg>
-                        </button>
-                        <button class="delete">
-                          <svg>
-                            <use
-                              xlink:href="../source/image/icon/trash.svg#trash"
-                            ></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
+                    <div class="description">Год: <b>2012</b></div>
+                    <div class="description">Коробка: <b>Автомат</b></div>
+                  </div>
+                  <div class="car__box">
+                    <div class="car__price">22 900$</div>
+                  </div>
+                  <div class="group">
+                    <button class="archive">
+                      <svg class="">
+                        <use
+                          xlink:href="../source/image/icon/archive.svg#archive"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="edit">
+                      <svg class="">
+                        <use
+                          xlink:href="../source/image/icon/pencil.svg#pencil"
+                        ></use>
+                      </svg>
+                    </button>
+                    <button class="delete">
+                      <svg>
+                        <use
+                          xlink:href="../source/image/icon/trash.svg#trash"
+                        ></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-      <!--Main End-->
-      <!--Footer-->
-      <footer id="footer" class="footer general_padding">
-        <div class="container p30">
-          <div class="footer__block">
-            <figure class="footer__logo">
-              <img
-                class="logo-desktop"
-                loading="lazy"
-                src="../source/image/logo/logo-yellow.svg"
-                alt="logo"
-              />
-              <img
-                class="logo-mobile"
-                loading="lazy"
-                src="../source/image/logo/logo-yellow-mobile.svg"
-                alt="logo"
-              />
-            </figure>
-            <form action="" class="form-subscribe">
-              <label for="footer_email">Быть в курсе последних новостей</label>
-              <div class="form__box">
-                <input
-                  id="footer_email"
-                  class="input"
-                  type="text"
-                  placeholder="Быть в курсе последних новостей"
-                />
-                <button type="button" class="button_yellow button-subscribe">
-                  Подписаться
-                </button>
-              </div>
-              <div class="subscription-issued">
-                <p>Поздравляем, подписка на новости успешно оформленна=)</p>
-                <div class="progress">
-                  <div class="progress-value"></div>
-                </div>
-              </div>
-            </form>
-            <a href="#header" class="button_yellow up">
-              <svg class="">
+      </div>
+    </div>
+  </main>
+  <!--Main End-->
+  <!--Footer-->
+  <footer id="footer" class="footer general_padding">
+    <div class="container p30">
+      <div class="footer__block">
+        <figure class="footer__logo">
+          <img
+            class="logo-desktop"
+            loading="lazy"
+            src="../source/image/logo/logo-yellow.svg"
+            alt="logo"
+          />
+          <img
+            class="logo-mobile"
+            loading="lazy"
+            src="../source/image/logo/logo-yellow-mobile.svg"
+            alt="logo"
+          />
+        </figure>
+        <form action="" class="form-subscribe">
+          <label for="footer_email">Быть в курсе последних новостей</label>
+          <div class="form__box">
+            <input
+              id="footer_email"
+              class="input"
+              type="text"
+              placeholder="Быть в курсе последних новостей"
+            />
+            <button type="button" class="button_yellow button-subscribe">
+              Подписаться
+            </button>
+          </div>
+          <div class="subscription-issued">
+            <p>Поздравляем, подписка на новости успешно оформленна=)</p>
+            <div class="progress">
+              <div class="progress-value"></div>
+            </div>
+          </div>
+        </form>
+        <a href="#header" class="button_yellow up">
+          <svg class="">
+            <use
+              xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+            ></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__title">
+        <h2 class="title">Каталог автомобилей</h2>
+        <button class="button__plus car-catalog">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="footer__nav nav_car-catalog">
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+        <a href="#">Каталог мото <span>555 2</span> </a>
+        <a href="#">Каталог водного <span>124 222</span> </a>
+        <a href="#">Каталог водного <span>1 222</span> </a>
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+        <a href="#">Каталог мото <span>555 2</span> </a>
+        <a href="#">Каталог водного <span>124 222</span> </a>
+        <a href="#">Каталог водного <span>1 222</span> </a>
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+        <a href="#">Каталог мото <span>555 2</span> </a>
+        <a href="#">Каталог водного <span>124 222</span> </a>
+        <a href="#">Каталог водного <span>1 222</span> </a>
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+        <a href="#">Каталог мото <span>555 2</span> </a>
+        <a href="#">Каталог водного <span>124 222</span> </a>
+        <a href="#">Каталог водного <span>1 222</span> </a>
+        <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
+        <a href="#">Каталог легковых <span>12 242</span> </a>
+      </nav>
+
+      <div class="footer__title">
+        <h2 class="title">Другое</h2>
+        <button class="button__plus other">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="footer__nav nav_other">
+        <a href="#">Калькуялтор растаможки</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Автосалоны</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Автосалоны</a>
+        <a href="#">Калькуялтор растаможки</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Калькуялтор растаможки</a>
+        <a href="#">Автосалоны</a>
+        <a href="#">Отзывы</a>
+        <a href="#">Автосалоны</a>
+        <a href="#">Калькуялтор растаможки</a>
+      </nav>
+    </div>
+    <div class="footer__copyright">
+      <div class="container p30">
+        <div class="footer__box">
+          <p>© Auff, Все права защищены</p>
+          <div class="social-networks">
+            <a href="#">
+              <svg class="social-networks__icon">
                 <use
-                  xlink:href="../source/image/icon/long-arrow.svg#long-arrow"
+                  xlink:href="../source/image/social-networks/instagram.svg#instagram"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="social-networks__icon">
+                <use
+                  xlink:href="../source/image/social-networks/facebook.svg#facebook"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="social-networks__icon">
+                <use
+                  xlink:href="../source/image/social-networks/telegram.svg#telegram"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="social-networks__icon">
+                <use
+                  xlink:href="../source/image/social-networks/viber.svg#viber"
+                ></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="social-networks__icon">
+                <use
+                  xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
                 ></use>
               </svg>
             </a>
           </div>
-
-          <div class="footer__title">
-            <h2 class="title">Каталог автомобилей</h2>
-            <button class="button__plus car-catalog">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-          <nav class="footer__nav nav_car-catalog">
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-            <a href="#">Каталог мото <span>555 2</span> </a>
-            <a href="#">Каталог водного <span>124 222</span> </a>
-            <a href="#">Каталог водного <span>1 222</span> </a>
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-            <a href="#">Каталог мото <span>555 2</span> </a>
-            <a href="#">Каталог водного <span>124 222</span> </a>
-            <a href="#">Каталог водного <span>1 222</span> </a>
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-            <a href="#">Каталог мото <span>555 2</span> </a>
-            <a href="#">Каталог водного <span>124 222</span> </a>
-            <a href="#">Каталог водного <span>1 222</span> </a>
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-            <a href="#">Каталог мото <span>555 2</span> </a>
-            <a href="#">Каталог водного <span>124 222</span> </a>
-            <a href="#">Каталог водного <span>1 222</span> </a>
-            <a href="#">Смотреть все марки191 854 <span>123 000</span> </a>
-            <a href="#">Каталог легковых <span>12 242</span> </a>
-          </nav>
-
-          <div class="footer__title">
-            <h2 class="title">Другое</h2>
-            <button class="button__plus other">
-              <span></span>
-              <span></span>
-            </button>
-          </div>
-          <nav class="footer__nav nav_other">
-            <a href="#">Калькуялтор растаможки</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Автосалоны</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Автосалоны</a>
-            <a href="#">Калькуялтор растаможки</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Калькуялтор растаможки</a>
-            <a href="#">Автосалоны</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Автосалоны</a>
-            <a href="#">Калькуялтор растаможки</a>
+          <nav>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Политика конфендициальности</a>
           </nav>
         </div>
-        <div class="footer__copyright">
-          <div class="container p30">
-            <div class="footer__box">
-              <p>© Auff, Все права защищены</p>
-              <div class="social-networks">
-                <a href="#">
-                  <svg class="social-networks__icon">
-                    <use
-                      xlink:href="../source/image/social-networks/instagram.svg#instagram"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg class="social-networks__icon">
-                    <use
-                      xlink:href="../source/image/social-networks/facebook.svg#facebook"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg class="social-networks__icon">
-                    <use
-                      xlink:href="../source/image/social-networks/telegram.svg#telegram"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg class="social-networks__icon">
-                    <use
-                      xlink:href="../source/image/social-networks/viber.svg#viber"
-                    ></use>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg class="social-networks__icon">
-                    <use
-                      xlink:href="../source/image/social-networks/whatsapp.svg#whatsapp"
-                    ></use>
-                  </svg>
-                </a>
-              </div>
-              <nav>
-                <a href="#">Пользовательское соглашение</a>
-                <a href="#">Политика конфендициальности</a>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!--Footer End-->
+      </div>
     </div>
-  </body>
+  </footer>
+  <!--Footer End-->
+</div>
+</body>
 </html>

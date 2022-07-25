@@ -40,8 +40,10 @@
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
-
+    cursor: pointer;
     & .date {
       font-size: 12px;
       color: var(--gray);
@@ -184,6 +186,7 @@
   }
 
   & .car__info {
+    flex-direction: row;
     transition: var(--transition);
     position: relative;
     z-index: 2;

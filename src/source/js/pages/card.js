@@ -1,6 +1,5 @@
 "use strict";
 const toggleInformation = document.querySelector(".toggle-information");
-//const button = toggleInformation.querySelectorAll(".button");
 const tabs = document.querySelector(".tabs");
 const listsContent = document.querySelector(".lists__content");
 
