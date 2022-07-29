@@ -587,8 +587,7 @@ $(document).ready(function() {
     }
   });
   $(".redirecting-link").on("click", function(e) {
-    console.log(e.target);
-    if (!$(e.target).closest(".group").length) {
+    if (!$(e.target).closest(".group").length || $(e.target).closest(".car__links a").length) {
       let url = $(this).find(".name").attr("href");
       if (typeof url !== "undefined") {
         window.location.href = $(this).find(".name").attr("href");
