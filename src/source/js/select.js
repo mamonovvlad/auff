@@ -1,5 +1,55 @@
 import "selectize";
 
+function clearFormParams(form) {
+  form.find('select, input[type="text"], input[type="checkbox"], input[type="hidden"]').each(function () {
+    let me = $(this);
+    if ((!me.val() && me.val().length === 0) ||
+      ((me.attr('name') == 'price' || me.attr('name') == 'shortPrice') && me.val() == '0;200000') ||
+      (me.attr('name') == 'race' && me.val() == '0;1000000')) {
+      me.attr('name', '');
+    }
+  });
+  form.find('input[type="checkbox"]').each(function () {
+    let me = $(this);
+    let value = me.val();
+    let name = me.attr('name');
+    if (!me.prop('checked')) {
+      me.parent().find('input[type="hidden"]').val(0);
+    } else {
+      me.parent().find('input[type="hidden"]').val(value);
+      me.parent().find('input[type="hidden"]').attr('name', name);
+    }
+  });
+  form.find('input[type="checkbox"]').each(function () {
+    let me = $(this);
+    me.attr('name', '');
+  });
+  form.find('input[name="fuel_usage"]').each(function () {
+    let me = $(this);
+    me.attr('name', '');
+  });
+  
+  return form;
+}
+
+function preload() {
+  if(!$('#search-form').length || !$('.count_adverts').length) {
+    return false;
+  }
+  let form = $('#search-form').clone();
+  form = clearFormParams(form);
+  $.ajax({
+    url: '/api/search/query?'+unescape(encodeURIComponent(form.serialize())),
+    success: function (data) {
+      if($('.count_adverts').length) {
+        $('.count_adverts').text(Number(data.result.count).toLocaleString());
+      }
+    },
+    error: function (data) {
+    }
+  });
+}
+
 let xhr;
 let select_transport_type, $select_transport_type;
 let select_transport_type_id, $select_transport_type_id;
@@ -23,6 +73,7 @@ let select_region, $select_region;
 let select_city, $select_city;
 let select_region_id, $select_region_id;
 let select_city_id, $select_city_id;
+let select_country_origin, $select_country_origin;
 
 $select_manufacturer = $("#manufacturer").selectize({
   valueField: "slug",
@@ -32,11 +83,13 @@ $select_manufacturer = $("#manufacturer").selectize({
     select_model.clear();
     if (typeof select_modification !== "undefined") {
       select_modification.clear();
+      preload();
     }
   }
   ,
   onChange: function(value) {
     if (!value.length) return;
+    preload();
     select_model.clear();
     select_model.clearOptions();
     select_model.load(function(callback) {
@@ -159,6 +212,7 @@ $select_model = $("#model").selectize({
   onItemRemove: function() {
     if (typeof select_modification !== "undefined") {
       select_modification.clear();
+      preload();
     }
     /*select_year_from.clear();
     if (typeof select_year_before !== "undefined") {
@@ -167,6 +221,7 @@ $select_model = $("#model").selectize({
   },
   onChange: function(value) {
     if (!value.length) return;
+    preload();
     if (typeof select_modification !== "undefined") {
       select_modification.clear();
       select_modification.clearOptions();
@@ -298,6 +353,7 @@ $select_year_from = $("#year_from").selectize({
   labelField: "name",
   searchField: ["name"],
   onChange: function(value_from) {
+    preload();
     if (!value_from.length) return;
     if (typeof select_year_before == "undefined") return;
     let value_before = select_year_before.getValue();
@@ -314,6 +370,7 @@ $select_year_before = $("#year_before").selectize({
   labelField: "name",
   searchField: ["name"],
   onChange: function(value_before) {
+    preload();
     if (!value_before.length) return;
     if (typeof select_year_from == "undefined") return;
     let value_from = select_year_from.getValue();
@@ -327,11 +384,13 @@ $select_year_before = $("#year_before").selectize({
 
 $select_region = $("#region").selectize({
   onItemRemove: function() {
+    preload();
     select_city.clear();
   }
   ,
   onChange: function(value) {
     if (!value.length) return;
+    preload();
     select_city.clear();
     select_city.clearOptions();
     select_city.load(function(callback) {
@@ -359,7 +418,10 @@ $select_region = $("#region").selectize({
 $select_city = $("#city").selectize({
   valueField: "slug",
   labelField: "name",
-  searchField: ["name"]
+  searchField: ["name"],
+  onChange: function(value) {
+    preload();
+  }
 });
 
 $select_region_id = $("#region_id").selectize({
@@ -401,6 +463,7 @@ $select_city_id = $("#city_id").selectize({
 
 $select_transport_type = $("#transport_type").selectize({
   onItemRemove: function() {
+    preload();
     if (typeof select_manufacturer !== "undefined") {
       select_manufacturer.clear();
     }
@@ -427,6 +490,7 @@ $select_transport_type = $("#transport_type").selectize({
   onChange: function(value) {
     if (!value.length) return;
     if (typeof select_manufacturer !== "undefined") {
+      preload();
       select_manufacturer.clear();
       select_manufacturer.clearOptions();
       select_manufacturer.load(function(callback) {
@@ -682,7 +746,10 @@ $select_transport_type_id = $("#transport_type_id").selectize({
 $select_body_type = $("#body_type").selectize({
   valueField: "slug",
   labelField: "name",
-  searchField: ["name"]
+  searchField: ["name"],
+  onChange: function(value) {
+    preload();
+  }
 });
 
 $select_fuel = $("#fuel").selectize({
@@ -725,6 +792,15 @@ $select_drive_id = $("#drive_id").selectize({
   valueField: "id",
   labelField: "name",
   searchField: ["name"]
+});
+
+$select_country_origin = $("#country_origin").selectize({
+  valueField: "slug",
+  labelField: "name",
+  searchField: ["name"],
+  onChange: function(value) {
+    preload();
+  }
 });
 
 $("select").selectize({
@@ -814,6 +890,10 @@ if (typeof $select_city_id[0] !== "undefined") {
   select_city_id = $select_city_id[0].selectize;
 }
 
+if (typeof $select_country_origin[0] !== "undefined") {
+  select_country_origin = $select_country_origin[0].selectize;
+}
+
 $("ul.transport_type li").on("click", function() {
   let transport_type = $(this).attr("data-name");
   $('input[name="transport_type"]').val(transport_type);
@@ -832,6 +912,7 @@ $("ul.transport_type li").on("click", function() {
         },
         success: function(results) {
           callback(results);
+          preload();
         },
         error: function() {
           callback();

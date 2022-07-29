@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function() {
   //Alert Open
   let alert = document.querySelector(".alert");
   let alertClose = document.querySelector(".alert .close");
-  let audio = document.querySelector(".notification_audio");
+  let audio = document.getElementById("notification_audio");
   let tabsArr = [];
   const textarea = document.querySelector(".textarea");
   const password = document.querySelectorAll(".password");
@@ -305,13 +305,6 @@ $(document).ready(function() {
     $(".search-info").slideToggle(300);
   });
   
-  //Footer Subscription Issued
-  $(".button-subscribe").click(function() {
-    $(".subscription-issued").fadeIn();
-    setTimeout(function() {
-      $(".subscription-issued").fadeOut();
-    }, 4000);
-  });
   //Footer Mail
   if (window.matchMedia("(max-width: 768px)").matches) {
     $("#footer_email").attr("placeholder", "Введите email");
